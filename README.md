@@ -1,3 +1,8 @@
 # 9to5 Runners
 
-GitHub Pages files with global search added to all pages.
+Current project files:
+- index.html
+- about.html
+- 9to5_shoes_page1.html
+
+Ready for GitHub Pages.
