@@ -448,6 +448,64 @@
   }
 }
 
+
+/* 9to5 Runners Responsive System */
+html { scroll-behavior:smooth; }
+img { max-width:100%; }
+
+@media (max-width:1100px){
+  .site-header{min-height:118px!important;height:auto!important;flex-wrap:wrap;padding:12px 16px 14px;gap:10px;}
+  .nav{position:static!important;order:1;width:100%;justify-content:center;gap:28px!important;font-size:14px!important;}
+  .site-header > a[aria-label*="Home"]{order:0;}
+  .site-logo{width:124px!important;height:70px!important;}
+  .search-wrap{position:static!important;order:2;width:min(520px,100%)!important;margin:0 auto!important;}
+  .search-results{left:0!important;right:auto!important;width:100%!important;}
+  .hero{min-height:440px!important;}
+  .hero-inner,.wrap,.review-shell,.shoe-wrap,.intro,.page-layout{padding-left:22px!important;padding-right:22px!important;}
+  .featured-grid,.reviews-grid,.videos-grid,.brand-grid,.intro-grid,.page-layout,.two-col{grid-template-columns:1fr!important;}
+  .filters{position:static!important;}
+}
+
+@media (max-width:768px){
+  body{overflow-x:hidden;}
+  .nav{gap:18px!important;font-size:12px!important;}
+  .hero{min-height:360px!important;background-position:center!important;}
+  .hero h1,.hero-title{font-size:clamp(42px,12vw,64px)!important;}
+  .hero-copy,.hero-sub{font-size:18px!important;}
+  .section-title,.page-title,.intro h2,.intro-copy h2,.section h2{font-size:34px!important;}
+  .review-shell{padding-top:34px!important;}
+  .intro-copy p,.section p{font-size:16px!important;line-height:1.6!important;}
+  .spec-horizontal{grid-template-columns:repeat(2,1fr)!important;margin:28px 0 12px!important;}
+  .spec-item{min-height:92px!important;padding:18px 10px!important;border-bottom:1px solid #ececec;}
+  .spec-item:nth-child(2n){border-right:none!important;}
+  .spec-item:last-child{grid-column:1/-1;border-bottom:none!important;}
+  .spec-item strong{font-size:20px!important;min-height:auto!important;}
+  .spec-item span{font-size:13px!important;}
+  .photo-block{max-width:100%!important;margin-top:24px!important;}
+  .photo-block img{width:100%!important;height:auto!important;max-height:320px!important;object-fit:contain!important;}
+  .review-row{grid-template-columns:1fr!important;gap:18px!important;}
+  .review-thumb img{height:auto!important;max-height:260px!important;object-fit:contain!important;}
+  .review-content h3,.review-name,.card-title{font-size:26px!important;}
+  .filter-pills{gap:8px!important;}
+  .filter-pills button,.clear-filters,.btn,.read-link,.page-btn{min-height:42px;}
+  .runner-profile-mock{margin:48px auto 28px!important;padding-top:22px!important;}
+  .runner-profile-image-wrap img{border-radius:6px!important;}
+  .youtube-hotspot{left:68%!important;top:37%!important;width:10%!important;height:16%!important;}
+  .instagram-hotspot{left:80%!important;top:36%!important;width:9%!important;height:18%!important;}
+  .footer{padding:28px 16px 34px!important;}
+}
+
+@media (max-width:480px){
+  .site-header{min-height:132px!important;}
+  .nav{gap:14px!important;font-size:11px!important;}
+  .site-logo{width:112px!important;height:62px!important;}
+  .hero{min-height:320px!important;}
+  .hero-inner,.wrap,.review-shell,.shoe-wrap,.intro,.page-layout{padding-left:16px!important;padding-right:16px!important;}
+  .spec-horizontal{grid-template-columns:1fr!important;}
+  .spec-item{border-right:none!important;}
+  .runner-profile-mock{display:none;}
+}
+
 </style>
 </head>
 <body>

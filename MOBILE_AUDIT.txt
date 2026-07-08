@@ -1,0 +1,24 @@
+index.html
+  responsive css: yes
+  search box: yes
+  nimbus links: 8
+
+9to5_Homepage.html
+  responsive css: yes
+  search box: yes
+  nimbus links: 8
+
+9to5_about.html
+  responsive css: yes
+  search box: yes
+  nimbus links: 1
+
+9to5_shoes_page1.html
+  responsive css: yes
+  search box: yes
+  nimbus links: 4
+
+9to5_shoes_asics_nimbus28.html
+  responsive css: yes
+  search box: yes
+  nimbus links: 1

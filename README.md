@@ -1,16 +1,17 @@
-# 9to5 Runners v1.3 Latest Review
+# 9to5 Runners v2.0 Responsive
 
-This package updates the latest review across the site.
+Mobile/tablet responsive update.
 
-Latest review:
-- ASICS Gel Nimbus 28 -> `9to5_shoes_asics_nimbus28.html`
+Included pages:
+- index.html
+- 9to5_Homepage.html
+- 9to5_about.html
+- 9to5_shoes_page1.html
+- 9to5_shoes_asics_nimbus28.html
 
-Updated:
-- Homepage hero/read review link
-- Homepage review cards
-- Homepage search
-- Shoes page Nimbus card
-- Shoes page filters retained
-- Coming Soon and dangling bullet removed
-- About page search
-- Navigation across all pages
+Key fixes:
+- Header/nav/search wrap cleanly on mobile.
+- Review tech specs switch from one row to a mobile grid.
+- Review images scale on phones without cropping.
+- Shoes page filters/cards stack cleanly.
+- Homepage sections stack cleanly.
