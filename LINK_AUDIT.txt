@@ -1,6 +1,15 @@
+index.html
+  Nimbus mentions: 5
+  Nimbus review links: 3
+  href: 9to5_Homepage.html
+  href: 9to5_Homepage.html#gear
+  href: 9to5_about.html
+  href: 9to5_shoes_asics_nimbus28.html
+  href: 9to5_shoes_page1.html
+
 9to5_Homepage.html
   Nimbus mentions: 5
-  Links to 9to5_shoes_asics_nimbus28.html: 3
+  Nimbus review links: 3
   href: 9to5_Homepage.html
   href: 9to5_Homepage.html#gear
   href: 9to5_about.html
@@ -9,15 +18,7 @@
 
 9to5_about.html
   Nimbus mentions: 1
-  Links to 9to5_shoes_asics_nimbus28.html: 1
-  href: 9to5_Homepage.html
-  href: 9to5_Homepage.html#gear
-  href: 9to5_about.html
-  href: 9to5_shoes_page1.html
-
-9to5_shoes_asics_nimbus28.html
-  Nimbus mentions: 11
-  Links to 9to5_shoes_asics_nimbus28.html: 1
+  Nimbus review links: 1
   href: 9to5_Homepage.html
   href: 9to5_Homepage.html#gear
   href: 9to5_about.html
@@ -25,18 +26,17 @@
 
 9to5_shoes_page1.html
   Nimbus mentions: 3
-  Links to 9to5_shoes_asics_nimbus28.html: 7
+  Nimbus review links: 4
   href: 9to5_Homepage.html
   href: 9to5_Homepage.html#gear
   href: 9to5_about.html
   href: 9to5_shoes_asics_nimbus28.html
   href: 9to5_shoes_page1.html
 
-index.html
-  Nimbus mentions: 5
-  Links to 9to5_shoes_asics_nimbus28.html: 3
+9to5_shoes_asics_nimbus28.html
+  Nimbus mentions: 11
+  Nimbus review links: 1
   href: 9to5_Homepage.html
   href: 9to5_Homepage.html#gear
   href: 9to5_about.html
-  href: 9to5_shoes_asics_nimbus28.html
   href: 9to5_shoes_page1.html
