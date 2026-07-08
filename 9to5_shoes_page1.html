@@ -174,6 +174,28 @@ a{color:inherit;}
   display:block;
 }
 
+
+.filter-clear-wrap {
+  border-top:1px solid #d8d8d8;
+  margin-top:18px;
+  padding-top:18px;
+}
+.clear-filters {
+  width:100%;
+  border:0;
+  border-radius:999px;
+  background:#232323;
+  color:#fff;
+  padding:11px 16px;
+  font-family:"Oswald", Arial, sans-serif;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+}
+.clear-filters:hover {
+  background:#2878d9;
+}
+
 </style>
 </head>
 <body>
@@ -237,6 +259,11 @@ a{color:inherit;}
           <button type="button" data-filter="long run">Long Run</button>
         </div>
       </div>
+    
+      <div class="filter-clear-wrap">
+        <button class="clear-filters" type="button">Clear All</button>
+      </div>
+
     </aside>
 
     <section>
@@ -380,42 +407,69 @@ setupSiteSearch();
 </script>
 
 
+
 <script>
 function setupShoeFilters() {
   const buttons = document.querySelectorAll(".filter-pills button[data-filter]");
+  const clearButton = document.querySelector(".clear-filters");
   const cards = document.querySelectorAll(".review-row[data-filter]");
   const count = document.querySelector(".post-count");
   const noResults = document.querySelector(".no-results");
 
   if (!buttons.length || !cards.length) return;
 
-  function applyFilter(value) {
+  const activeFilters = new Set();
+
+  function updateButtonStates() {
+    buttons.forEach(button => {
+      button.classList.toggle("active", activeFilters.has(button.dataset.filter));
+    });
+  }
+
+  function applyFilters() {
+    const filters = Array.from(activeFilters).filter(value => value !== "all");
     let visible = 0;
 
     cards.forEach(card => {
       const tags = (card.dataset.filter || "").toLowerCase();
-      const show = value === "all" || tags.includes(value);
+      const show = filters.length === 0 || filters.every(filter => tags.includes(filter));
       card.style.display = show ? "" : "none";
       if (show) visible++;
     });
 
     if (count) count.textContent = `${visible} ${visible === 1 ? "post" : "posts"}`;
     if (noResults) noResults.classList.toggle("active", visible === 0);
+    updateButtonStates();
   }
 
   buttons.forEach(button => {
     button.addEventListener("click", () => {
-      const group = button.closest(".filter-pills");
-      if (group) group.querySelectorAll("button").forEach(btn => btn.classList.remove("active"));
-      button.classList.add("active");
-      applyFilter(button.dataset.filter);
+      const value = button.dataset.filter;
+
+      if (value === "all") {
+        activeFilters.clear();
+      } else if (activeFilters.has(value)) {
+        activeFilters.delete(value);
+      } else {
+        activeFilters.add(value);
+      }
+
+      applyFilters();
     });
   });
 
-  applyFilter("all");
+  if (clearButton) {
+    clearButton.addEventListener("click", () => {
+      activeFilters.clear();
+      applyFilters();
+    });
+  }
+
+  applyFilters();
 }
 setupShoeFilters();
 </script>
+
 
 </body>
 </html>
