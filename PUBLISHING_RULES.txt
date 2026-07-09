@@ -11,6 +11,11 @@
   • Hero button/link
 - Never update the hero text without updating the hero image.
 
+CURRENT FEATURED REVIEW APPLIED:
+- Janji Revy Pack
+- Page: 9to5_gear_janji_revy_pack.html
+- Homepage hero image synced from the Janji Revy Pack review.
+
 2. HOMEPAGE LATEST REVIEWS
 - Do NOT include the Featured Review.
 - Display the three newest Shoe Reviews.
@@ -35,7 +40,7 @@
   • Search index
   • Archive pages
   • Internal links
-  • Homepage hero image (required)
+  • Homepage hero image
 
 7. LINK VERIFICATION
 - Verify all internal links before every release.
