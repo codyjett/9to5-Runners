@@ -544,7 +544,7 @@ img { max-width:100%; }
 
     <section class="wrap" id="reviews">
       <div class="section-head">
-        <h2 class="display section-title">Featured Stories</h2>
+        <h2 class="featured-stories-title">Featured Stories</h2>
         <a class="view-all" href="#">View All</a>
       </div>
       <div class="featured-grid">
@@ -830,6 +830,60 @@ function setupSiteSearch() {
 
 setupSiteSearch();
 </script>
+
+
+
+
+
+<style>
+/* Homepage hero height + Featured Stories visibility fix */
+body .hero{
+  min-height:420px !important;
+  height:420px !important;
+}
+body .hero-inner{
+  padding-bottom:42px !important;
+}
+body .featured-stories{
+  display:block !important;
+  visibility:visible !important;
+  overflow:visible !important;
+  clear:both !important;
+  padding-top:54px !important;
+  margin-top:0 !important;
+}
+body .featured-stories-title,
+body .featured-stories h2{
+  display:block !important;
+  visibility:visible !important;
+  font-family:"Bowlby One SC", Impact, sans-serif !important;
+  font-size:42px !important;
+  line-height:1.35 !important;
+  margin:0 0 28px 0 !important;
+  padding:0 0 12px 0 !important;
+  height:auto !important;
+  max-height:none !important;
+  overflow:visible !important;
+  clip-path:none !important;
+}
+@media(max-width:768px){
+  body .hero{
+    min-height:360px !important;
+    height:360px !important;
+  }
+  body .hero-inner{
+    padding-bottom:34px !important;
+  }
+  body .featured-stories{
+    padding-top:38px !important;
+  }
+  body .featured-stories-title,
+  body .featured-stories h2{
+    font-size:34px !important;
+    line-height:1.35 !important;
+  }
+}
+</style>
 
 </body>
 </html>
