@@ -30,3 +30,9 @@ This build includes:
 - `PUBLISHING_RULES.txt` — master publishing workflow
 
 Review IDs are internal only and should not display publicly.
+
+
+Latest homepage updates:
+- Featured Stories and Latest Shoe Reviews now use matching font/size.
+- Latest Reviews renamed to Latest Shoe Reviews.
+- Homepage update applied to both 9to5_Homepage.html and index.html.
