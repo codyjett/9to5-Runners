@@ -1,0 +1,42 @@
+9to5 RUNNERS PUBLISHING RULES
+==============================
+
+1. HOMEPAGE FEATURED REVIEW
+- The newest published review becomes the Featured Review.
+- Update ALL of the following together:
+  • Hero image (use the review's primary hero image)
+  • Hero category
+  • Hero title
+  • Hero description
+  • Hero button/link
+- Never update the hero text without updating the hero image.
+
+2. HOMEPAGE LATEST REVIEWS
+- Do NOT include the Featured Review.
+- Display the three newest Shoe Reviews.
+
+3. HOMEPAGE FEATURED STORIES
+- Show the latest Shoe/Gear reviews.
+- Exclude the Featured Review.
+
+4. SHOES PAGE
+- Newest Shoe Review becomes the Shoes hero.
+- Hero image and copy update automatically.
+- Archive updates by year.
+
+5. GEAR PAGE
+- Newest Gear Review becomes the Gear hero.
+- Hero image and copy update automatically.
+- Archive updates by year.
+
+6. REVIEW PUBLISHING
+- Every new review updates:
+  • Homepage
+  • Search index
+  • Archive pages
+  • Internal links
+  • Homepage hero image (required)
+
+7. LINK VERIFICATION
+- Verify all internal links before every release.
+- Ensure search indexes include new reviews.

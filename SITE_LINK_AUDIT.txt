@@ -1,0 +1,57 @@
+9to5 Runners Final Verification
+===============================
+
+Publishing rules:
+- Featured Review should be newest review: Janji Revy Pack.
+- Featured Review excluded from Latest Reviews.
+- Featured Stories exclude Featured Review.
+- Shoes page retains the restored black hero.
+- Gear page and Shoe page both linked from nav.
+- Search is present on all core pages.
+
+Broken local links:
+None found.
+
+Detailed page report:
+9to5_Homepage.html
+  search box: YES
+  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
+  Janji review links: 2
+  Nimbus review links: 6
+
+9to5_about.html
+  search box: YES
+  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
+  Janji review links: 1
+  Nimbus review links: 1
+
+9to5_gear_janji_revy_pack.html
+  search box: YES
+  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
+  Janji review links: 1
+  Nimbus review links: 1
+
+9to5_gear_page1.html
+  search box: YES
+  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
+  Janji review links: 4
+  Nimbus review links: 1
+
+9to5_shoes_asics_nimbus28.html
+  search box: YES
+  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
+  Janji review links: 1
+  Nimbus review links: 1
+
+9to5_shoes_page1.html
+  search box: YES
+  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
+  Janji review links: 1
+  Nimbus review links: 4
+
+index.html
+  search box: YES
+  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
+  Janji review links: 2
+  Nimbus review links: 6
+
