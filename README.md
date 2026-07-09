@@ -20,3 +20,13 @@ Approved updates included:
 - Shoes page black hero restored
 - Gear page added
 - Search/nav links verified from prior build
+
+## Publishing Manifest
+
+This build includes:
+
+- `data/reviews.json` — internal review manifest
+- `data/README.md` — manifest notes
+- `PUBLISHING_RULES.txt` — master publishing workflow
+
+Review IDs are internal only and should not display publicly.

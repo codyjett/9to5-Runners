@@ -1,0 +1,55 @@
+[
+  {
+    "id": "2026-001",
+    "internalOnly": true,
+    "title": "ASICS Gel Nimbus 28",
+    "type": "Shoe Review",
+    "brand": "ASICS",
+    "model": "Gel Nimbus 28",
+    "category": "Max Cushion Daily Trainer",
+    "status": "Full Review",
+    "published": "2026-07-09",
+    "updated": null,
+    "page": "9to5_shoes_asics_nimbus28.html",
+    "featured": false,
+    "archive": {
+      "year": 2026,
+      "month": "July"
+    },
+    "tags": [
+      "asics",
+      "gel nimbus 28",
+      "road",
+      "max cushion",
+      "daily trainer"
+    ]
+  },
+  {
+    "id": "2026-002",
+    "internalOnly": true,
+    "title": "Janji Revy Pack",
+    "type": "Gear Review",
+    "brand": "Janji",
+    "model": "Revy Pack",
+    "category": "Backpack",
+    "status": "Full Review",
+    "published": "2026-07-09",
+    "updated": null,
+    "page": "9to5_gear_janji_revy_pack.html",
+    "featured": true,
+    "archive": {
+      "year": 2026,
+      "month": "July"
+    },
+    "tags": [
+      "janji",
+      "revy pack",
+      "gear",
+      "backpack",
+      "fastpacking",
+      "travel",
+      "hydration",
+      "laptop"
+    ]
+  }
+]

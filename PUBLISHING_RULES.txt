@@ -1,47 +1,66 @@
 9to5 RUNNERS PUBLISHING RULES
 ==============================
 
-1. HOMEPAGE FEATURED REVIEW
+MASTER SITE RULE
+- Maintain one master project.
+- Every update starts from the latest master.
+- Never rebuild from an older ZIP.
+- Every release must include a link audit before zipping.
+
+INTERNAL REVIEW IDS
+- Every review receives an internal ID, such as 2026-001.
+- Internal IDs are used for workflow, archives, search, related reviews, and ordering.
+- Internal IDs are NOT displayed publicly on the website.
+
+PUBLIC REVIEW DISPLAY
+Public pages may show:
+- Review title
+- Category
+- Published date
+- Updated date when needed
+- Author/reviewer
+- Brand/model/category
+
+Public pages should NOT show:
+- Internal review ID
+
+HOMEPAGE FEATURED REVIEW
 - The newest published review becomes the Featured Review.
 - Update ALL of the following together:
-  • Hero image (use the review's primary hero image)
+  • Hero image
   • Hero category
   • Hero title
   • Hero description
   • Hero button/link
-- Never update the hero text without updating the hero image.
+  • Published date, if shown
+- Never update homepage hero text without updating the hero image.
 
-CURRENT FEATURED REVIEW APPLIED:
-- Janji Revy Pack
-- Page: 9to5_gear_janji_revy_pack.html
-- Homepage hero image synced from the Janji Revy Pack review.
-
-2. HOMEPAGE LATEST REVIEWS
+HOMEPAGE LATEST REVIEWS
 - Do NOT include the Featured Review.
 - Display the three newest Shoe Reviews.
 
-3. HOMEPAGE FEATURED STORIES
-- Show the latest Shoe/Gear reviews.
+HOMEPAGE FEATURED STORIES
+- Show latest Shoe/Gear reviews.
 - Exclude the Featured Review.
 
-4. SHOES PAGE
-- Newest Shoe Review becomes the Shoes hero.
-- Hero image and copy update automatically.
-- Archive updates by year.
+SHOES PAGE
+- Newest Shoe Review becomes the Shoes page hero.
+- Archive cards show published date.
+- Search and filters must include the new shoe review.
 
-5. GEAR PAGE
-- Newest Gear Review becomes the Gear hero.
-- Hero image and copy update automatically.
-- Archive updates by year.
+GEAR PAGE
+- Newest Gear Review becomes the Gear page hero.
+- Archive cards show published date.
+- Search and filters must include the new gear review.
 
-6. REVIEW PUBLISHING
-- Every new review updates:
-  • Homepage
-  • Search index
-  • Archive pages
-  • Internal links
-  • Homepage hero image
+ARCHIVES
+- Organize reviews by year and month.
+- Use internal ID for ordering only.
 
-7. LINK VERIFICATION
-- Verify all internal links before every release.
-- Ensure search indexes include new reviews.
+SEARCH
+- Every new review must be added to search.
+- Search links must point to the correct review page.
+
+LINK VERIFICATION
+- Verify all local HTML links before every release.
+- Generate a SITE_LINK_AUDIT.txt file before creating the ZIP.
