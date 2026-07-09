@@ -1,0 +1,12 @@
+Homepage Fix Audit
+==================
+
+Homepage hero updated:
+- Category: YES
+- Title: YES
+- Description: YES
+- Button link: YES
+- Hero image in CSS: YES
+
+Broken local links:
+None found.
