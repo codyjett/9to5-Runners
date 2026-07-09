@@ -1,17 +1,13 @@
-# 9to5 Runners v2.0 Responsive
+# 9to5 Runners v2.3 Verified
 
-Mobile/tablet responsive update.
+Before zipping, this package was checked against the publishing rules:
 
-Included pages:
-- index.html
-- 9to5_Homepage.html
-- 9to5_about.html
-- 9to5_shoes_page1.html
-- 9to5_shoes_asics_nimbus28.html
+- Newest review is Featured Review.
+- Featured Review is excluded from Latest Reviews.
+- Featured Stories exclude the Featured Review.
+- Gear nav points to `9to5_gear_page1.html`.
+- Janji Revy Pack review exists and is linked.
+- ASICS Gel Nimbus 28 remains linked from Shoes/latest/story sections.
+- Local HTML links were audited.
 
-Key fixes:
-- Header/nav/search wrap cleanly on mobile.
-- Review tech specs switch from one row to a mobile grid.
-- Review images scale on phones without cropping.
-- Shoes page filters/cards stack cleanly.
-- Homepage sections stack cleanly.
+See `SITE_RULES_AND_LINK_AUDIT.txt` for the verification report.

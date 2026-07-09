@@ -1,0 +1,64 @@
+Publishing Rule Check
+=====================
+
+Featured Review:
+- Expected: Janji Revy Pack -> 9to5_gear_janji_revy_pack.html
+- Homepage hero contains Janji: YES
+- Homepage hero links Janji review: YES
+
+Latest Reviews:
+- Rule: last 3 shoe reviews only, excluding featured.
+- Current shoe reviews available: ASICS Gel Nimbus 28
+- Nimbus review linked on homepage: YES
+
+Featured Stories:
+- Rule: latest shoe or gear reviews, excluding featured.
+- Current non-feature story: ASICS Gel Nimbus 28
+- Featured Stories section present: YES
+
+Gear:
+- Gear nav points to: 9to5_gear_page1.html
+- Gear review exists: YES
+- Gear archive exists: YES
+
+Broken local links:
+None found.
+
+
+Detailed Link Report
+====================
+
+9to5_Homepage.html
+  local html links: ['9to5_Homepage.html', '9to5_about.html', '9to5_gear_janji_revy_pack.html', '9to5_gear_page1.html', '9to5_shoes_asics_nimbus28.html', '9to5_shoes_page1.html']
+  Janji review links: 2
+  Nimbus review links: 6
+
+9to5_about.html
+  local html links: ['9to5_Homepage.html', '9to5_about.html', '9to5_gear_janji_revy_pack.html', '9to5_gear_page1.html', '9to5_shoes_asics_nimbus28.html', '9to5_shoes_page1.html']
+  Janji review links: 1
+  Nimbus review links: 1
+
+9to5_gear_janji_revy_pack.html
+  local html links: ['9to5_Homepage.html', '9to5_about.html', '9to5_gear_janji_revy_pack.html', '9to5_gear_page1.html', '9to5_shoes_asics_nimbus28.html', '9to5_shoes_page1.html']
+  Janji review links: 1
+  Nimbus review links: 1
+
+9to5_gear_page1.html
+  local html links: ['9to5_Homepage.html', '9to5_about.html', '9to5_gear_janji_revy_pack.html', '9to5_gear_page1.html', '9to5_shoes_asics_nimbus28.html', '9to5_shoes_page1.html']
+  Janji review links: 4
+  Nimbus review links: 1
+
+9to5_shoes_asics_nimbus28.html
+  local html links: ['9to5_Homepage.html', '9to5_about.html', '9to5_gear_janji_revy_pack.html', '9to5_gear_page1.html', '9to5_shoes_asics_nimbus28.html', '9to5_shoes_page1.html']
+  Janji review links: 1
+  Nimbus review links: 1
+
+9to5_shoes_page1.html
+  local html links: ['9to5_Homepage.html', '9to5_about.html', '9to5_gear_janji_revy_pack.html', '9to5_gear_page1.html', '9to5_shoes_asics_nimbus28.html', '9to5_shoes_page1.html']
+  Janji review links: 1
+  Nimbus review links: 4
+
+index.html
+  local html links: ['9to5_Homepage.html', '9to5_about.html', '9to5_gear_janji_revy_pack.html', '9to5_gear_page1.html', '9to5_shoes_asics_nimbus28.html', '9to5_shoes_page1.html']
+  Janji review links: 2
+  Nimbus review links: 6

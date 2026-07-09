@@ -1,0 +1,7 @@
+index.html: Janji links=2, gear page links=1, search=yes
+9to5_Homepage.html: Janji links=2, gear page links=1, search=yes
+9to5_about.html: Janji links=1, gear page links=1, search=yes
+9to5_shoes_page1.html: Janji links=1, gear page links=1, search=yes
+9to5_shoes_asics_nimbus28.html: Janji links=1, gear page links=1, search=yes
+9to5_gear_page1.html: Janji links=4, gear page links=1, search=yes
+9to5_gear_janji_revy_pack.html: Janji links=1, gear page links=3, search=yes
