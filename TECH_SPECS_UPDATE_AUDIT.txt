@@ -1,0 +1,25 @@
+9to5 Runners Tech Specs Update Audit
+====================================
+
+Puma Deviate Pure Nitro:
+- Price: $150
+- Stack: 37 / 29 mm
+- Drop: 8 mm
+- Weight: 7.5 oz
+- Category: Daily Trainer
+
+Saucony Paramount Max:
+- Price: $200
+- Stack: 43 / 37 mm
+- Drop: 10.6 mm
+- Weight: 9.9 oz
+- Category: Max Cushion
+
+Broken local HTML links:
+None found.
+
+Missing local image assets:
+None found.
+
+Embedded Base64 images remaining:
+None.

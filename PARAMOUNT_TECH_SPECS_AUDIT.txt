@@ -1,0 +1,11 @@
+Saucony Paramount Max Tech Specs Correction
+============================================
+
+- Price: $200
+- Stack: 43 / 37 mm
+- Drop: 6 mm
+- Weight: 10.6 oz
+- Category: Max Cushion
+
+Broken local links: None found.
+Missing local image assets: None found.
