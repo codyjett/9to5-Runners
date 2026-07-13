@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-003",
+    "internalOnly": true,
+    "title": "Saucony Paramount Max",
+    "type": "Shoe Review",
+    "published": "2026-07-12",
+    "page": "9to5_shoes_saucony_paramountmax.html",
+    "featured": true
+  },
+  {
     "id": "2026-001",
     "internalOnly": true,
     "title": "ASICS Gel Nimbus 28",
@@ -16,14 +25,5 @@
     "published": "2026-07-09",
     "page": "9to5_gear_janji_revy_pack.html",
     "featured": false
-  },
-  {
-    "id": "2026-003",
-    "internalOnly": true,
-    "title": "Saucony Paramount Max",
-    "type": "Shoe Review",
-    "published": "2026-07-12",
-    "page": "9to5_shoes_saucony_paramountmax.html",
-    "featured": true
   }
 ]

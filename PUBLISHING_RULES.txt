@@ -1,30 +1,32 @@
-9to5 RUNNERS PUBLISHING RULES
+9to5 RUNNERS — LOCKED MASTER RULES
+
+HIGHEST PRIORITY
+- Never change the framework of an approved page during a rebuild.
+- Do not change HTML structure, CSS, layout, spacing, font sizes, shadows,
+  borders, header, footer, navigation, search, JavaScript, or responsive behavior.
+- Use the approved page files byte-for-byte as the master framework.
+- Only change requested content inside existing components.
 
 HOMEPAGE
-- The newest published review is always the top hero.
-- Keep the approved homepage hero template unchanged.
-- Update image, title, category, date, description, and link together.
-- Latest Reviews is the only review grid.
-- Latest Reviews excludes the hero review.
-- Show up to 9 real reviews, 3 per row.
+- Latest published review is the hero.
+- Latest Reviews excludes the hero.
+- Up to 9 reviews, 3 per row.
+- No Featured Stories.
 - No placeholders.
 - No More Reviews button.
-- Latest Reviews, Latest From YouTube, and Shop by Brand use matching heading typography.
+- Do not add helper/developer notes to the visible page.
 
-SHOES / GEAR ARCHIVES
-- Add each published review in the existing archive card format.
-- Show published dates.
-- Remove placeholder cards.
-- Preserve the approved archive hero and filters.
-
-REVIEW PAGES
-- Nimbus is the master shoe-review template.
-- Use the approved header, footer, tech specs, image sizing, typography, and spacing.
-- Use permanent Cody, Blake, and Eric profile graphics when those reviewers participate.
-- Internal review IDs never display publicly.
+SHOES PAGE
+- Preserve the approved hero, filters, review-row layout, footer, and CSS.
+- Add new reviews only by cloning the approved review-row structure.
+- Remove placeholders only.
 
 RELEASE
-- Start from this master.
-- Update search.
-- Audit all local links.
-- Generate one new full-site ZIP.
+- Replace approved master files directly.
+- Do not regenerate approved pages.
+- Audit every local link before delivery.
+
+ARCHIVE PAGINATION
+- Shoe and Gear archive pages display no more than 25 reviews per page.
+- Preserve the approved archive framework.
+- Add pagination only when more than 25 reviews exist.
