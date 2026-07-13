@@ -10,3 +10,11 @@ ASSET MANAGEMENT
 - Store images in the shared /images directory.
 - Reference images with relative paths.
 - Reuse shared logos and runner profile graphics.
+
+THE 9TO5 PICKS
+- Appears between Latest Reviews and Latest From YouTube.
+- Displays Last Updated only when rankings change.
+- Rankings are grouped by category.
+- Current category: Road.
+- Additional categories such as Trail may be added later using the same layout.
+- Shoe names remain plain text until a review page exists.

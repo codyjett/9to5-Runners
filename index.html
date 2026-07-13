@@ -531,6 +531,80 @@ img { max-width:100%; }
   }
 }
 
+
+/* The 9to5 Picks */
+.picks-section{
+  margin-top:64px;
+}
+.picks-meta{
+  margin:0 0 8px;
+  color:var(--muted);
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.3px;
+  text-transform:uppercase;
+}
+.picks-subtitle{
+  max-width:760px;
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.55;
+}
+.picks-category{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  text-transform:uppercase;
+  font-size:22px;
+  margin:0 0 20px;
+}
+.picks-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+}
+.picks-column{
+  background:var(--card);
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:16px;
+  padding:24px;
+}
+.picks-column h3{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  text-transform:uppercase;
+  font-size:24px;
+  margin:0 0 18px;
+}
+.picks-column ol{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.picks-column li{
+  display:grid;
+  grid-template-columns:34px 1fr;
+  align-items:center;
+  gap:10px;
+  font-size:16px;
+  line-height:1.35;
+}
+.picks-column .rank{
+  width:30px;
+  height:30px;
+  border-radius:999px;
+  background:var(--blue);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:13px;
+}
+@media(max-width:900px){
+  .picks-grid{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 </head>
 <body>
@@ -560,6 +634,47 @@ img { max-width:100%; }
 <h2 class="homepage-section-heading">Latest Reviews</h2>
 </div>
 <div class="reviews-grid"><article class="review-card"><a href="9to5_shoes_saucony_paramountmax.html"><img alt="Saucony Paramount Max" src="images/asset-80d6b093ece4f430.png"/></a><div class="review-body"><a href="9to5_shoes_saucony_paramountmax.html" style="color:inherit;text-decoration:none;"><h3 class="review-name">Saucony Paramount Max</h3></a><p class="meta">Shoe Review • Max Cushion</p></div></article><article class="review-card"><a href="9to5_shoes_asics_nimbus28.html"><img alt="ASICS Gel Nimbus 28" src="images/asset-67c7d10077f18645.jpg"/></a><div class="review-body"><a href="9to5_shoes_asics_nimbus28.html" style="color:inherit;text-decoration:none;"><h3 class="review-name">ASICS Gel Nimbus 28</h3></a><p class="meta">Shoe Review • Daily Trainer</p></div></article><article class="review-card"><a href="9to5_gear_janji_revy_pack.html"><img alt="Janji Revy Pack" src="images/asset-9c81e0327d710b5a.jpg"/></a><div class="review-body"><a href="9to5_gear_janji_revy_pack.html" style="color:inherit;text-decoration:none;"><h3 class="review-name">Janji Revy Pack</h3></a><p class="meta">Gear Review • Backpack</p></div></article></div>
+</section>
+
+<section class="wrap picks-section" id="picks">
+<div class="section-head">
+<h2 class="homepage-section-heading">The 9to5 Picks</h2>
+</div>
+<div class="picks-meta">Last Updated: July 13, 2026</div>
+<p class="picks-subtitle">The shoes we keep reaching for. These rankings evolve as we test more gear throughout the year.</p>
+<h3 class="picks-category">Road</h3>
+<div class="picks-grid">
+<article class="picks-column">
+<h3>Cody</h3>
+<ol>
+<li><span class="rank">1</span><span>ASICS Superblast 3</span></li>
+<li><span class="rank">2</span><span>Saucony Endorphin Azura</span></li>
+<li><span class="rank">3</span><span>Salomon Aero Glide 4</span></li>
+<li><span class="rank">4</span><span>ASICS Novablast 6</span></li>
+<li><span class="rank">5</span><span>Mizuno Neo Zen</span></li>
+</ol>
+</article>
+<article class="picks-column">
+<h3>Blake</h3>
+<ol>
+<li><span class="rank">1</span><span>ASICS Superblast 3</span></li>
+<li><span class="rank">2</span><span>ASICS Novablast 6</span></li>
+<li><span class="rank">3</span><span>Saucony Endorphin Azura</span></li>
+<li><span class="rank">4</span><span>On Cloudmonster 3 Hyper</span></li>
+<li><span class="rank">5</span><span>Salomon Aero Glide 4 GRVL</span></li>
+</ol>
+</article>
+<article class="picks-column">
+<h3>Eric</h3>
+<ol>
+<li><span class="rank">1</span><span>ASICS Novablast 6</span></li>
+<li><span class="rank">2</span><span>Topo Athletic Specter 3</span></li>
+<li><span class="rank">3</span><span>Dynafish Xiaonian</span></li>
+<li><span class="rank">4</span><span>Li-Ning Feidan 6 Elite</span></li>
+<li><span class="rank">5</span><span>ASICS Superblast 3</span></li>
+</ol>
+</article>
+</div>
 </section>
 <section class="wrap" id="gear">
 <div class="section-head">
