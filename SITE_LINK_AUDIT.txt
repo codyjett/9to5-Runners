@@ -1,28 +1,15 @@
-9to5 Runners Master Link Audit
-===============================
+9to5 Runners v1.0 Link Audit
+============================
 
 Broken local links:
 None found.
 
-Detailed report:
-
-9to5_Homepage.html
-  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
-
-9to5_about.html
-  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
-
-9to5_gear_janji_revy_pack.html
-  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
-
-9to5_gear_page1.html
-  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
-
-9to5_shoes_asics_nimbus28.html
-  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
-
-9to5_shoes_page1.html
-  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
-
-index.html
-  local links: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html
+Page link report:
+9to5_Homepage.html: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html, 9to5_shoes_saucony_paramountmax.html
+9to5_about.html: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_page1.html, 9to5_shoes_page1.html
+9to5_gear_janji_revy_pack.html: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_page1.html, 9to5_shoes_page1.html
+9to5_gear_page1.html: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_page1.html
+9to5_shoes_asics_nimbus28.html: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_page1.html, 9to5_shoes_page1.html
+9to5_shoes_page1.html: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html, 9to5_shoes_saucony_paramountmax.html
+9to5_shoes_saucony_paramountmax.html: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_page1.html, 9to5_shoes_page1.html
+index.html: 9to5_Homepage.html, 9to5_about.html, 9to5_gear_janji_revy_pack.html, 9to5_gear_page1.html, 9to5_shoes_asics_nimbus28.html, 9to5_shoes_page1.html, 9to5_shoes_saucony_paramountmax.html

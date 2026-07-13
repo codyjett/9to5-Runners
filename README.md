@@ -1,38 +1,16 @@
-# 9to5 Runners MASTER
+# 9to5 Runners v1.0 FINAL
 
-Current approved full site build.
-
-Included:
+Included pages:
 - index.html
 - 9to5_Homepage.html
 - 9to5_about.html
 - 9to5_shoes_page1.html
 - 9to5_shoes_asics_nimbus28.html
+- 9to5_shoes_saucony_paramountmax.html
 - 9to5_gear_page1.html
 - 9to5_gear_janji_revy_pack.html
 
-Approved updates included:
-- Shorter homepage hero
-- Featured Stories visibility fix
-- Janji Revy Pack homepage feature
-- Janji Revy Pack review images
-- Janji Revy Pack intro updated to over a year of testing
-- Shoes page black hero restored
-- Gear page added
-- Search/nav links verified from prior build
-
-## Publishing Manifest
-
-This build includes:
-
-- `data/reviews.json` — internal review manifest
-- `data/README.md` — manifest notes
-- `PUBLISHING_RULES.txt` — master publishing workflow
-
-Review IDs are internal only and should not display publicly.
-
-
-Latest homepage updates:
-- Featured Stories and Latest Shoe Reviews now use matching font/size.
-- Latest Reviews renamed to Latest Shoe Reviews.
-- Homepage update applied to both 9to5_Homepage.html and index.html.
+Included support files:
+- data/reviews.json
+- PUBLISHING_RULES.txt
+- SITE_LINK_AUDIT.txt

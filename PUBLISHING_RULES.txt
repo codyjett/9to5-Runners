@@ -1,66 +1,30 @@
 9to5 RUNNERS PUBLISHING RULES
-==============================
 
-MASTER SITE RULE
-- Maintain one master project.
-- Every update starts from the latest master.
-- Never rebuild from an older ZIP.
-- Every release must include a link audit before zipping.
+HOMEPAGE
+- The newest published review is always the top hero.
+- Keep the approved homepage hero template unchanged.
+- Update image, title, category, date, description, and link together.
+- Latest Reviews is the only review grid.
+- Latest Reviews excludes the hero review.
+- Show up to 9 real reviews, 3 per row.
+- No placeholders.
+- No More Reviews button.
+- Latest Reviews, Latest From YouTube, and Shop by Brand use matching heading typography.
 
-INTERNAL REVIEW IDS
-- Every review receives an internal ID, such as 2026-001.
-- Internal IDs are used for workflow, archives, search, related reviews, and ordering.
-- Internal IDs are NOT displayed publicly on the website.
+SHOES / GEAR ARCHIVES
+- Add each published review in the existing archive card format.
+- Show published dates.
+- Remove placeholder cards.
+- Preserve the approved archive hero and filters.
 
-PUBLIC REVIEW DISPLAY
-Public pages may show:
-- Review title
-- Category
-- Published date
-- Updated date when needed
-- Author/reviewer
-- Brand/model/category
+REVIEW PAGES
+- Nimbus is the master shoe-review template.
+- Use the approved header, footer, tech specs, image sizing, typography, and spacing.
+- Use permanent Cody, Blake, and Eric profile graphics when those reviewers participate.
+- Internal review IDs never display publicly.
 
-Public pages should NOT show:
-- Internal review ID
-
-HOMEPAGE FEATURED REVIEW
-- The newest published review becomes the Featured Review.
-- Update ALL of the following together:
-  • Hero image
-  • Hero category
-  • Hero title
-  • Hero description
-  • Hero button/link
-  • Published date, if shown
-- Never update homepage hero text without updating the hero image.
-
-HOMEPAGE LATEST REVIEWS
-- Do NOT include the Featured Review.
-- Display the three newest Shoe Reviews.
-
-HOMEPAGE FEATURED STORIES
-- Show latest Shoe/Gear reviews.
-- Exclude the Featured Review.
-
-SHOES PAGE
-- Newest Shoe Review becomes the Shoes page hero.
-- Archive cards show published date.
-- Search and filters must include the new shoe review.
-
-GEAR PAGE
-- Newest Gear Review becomes the Gear page hero.
-- Archive cards show published date.
-- Search and filters must include the new gear review.
-
-ARCHIVES
-- Organize reviews by year and month.
-- Use internal ID for ordering only.
-
-SEARCH
-- Every new review must be added to search.
-- Search links must point to the correct review page.
-
-LINK VERIFICATION
-- Verify all local HTML links before every release.
-- Generate a SITE_LINK_AUDIT.txt file before creating the ZIP.
+RELEASE
+- Start from this master.
+- Update search.
+- Audit all local links.
+- Generate one new full-site ZIP.
