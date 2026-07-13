@@ -1,12 +1,21 @@
 [
   {
+    "id": "2026-004",
+    "internalOnly": true,
+    "title": "Puma Deviate Pure Nitro",
+    "type": "Shoe Review",
+    "published": "2026-07-13",
+    "page": "9to5_shoes_puma_deviatepurenitro.html",
+    "featured": true
+  },
+  {
     "id": "2026-003",
     "internalOnly": true,
     "title": "Saucony Paramount Max",
     "type": "Shoe Review",
     "published": "2026-07-12",
     "page": "9to5_shoes_saucony_paramountmax.html",
-    "featured": true
+    "featured": false
   },
   {
     "id": "2026-001",

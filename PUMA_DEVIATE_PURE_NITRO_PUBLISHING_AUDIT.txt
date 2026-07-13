@@ -1,0 +1,13 @@
+Puma Deviate Pure Nitro Publishing Audit
+=========================================
+
+Homepage hero: Puma Deviate Pure Nitro
+Homepage hero link: 9to5_shoes_puma_deviatepurenitro.html
+Homepage Latest Reviews excludes hero: YES
+Shoes archive updated: YES
+Shoes archive pagination preserved: YES
+Search updated across pages: YES
+Visible helper comments removed: YES
+
+Broken local links:
+None found.
