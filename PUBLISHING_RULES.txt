@@ -1,32 +1,12 @@
-9to5 RUNNERS — LOCKED MASTER RULES
 
-HIGHEST PRIORITY
-- Never change the framework of an approved page during a rebuild.
-- Do not change HTML structure, CSS, layout, spacing, font sizes, shadows,
-  borders, header, footer, navigation, search, JavaScript, or responsive behavior.
-- Use the approved page files byte-for-byte as the master framework.
-- Only change requested content inside existing components.
 
-HOMEPAGE
-- Latest published review is the hero.
-- Latest Reviews excludes the hero.
-- Up to 9 reviews, 3 per row.
-- No Featured Stories.
-- No placeholders.
-- No More Reviews button.
-- Do not add helper/developer notes to the visible page.
+FILTER VALIDATION
+- Before every release, confirm the new review's brand, category, and terrain filters exist.
+- If a filter is missing, add it to the existing filter group and wire it to the review row.
+- Never change the filter layout, CSS, or behavior.
 
-SHOES PAGE
-- Preserve the approved hero, filters, review-row layout, footer, and CSS.
-- Add new reviews only by cloning the approved review-row structure.
-- Remove placeholders only.
-
-RELEASE
-- Replace approved master files directly.
-- Do not regenerate approved pages.
-- Audit every local link before delivery.
-
-ARCHIVE PAGINATION
-- Shoe and Gear archive pages display no more than 25 reviews per page.
-- Preserve the approved archive framework.
-- Add pagination only when more than 25 reviews exist.
+ASSET MANAGEMENT
+- Never embed images as Base64 in public HTML files.
+- Store images in the shared /images directory.
+- Reference images with relative paths.
+- Reuse shared logos and runner profile graphics.

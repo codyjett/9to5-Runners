@@ -1,0 +1,10 @@
+9to5 Runners Release Audit
+==========================
+
+Puma filter present: YES
+Puma review wired to filter: YES
+Base64 images remaining: None
+Shared image assets created: 28
+Largest HTML file: 9to5_shoes_puma_deviatepurenitro.html (31.7 KB)
+Broken local links: 0
+Missing image assets: 0
