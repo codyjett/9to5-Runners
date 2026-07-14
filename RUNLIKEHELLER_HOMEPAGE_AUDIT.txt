@@ -1,0 +1,7 @@
+RunLikeHeller Homepage Audit
+=============================
+
+channel_entry: YES
+fallback_entry: YES
+logo_reference: YES
+four_column_grid: YES

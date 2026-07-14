@@ -1,0 +1,63 @@
+9to5 Runners Miles Tested Audit
+================================
+
+9to5_shoes_saucony_paramountmax.html
+- Section present: YES
+- Directly below Tech Specs: YES
+- Cody: 37 miles
+- Blake: 35 miles
+- Eric: 32 miles
+
+9to5_shoes_puma_deviatepurenitro.html
+- Section present: YES
+- Directly below Tech Specs: YES
+- Blake: 32 miles
+- Eric: 27 miles
+
+Broken local links:
+None found.
+
+Missing image assets:
+- 9to5_Homepage.html -> images/asset-313d0f249b137e11.jpg
+- 9to5_Homepage.html -> images/asset-80d6b093ece4f430.png
+- 9to5_Homepage.html -> images/asset-67c7d10077f18645.jpg
+- 9to5_Homepage.html -> images/asset-9c81e0327d710b5a.jpg
+- 9to5_about.html -> images/asset-34bb454b7ed54eed.jpg
+- 9to5_about.html -> images/asset-43a846f0dc0328eb.png
+- 9to5_about.html -> images/asset-b6fbce79fc50a1c4.png
+- 9to5_about.html -> images/asset-46eea55380898332.png
+- 9to5_gear_janji_revy_pack.html -> images/asset-313d0f249b137e11.jpg
+- 9to5_gear_janji_revy_pack.html -> images/asset-673e39421ae11be1.jpg
+- 9to5_gear_janji_revy_pack.html -> images/asset-f2afb26c1e4f8e60.jpg
+- 9to5_gear_janji_revy_pack.html -> images/asset-2981c99cc5ac8643.jpg
+- 9to5_gear_janji_revy_pack.html -> images/asset-e690a3bf0477b54d.jpg
+- 9to5_gear_janji_revy_pack.html -> images/asset-2957d7e6507f6df7.jpg
+- 9to5_gear_page1.html -> images/asset-313d0f249b137e11.jpg
+- 9to5_shoes_asics_nimbus28.html -> images/asset-313d0f249b137e11.jpg
+- 9to5_shoes_asics_nimbus28.html -> images/asset-0b02f92ac19b8320.jpg
+- 9to5_shoes_asics_nimbus28.html -> images/asset-f6070e44684aeb2d.jpg
+- 9to5_shoes_asics_nimbus28.html -> images/asset-00ab3852a651dbce.jpg
+- 9to5_shoes_asics_nimbus28.html -> images/asset-1aedc199f244fb6c.png
+- 9to5_shoes_page1.html -> images/asset-313d0f249b137e11.jpg
+- 9to5_shoes_page1.html -> images/asset-924106f12f164d85.png
+- 9to5_shoes_page1.html -> images/asset-80d6b093ece4f430.png
+- 9to5_shoes_page1.html -> images/asset-c28025710b95b484.jpg
+- 9to5_shoes_puma_deviatepurenitro.html -> images/asset-313d0f249b137e11.jpg
+- 9to5_shoes_puma_deviatepurenitro.html -> images/asset-924106f12f164d85.png
+- 9to5_shoes_puma_deviatepurenitro.html -> images/asset-10125957c16f6865.png
+- 9to5_shoes_puma_deviatepurenitro.html -> images/asset-ed099a8cc8a077af.png
+- 9to5_shoes_saucony_paramountmax.html -> images/asset-313d0f249b137e11.jpg
+- 9to5_shoes_saucony_paramountmax.html -> images/asset-0c9d0eb5d25723e7.png
+- 9to5_shoes_saucony_paramountmax.html -> images/asset-2452c4934ed87891.png
+- 9to5_shoes_saucony_paramountmax.html -> images/asset-1aedc199f244fb6c.png
+- 9to5_shoes_saucony_paramountmax.html -> images/asset-10125957c16f6865.png
+- 9to5_shoes_saucony_paramountmax.html -> images/asset-ed099a8cc8a077af.png
+- index.html -> images/asset-313d0f249b137e11.jpg
+- index.html -> images/asset-80d6b093ece4f430.png
+- index.html -> images/asset-67c7d10077f18645.jpg
+- index.html -> images/asset-9c81e0327d710b5a.jpg
+
+Final Asset Verification
+------------------------
+Broken local links: 0
+Missing image assets: 0

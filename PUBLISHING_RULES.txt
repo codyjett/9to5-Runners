@@ -1,20 +1,14 @@
 
 
-FILTER VALIDATION
-- Before every release, confirm the new review's brand, category, and terrain filters exist.
-- If a filter is missing, add it to the existing filter group and wire it to the review row.
-- Never change the filter layout, CSS, or behavior.
+MILES TESTED
+- Every shoe review includes a Miles Tested section directly below Tech Specs.
+- Only list reviewers who tested the shoe.
+- Format mileage as whole-number miles.
+- Update mileage when additional testing is completed.
 
-ASSET MANAGEMENT
-- Never embed images as Base64 in public HTML files.
-- Store images in the shared /images directory.
-- Reference images with relative paths.
-- Reuse shared logos and runner profile graphics.
-
-THE 9TO5 PICKS
-- Appears between Latest Reviews and Latest From YouTube.
-- Displays Last Updated only when rankings change.
-- Rankings are grouped by category.
-- Current category: Road.
-- Additional categories such as Trail may be added later using the same layout.
-- Shoe names remain plain text until a review page exists.
+REVIEW TEAM
+- Active reviewers: Cody, Blake, Eric, and Emily.
+- Every active reviewer appears on the About page and in The 9to5 Picks.
+- The 9to5 Picks displays four reviewer columns on desktop, two columns on tablet, and one column on mobile.
+- Review pages include only reviewers who contributed to that review.
+- Emily's approved role is Gear Reviewer.

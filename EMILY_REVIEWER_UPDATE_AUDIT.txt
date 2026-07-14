@@ -1,0 +1,12 @@
+9to5 Runners Emily Reviewer Update Audit
+=========================================
+
+Homepage Picks columns: 4
+Emily Picks card present: YES
+About-page members: 4
+Emily About card present: YES
+Emily profile image present: YES
+Nimbus Miles Tested: YES
+Nimbus mileage value: 33 miles
+Broken local links: 0
+Missing local assets: 0
