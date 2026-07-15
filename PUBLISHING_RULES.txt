@@ -1,14 +1,7 @@
 
 
-MILES TESTED
-- Every shoe review includes a Miles Tested section directly below Tech Specs.
-- Only list reviewers who tested the shoe.
-- Format mileage as whole-number miles.
-- Update mileage when additional testing is completed.
-
-REVIEW TEAM
-- Active reviewers: Cody, Blake, Eric, and Emily.
-- Every active reviewer appears on the About page and in The 9to5 Picks.
-- The 9to5 Picks displays four reviewer columns on desktop, two columns on tablet, and one column on mobile.
-- Review pages include only reviewers who contributed to that review.
-- Emily's approved role is Gear Reviewer.
+PAGE TITLE VALIDATION
+- Every HTML page must contain one H1.
+- The HTML title must exactly match the H1 text, followed by " | 9to5 Runners".
+- Open Graph and Twitter titles must use the same title.
+- Validate this before every release.
