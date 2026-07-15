@@ -1,0 +1,11 @@
+Puma Deviate Pure Nitro — Emily Update Audit
+=============================================
+
+emily_mileage: ['35 miles']
+emily_sections: 4
+emily_profile: True
+youtube_link: True
+instagram_link: True
+title_matches_h1: True
+broken_links: 0
+missing_assets: 0
