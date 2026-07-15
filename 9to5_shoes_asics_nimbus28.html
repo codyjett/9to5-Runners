@@ -674,6 +674,29 @@ img { max-width:100%; }
 @media(max-width:760px){
   .miles-tested-grid{grid-template-columns:1fr;}
 }
+
+
+/* Miles Tested — single-row desktop layout */
+.miles-tested-grid{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:stretch !important;
+  gap:12px !important;
+  flex-wrap:nowrap !important;
+}
+.miles-tested-item{
+  flex:1 1 0 !important;
+  min-width:0 !important;
+  max-width:none !important;
+}
+@media(max-width:760px){
+  .miles-tested-grid{
+    flex-wrap:wrap !important;
+  }
+  .miles-tested-item{
+    flex:1 1 180px !important;
+  }
+}
 </style>
 <meta content="ASICS GEL NIMBUS 28 | 9to5 Runners" property="og:title"/><meta content="ASICS GEL NIMBUS 28 | 9to5 Runners" name="twitter:title"/></head>
 <body>
