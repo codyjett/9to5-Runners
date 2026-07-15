@@ -1,7 +1,15 @@
 
 
-PAGE TITLE VALIDATION
-- Every HTML page must contain one H1.
-- The HTML title must exactly match the H1 text, followed by " | 9to5 Runners".
-- Open Graph and Twitter titles must use the same title.
-- Validate this before every release.
+RYAN REVIEWER PROFILE
+- Ryan is a Gear Reviewer.
+- About page uses images/ryan-headshot.png.
+- Any review featuring Ryan uses images/ryan-runner-profile.png.
+- Ryan profile links: Substack and Instagram.
+- Substack: https://runfitzyrun.substack.com/
+- Instagram: https://www.instagram.com/runfitzyrun/
+
+THE 9TO5 PICKS — TRAIL
+- Trail rankings appear beneath Road rankings.
+- Display only reviewers who submitted Trail rankings.
+- Current Trail reviewer: Ryan.
+- Last Updated changes only when rankings change.

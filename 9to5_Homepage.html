@@ -612,6 +612,25 @@ img { max-width:100%; }
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
 }
+
+/* Trail Picks */
+.trail-picks-block{
+  margin-top:34px;
+}
+.trail-picks-grid{
+  grid-template-columns:minmax(0,1fr);
+  max-width:calc((100% - 66px) / 4);
+}
+@media(max-width:1050px){
+  .trail-picks-grid{
+    max-width:calc((100% - 22px) / 2);
+  }
+}
+@media(max-width:900px){
+  .trail-picks-grid{
+    max-width:none;
+  }
+}
 </style>
 <meta content="Puma Deviate Pure Nitro | 9to5 Runners" property="og:title"/><meta content="Puma Deviate Pure Nitro | 9to5 Runners" name="twitter:title"/></head>
 <body>
@@ -646,7 +665,7 @@ img { max-width:100%; }
 <div class="section-head">
 <h2 class="homepage-section-heading">The 9to5 Picks</h2>
 </div>
-<div class="picks-meta">Last Updated: July 13, 2026</div>
+<div class="picks-meta">Last Updated: July 15, 2026</div>
 <p class="picks-subtitle">The shoes we keep reaching for. These rankings evolve as we test more gear throughout the year.</p>
 <h3 class="picks-category">Road</h3>
 <div class="picks-grid">
@@ -690,6 +709,21 @@ img { max-width:100%; }
 <li><span class="rank">5</span><span>adidas EVO SL</span></li>
 </ol>
 </article></div>
+<div class="trail-picks-block">
+<h3 class="picks-category">Trail</h3>
+<div class="picks-grid trail-picks-grid">
+<article class="picks-column">
+<h3>Ryan</h3>
+<ol>
+<li><span class="rank">1</span><span>Norda 055</span></li>
+<li><span class="rank">2</span><span>The North Face Altamesa 500 v2</span></li>
+<li><span class="rank">3</span><span>Salomon GRVL Concept</span></li>
+<li><span class="rank">4</span><span>Salomon Aero Glide 4 GRVL</span></li>
+<li><span class="rank">5</span><span>Nike ACG Zegama</span></li>
+</ol>
+</article>
+</div>
+</div>
 </section>
 <section class="wrap" id="gear">
 <div class="section-head">
@@ -859,6 +893,7 @@ img { max-width:100%; }
   </script>
 <script>
 const searchIndex = [
+  { title: "Ryan", type: "Reviewer", tags: "run fitzy run substack instagram trail gear reviewer", url: "9to5_about.html" },
   { title: "Puma Deviate Pure Nitro", type: "Shoe Review", tags: "puma deviate pure nitro peba pumagrip daily trainer uptempo", url: "9to5_shoes_puma_deviatepurenitro.html" },
   { title: "Janji Revy Pack", type: "Gear Review", tags: "janji revy pack backpack fastpacking travel hydration laptop", url: "9to5_gear_janji_revy_pack.html" },
   { title: "ASICS Gel Nimbus 28", type: "Shoe Review", tags: "asics road max cushion daily trainer", url: "9to5_shoes_asics_nimbus28.html" },
