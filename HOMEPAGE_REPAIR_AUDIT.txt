@@ -1,0 +1,10 @@
+Homepage Repair Audit
+=====================
+
+Hero: Suunto Spark Review
+Hero link: 9to5_gear_suunto_spark.html
+Latest Reviews: ['Puma Deviate Pure Nitro', 'Saucony Paramount Max', 'ASICS Gel Nimbus 28', 'Janji Revy Pack']
+Suunto excluded from Latest Reviews: YES
+Picks section preserved: YES
+YouTube section preserved: YES
+Shop by Brand preserved: YES
