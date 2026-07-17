@@ -1,0 +1,8 @@
+Gear Filter Layout Repair
+=========================
+
+Two-column framework: PASS
+Filter groups: ['Brand', 'Category', 'Use']
+Review rows: 3
+Broken local links: 0
+Missing local assets: 0

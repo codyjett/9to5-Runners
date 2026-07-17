@@ -1,0 +1,15 @@
+Dera B01 Full Update Audit
+===========================
+
+Dera review page: YES
+Homepage hero: Dera B01 Trail Running Belt Review
+Gear archive first review: Dera B01 Trail Running Belt Review
+Title/H1 mismatches: 0
+Broken local links: 0
+Missing local assets: 50
+
+Final Verification
+------------------
+Shared image assets: 41
+Broken local links: 0
+Missing local assets: 0

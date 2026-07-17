@@ -15,6 +15,131 @@ a{color:inherit}.display{font-family:"Bowlby One SC",Impact,sans-serif;text-tran
 @media(max-width:1100px){.site-header{min-height:118px!important;height:auto!important;flex-wrap:wrap;padding:12px 16px 14px;gap:10px}.nav{position:static!important;order:1;width:100%;justify-content:center;gap:28px!important;font-size:14px!important}.site-header>a[aria-label*="Home"]{order:0}.site-logo{width:124px!important;height:70px!important}.search-wrap{position:static!important;order:2;width:min(520px,100%)!important;margin:0 auto!important}.hero{min-height:440px!important}.hero-inner,.review-shell{padding-left:22px!important;padding-right:22px!important}.two-col{grid-template-columns:1fr!important}}
 @media(max-width:768px){.nav{gap:18px!important;font-size:12px!important}.hero{min-height:360px!important}.hero h1{font-size:clamp(42px,12vw,64px)!important}.hero-sub{font-size:18px!important}.section h2{font-size:34px!important}.intro-copy p,.section p{font-size:16px!important;line-height:1.6!important}.spec-horizontal{grid-template-columns:repeat(2,1fr)!important}.spec-item:nth-child(2n){border-right:none!important}}
 @media(max-width:480px){.spec-horizontal{grid-template-columns:1fr!important}.spec-item{border-right:none!important}.site-header{min-height:132px!important}.site-logo{width:112px!important;height:62px!important}}
+
+
+/* Gear archive filter layout */
+.page-layout{
+  max-width:1180px;
+  margin:0 auto;
+  padding:54px 34px 80px;
+  display:grid;
+  grid-template-columns:280px minmax(0,1fr);
+  gap:34px;
+  align-items:start;
+}
+.filters{
+  position:sticky;
+  top:124px;
+  align-self:start;
+  background:#f3f3f3;
+  border-radius:24px;
+  padding:24px;
+}
+.filters h3{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:28px;
+  line-height:1;
+  margin-bottom:18px;
+  text-transform:uppercase;
+}
+.filter-group{
+  border-top:1px solid #d8d8d8;
+  padding-top:17px;
+  margin-top:17px;
+}
+.filter-label{
+  font-family:"Oswald",Arial,sans-serif;
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:#666;
+  margin-bottom:10px;
+}
+.filter-pills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+}
+.filter-pills button{
+  border:0;
+  border-radius:999px;
+  background:#fff;
+  padding:8px 13px;
+  min-height:40px;
+  font-family:"Oswald",Arial,sans-serif;
+  font-size:14px;
+  font-weight:700;
+  cursor:pointer;
+}
+.filter-pills button.active{
+  background:var(--blue);
+  color:#fff;
+}
+.filter-clear-wrap{
+  border-top:1px solid #d8d8d8;
+  margin-top:18px;
+  padding-top:18px;
+}
+.clear-filters{
+  width:100%;
+  border:0;
+  border-radius:999px;
+  background:var(--dark);
+  color:#fff;
+  padding:11px 16px;
+  min-height:42px;
+  font-family:"Oswald",Arial,sans-serif;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+}
+.list-head{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:end;
+  margin-bottom:28px;
+}
+.list-head h2{
+  font-size:42px !important;
+  margin:0 !important;
+}
+.post-count{
+  color:#666;
+  font-family:"Oswald",Arial,sans-serif;
+  font-size:15px;
+  white-space:nowrap;
+}
+.review-list{
+  display:grid;
+  gap:22px;
+}
+.no-results{
+  display:none;
+  margin-top:24px;
+  padding:22px;
+  background:#f3f3f3;
+  border-radius:18px;
+  font-size:17px;
+}
+@media(max-width:900px){
+  .page-layout{
+    grid-template-columns:1fr;
+    padding-left:22px;
+    padding-right:22px;
+  }
+  .filters{
+    position:static;
+  }
+}
+@media(max-width:600px){
+  .list-head{
+    display:block;
+  }
+  .post-count{
+    margin-top:10px;
+  }
+}
 </style>
 <style>.list-wrap{max-width:1180px;margin:0 auto;padding:54px 34px 90px}.review-row{display:grid;grid-template-columns:260px 1fr;gap:26px;border-bottom:1px solid #dedede;padding-bottom:28px}.placeholder-thumb{height:176px;border-radius:18px;background:linear-gradient(135deg,#111,#444);display:flex;align-items:center;justify-content:center;color:#fff;font-family:"Bowlby One SC",Impact,sans-serif;text-align:center;padding:20px;text-decoration:none}.review-meta{font-size:15px;text-transform:uppercase;letter-spacing:.5px;color:var(--blue);margin:3px 0 9px}.review-content h3{font-family:"Bowlby One SC",Impact,sans-serif;font-size:34px;line-height:.95;text-transform:uppercase;margin-bottom:10px}.review-content h3 a{text-decoration:none}.review-content p{font-size:16px;line-height:1.45;color:#444;max-width:620px}.read-link{display:inline-block;margin-top:16px;background:var(--blue);color:#fff;text-decoration:none;border-radius:999px;padding:10px 18px;line-height:1}@media(max-width:768px){.review-row{grid-template-columns:1fr}}</style><meta content="Gear Built For Real Life | 9to5 Runners" property="og:title"/><meta content="Gear Built For Real Life | 9to5 Runners" name="twitter:title"/></head>
 <body>
@@ -30,13 +155,31 @@ a{color:inherit}.display{font-family:"Bowlby One SC",Impact,sans-serif;text-tran
 <div aria-label="Search results" class="search-results"></div>
 </div>
 </header>
-<main><section class="hero"><div class="hero-inner"><div class="kicker">Gear Reviews</div><h1 class="display">Gear Built For Real Life</h1><p class="hero-sub">Backpacks, apparel, accessories, and running gear tested through training, travel, work, and family life.</p></div></section><section class="list-wrap"><h2 class="display" style="font-size:42px;margin-bottom:28px;">Latest Gear Reviews</h2><div class="review-row"><a class="placeholder-thumb" href="9to5_gear_suunto_spark.html">Suunto<br/>Spark</a><div class="review-content"><div class="review-meta">Gear Review • Published July 16, 2026</div><h3><a href="9to5_gear_suunto_spark.html">Suunto Spark Review</a></h3><p>Open-ear wireless headphones that deliver crisp audio while keeping runners aware of traffic, cyclists, and their surroundings.</p><a class="read-link" href="9to5_gear_suunto_spark.html">Read Review</a></div></div><div class="review-row"><a class="placeholder-thumb" href="9to5_gear_janji_revy_pack.html">Janji<br/>Revy Pack</a><div class="review-content"><div class="review-meta">Gear Review • Published July 9, 2026</div><h3><a href="9to5_gear_janji_revy_pack.html">Janji Revy Pack</a></h3><p>One do-it-all backpack for trails, travel, commuting, family adventures, and everyday life.</p><a class="read-link" href="9to5_gear_janji_revy_pack.html">Read Review</a></div></div></section></main>
+<main><section class="hero"><div class="hero-inner"><div class="kicker">Gear Reviews</div><h1 class="display">Gear Built For Real Life</h1><p class="hero-sub">Backpacks, apparel, accessories, and running gear tested through training, travel, work, and family life.</p></div></section><section class="page-layout"><aside class="filters">
+<h3>Filters</h3>
+<div class="filter-group">
+<div class="filter-label">Brand</div>
+<div class="filter-pills"><button data-filter="dera" type="button">Dera</button><button data-filter="janji" type="button">Janji</button><button data-filter="suunto" type="button">Suunto</button></div>
+</div>
+<div class="filter-group">
+<div class="filter-label">Category</div>
+<div class="filter-pills"><button data-filter="running-belts" type="button">Running Belts</button><button data-filter="backpacks" type="button">Backpacks</button><button data-filter="headphones" type="button">Headphones</button><button data-filter="clothes" type="button">Clothes</button><button data-filter="accessories" type="button">Accessories</button></div>
+</div>
+<div class="filter-group">
+<div class="filter-label">Use</div>
+<div class="filter-pills"><button data-filter="trail" type="button">Trail</button><button data-filter="road" type="button">Road</button><button data-filter="travel" type="button">Travel</button><button data-filter="everyday" type="button">Everyday</button></div>
+</div>
+<div class="filter-clear-wrap">
+<button class="clear-filters" type="button">Clear All</button>
+</div>
+</aside><section class="gear-results"><div class="list-head"><h2 class="display" style="font-size:42px;margin-bottom:28px;">Latest Gear Reviews</h2><div class="post-count">3 posts</div></div><div class="review-list"><div class="review-row" data-brand="dera" data-category="running-belts" data-filter="dera running-belts trail" data-use="trail"><a class="placeholder-thumb" href="9to5_gear_dera_b01.html">Dera<br/>B01</a><div class="review-content"><div class="review-meta">Gear Review • Published July 16, 2026</div><h3><a href="9to5_gear_dera_b01.html">Dera B01 Trail Running Belt Review</a></h3><p>Ryan tests the Dera B01 after hundreds of trail miles, covering its carrying capacity, no-bounce fit, storage, and dial-fit closure.</p><a class="read-link" href="9to5_gear_dera_b01.html">Read Review</a></div></div><div class="review-row" data-brand="suunto" data-category="headphones" data-filter="suunto headphones road everyday" data-use="road everyday"><a class="placeholder-thumb" href="9to5_gear_suunto_spark.html">Suunto<br/>Spark</a><div class="review-content"><div class="review-meta">Gear Review • Published July 16, 2026</div><h3><a href="9to5_gear_suunto_spark.html">Suunto Spark Review</a></h3><p>Open-ear wireless headphones that deliver crisp audio while keeping runners aware of traffic, cyclists, and their surroundings.</p><a class="read-link" href="9to5_gear_suunto_spark.html">Read Review</a></div></div><div class="review-row" data-brand="janji" data-category="backpacks" data-filter="janji backpacks trail travel everyday" data-use="trail travel everyday"><a class="placeholder-thumb" href="9to5_gear_janji_revy_pack.html">Janji<br/>Revy Pack</a><div class="review-content"><div class="review-meta">Gear Review • Published July 9, 2026</div><h3><a href="9to5_gear_janji_revy_pack.html">Janji Revy Pack</a></h3><p>One do-it-all backpack for trails, travel, commuting, family adventures, and everyday life.</p><a class="read-link" href="9to5_gear_janji_revy_pack.html">Read Review</a></div></div></div><div class="no-results">No gear reviews match those filters yet.</div></section></section></main>
 <footer class="footer">
 <div class="footer-title">Connect</div>
 <a aria-label="Follow 9to5 Runners on Instagram" class="instagram" href="https://www.instagram.com/9to5runners/" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><rect height="18" rx="5" stroke="currentColor" stroke-width="2" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="2"></circle><circle cx="17.2" cy="6.8" fill="currentColor" r="1.1"></circle></svg></a>
 </footer>
 <script>
 const searchIndex = [
+  { title: "Dera B01 Trail Running Belt Review", type: "Gear Review", tags: "dera b01 trail running belt hydrapak ultraflask dial fit no bounce", url: "9to5_gear_dera_b01.html" },
   { title: "Suunto Spark Review", type: "Gear Review", tags: "suunto spark open ear wireless headphones bluetooth running audio", url: "9to5_gear_suunto_spark.html" },
   { title: "Puma Deviate Pure Nitro", type: "Shoe Review", tags: "puma deviate pure nitro peba pumagrip daily trainer uptempo", url: "9to5_shoes_puma_deviatepurenitro.html" },
   { title: "Saucony Paramount Max", type: "Shoe Review", tags: "saucony paramount max incredirun max cushion easy recovery long run", url: "9to5_shoes_saucony_paramountmax.html" },
@@ -57,5 +200,62 @@ function setupSiteSearch(){
  document.addEventListener("click",e=>{if(!e.target.closest(".search-wrap"))results.classList.remove("active");});
 }
 setupSiteSearch();
+</script>
+
+<script>
+(function(){
+  const filterRoot = document.querySelector(".filters");
+  const rows = Array.from(document.querySelectorAll(".review-row"));
+  if (!filterRoot || !rows.length) return;
+
+  const buttons = Array.from(filterRoot.querySelectorAll("button[data-filter]"));
+  const search = filterRoot.querySelector('input[type="search"]');
+  const clear = filterRoot.querySelector(".clear-filters, [data-clear]");
+
+  const active = new Set();
+
+  function applyGearFilters(){
+    const query = (search?.value || "").trim().toLowerCase();
+
+    let visibleCount = 0;
+    rows.forEach(row => {
+      const tokens = new Set((row.dataset.filter || "").split(/\s+/).filter(Boolean));
+      const matchesFilters = [...active].every(token => tokens.has(token));
+      const matchesSearch = !query || row.textContent.toLowerCase().includes(query);
+      const visible = matchesFilters && matchesSearch;
+      row.style.display = visible ? "" : "none";
+      if (visible) visibleCount += 1;
+    });
+    const empty = document.querySelector(".no-results");
+    if (empty) empty.style.display = visibleCount ? "none" : "block";
+    const count = document.querySelector(".post-count");
+    if (count) count.textContent = `${visibleCount} ${visibleCount === 1 ? "post" : "posts"}`;
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const token = button.dataset.filter;
+      if (active.has(token)) {
+        active.delete(token);
+        button.classList.remove("active");
+      } else {
+        active.add(token);
+        button.classList.add("active");
+      }
+      applyGearFilters();
+    });
+  });
+
+  search?.addEventListener("input", applyGearFilters);
+
+  clear?.addEventListener("click", () => {
+    active.clear();
+    buttons.forEach(button => button.classList.remove("active"));
+    if (search) search.value = "";
+    applyGearFilters();
+  });
+
+  applyGearFilters();
+})();
 </script>
 </body></html>

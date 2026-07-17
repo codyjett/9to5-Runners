@@ -1,0 +1,9 @@
+Gear Filters Audit
+==================
+
+Filter labels: ['Brand', 'Category', 'Use']
+Filter values: ['Dera', 'Janji', 'Suunto', 'Running Belts', 'Backpacks', 'Headphones', 'Clothes', 'Accessories', 'Trail', 'Road', 'Travel', 'Everyday']
+Review row tags: {'Dera B01 Trail Running Belt Review': 'dera running-belts trail', 'Suunto Spark Review': 'suunto headphones road everyday', 'Janji Revy Pack': 'janji backpacks trail travel everyday'}
+Dera date: Gear Review • Published July 16, 2026
+Broken local links: 0
+Missing local assets: 0

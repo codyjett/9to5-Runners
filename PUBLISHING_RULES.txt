@@ -1,15 +1,10 @@
 
 
-RYAN REVIEWER PROFILE
-- Ryan is a Gear Reviewer.
-- About page uses images/ryan-headshot.png.
-- Any review featuring Ryan uses images/ryan-runner-profile.png.
-- Ryan profile links: Substack and Instagram.
-- Substack: https://runfitzyrun.substack.com/
-- Instagram: https://www.instagram.com/runfitzyrun/
-
-THE 9TO5 PICKS — TRAIL
-- Trail rankings appear beneath Road rankings.
-- Display only reviewers who submitted Trail rankings.
-- Current Trail reviewer: Ryan.
-- Last Updated changes only when rankings change.
+GEAR ARCHIVE FILTERS
+- Gear page uses the approved Shoes-page filter framework.
+- Brand filters: Dera, Janji, Suunto.
+- Category filters: Running Belts, Backpacks, Headphones, Clothes, Accessories.
+- Use filters: Trail, Road, Travel, Everyday.
+- Every new gear review must be tagged with brand, category, and use values.
+- If a required filter does not exist, add it without changing the approved framework.
+- Gear review cards display: Gear Review • Published Month Day, Year.
