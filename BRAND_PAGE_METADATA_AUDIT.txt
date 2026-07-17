@@ -1,0 +1,71 @@
+9to5 Runners Brand Page Metadata Audit
+======================================
+
+9to5_Homepage.html
+- Title: 9to5 Runners | Honest Running Shoe & Gear Reviews
+- H1: Dera B01 Trail Running Belt Review
+- Meta description: YES
+- Canonical: https://www.9to5runners.com/
+
+9to5_shoes_page1.html
+- Title: Running Shoe Reviews | 9to5 Runners
+- H1: Real Reviews Real Miles No Hype
+- Meta description: YES
+- Canonical: https://www.9to5runners.com/9to5_shoes_page1.html
+
+9to5_gear_page1.html
+- Title: Running Gear Reviews | 9to5 Runners
+- H1: Gear Built For Real Life
+- Meta description: YES
+- Canonical: https://www.9to5runners.com/9to5_gear_page1.html
+
+9to5_about.html
+- Title: About the Team | 9to5 Runners
+- H1: Welcome to 9 to 5 Runners
+- Meta description: YES
+- Canonical: https://www.9to5runners.com/9to5_about.html
+
+index.html
+- Title: 9to5 Runners | Honest Running Shoe & Gear Reviews
+- H1: Dera B01 Trail Running Belt Review
+- Meta description: YES
+- Canonical: https://www.9to5runners.com/
+
+9to5_shoes_asics_nimbus28.html
+- Title: ASICS GEL NIMBUS 28 | 9to5 Runners
+- H1: ASICS GEL NIMBUS 28
+- Meta description: NO
+- Canonical: MISSING
+
+9to5_shoes_puma_deviatepurenitro.html
+- Title: Puma Deviate Pure Nitro | 9to5 Runners
+- H1: Puma Deviate Pure Nitro
+- Meta description: NO
+- Canonical: MISSING
+
+9to5_shoes_saucony_paramountmax.html
+- Title: Saucony Paramount Max | 9to5 Runners
+- H1: Saucony Paramount Max
+- Meta description: NO
+- Canonical: MISSING
+
+9to5_gear_janji_revy_pack.html
+- Title: Janji Revy Pack | 9to5 Runners
+- H1: Janji Revy Pack
+- Meta description: NO
+- Canonical: MISSING
+
+9to5_gear_suunto_spark.html
+- Title: Suunto Spark Review | 9to5 Runners
+- H1: Suunto Spark Review
+- Meta description: NO
+- Canonical: MISSING
+
+9to5_gear_dera_b01.html
+- Title: Dera B01 Trail Running Belt Review | 9to5 Runners
+- H1: Dera B01 Trail Running Belt Review
+- Meta description: NO
+- Canonical: MISSING
+
+Broken local links: 0
+Missing local assets: 0

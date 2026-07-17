@@ -1,0 +1,6 @@
+Gear Real Images Final Audit
+============================
+
+Gear thumbnails: {'Dera B01 Trail Running Belt Review': 'images/dera-b01-hero.png', 'Suunto Spark Review': 'images/suunto-spark-hero.jpg', 'Janji Revy Pack': 'images/asset-9c81e0327d710b5a.jpg'}
+Broken local links: 0
+Missing local assets: 0
