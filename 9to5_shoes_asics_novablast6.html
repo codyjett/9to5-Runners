@@ -273,29 +273,10 @@ a { color:inherit; }
   border-radius:18px;
   display:block;
 }
-.two-col {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:26px;
-  margin-top:24px;
-}
-.callout {
-  background:#f3f3f3;
-  border-radius:22px;
-  padding:24px;
-}
-.callout h3 {
-  font-family:"Bowlby One SC", Impact, sans-serif;
-  font-size:28px;
-  line-height:1;
-  text-transform:uppercase;
-  margin-bottom:12px;
-}
-.callout ul {
-  padding-left:20px;
-  line-height:1.55;
-  font-size:16px;
-}
+
+
+
+
 
 .gallery {
   display:grid;
@@ -583,7 +564,7 @@ img { max-width:100%; }
   .search-results{left:0!important;right:auto!important;width:100%!important;}
   .hero{min-height:440px!important;}
   .hero-inner,.wrap,.review-shell,.shoe-wrap,.intro,.page-layout{padding-left:22px!important;padding-right:22px!important;}
-  .featured-grid,.reviews-grid,.videos-grid,.brand-grid,.intro-grid,.page-layout,.two-col{grid-template-columns:1fr!important;}
+  .featured-grid,.reviews-grid,.videos-grid,.brand-grid,.intro-grid,.page-layout,
   .filters{position:static!important;}
 }
 
@@ -700,7 +681,48 @@ img { max-width:100%; }
   }
 }
 
+/* Shoe review callout boxes — template */
+.two-col {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:26px;
+  margin-top:24px;
+}
+.callout {
+  background:#f3f3f3;
+  border-radius:22px;
+  padding:24px;
+}
+.callout h3 {
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:28px;
+  line-height:1;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.callout ul {
+  padding-left:20px;
+  line-height:1.55;
+  font-size:16px;
+}
+@media(max-width:760px){
+  .two-col{grid-template-columns:1fr!important;}
+}
 
+/* Full-width shoe review callouts */
+.paramount-callouts{
+  margin:56px 0;
+  width:100%;
+}
+.paramount-callouts .two-col{
+  width:100%;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+}
+@media(max-width:760px){
+  .paramount-callouts .two-col{
+    grid-template-columns:1fr!important;
+  }
+}
 </style>
 <style>
 /* Paramount Max review-specific layout */
@@ -887,11 +909,11 @@ img { max-width:100%; }
 <main class="paramount-main">
 <section class="paramount-intro"><p>Few daily trainers have built the reputation of the ASICS Novablast. With each new version comes the same question: can ASICS improve on a shoe that runners already love?</p><p>The Novablast 6 answers that challenge with updated FF TURBO 2 foam, a refined upper, and the promise of an even more energetic ride. But do those changes translate to a better running experience, or is this simply another annual refresh?</p><p>After putting plenty of miles into the Novablast 6, we have our answer.</p></section><div class="paramount-photo"><img alt="ASICS Novablast 6 side profile on a stone wall" src="images/asics-novablast-6-gallery-1.png"/></div>
 <section class="paramount-specs"><div class="paramount-spec"><span>Price</span><strong>$155</strong></div><div class="paramount-spec"><span>Stack</span><strong>42 / 34 mm</strong></div><div class="paramount-spec"><span>Drop</span><strong>8 mm</strong></div><div class="paramount-spec"><span>Weight</span><strong>8.8 oz</strong></div><div class="paramount-spec"><span>Category</span><strong>Daily Trainer</strong></div></section><section class="miles-tested"><h2>Miles Tested</h2><div class="miles-tested-grid"><div class="miles-tested-item"><span>Cody</span><strong>37 miles</strong></div><div class="miles-tested-item"><span>Eric</span><strong>32 miles</strong></div><div class="miles-tested-item"><span>Emily</span><strong>60+ miles</strong></div><div class="miles-tested-item"><span>Blake</span><strong>41 miles</strong></div></div></section>
-<section class="paramount-section"><h2>The Good</h2><div class="paramount-reviewer"><h3>Cody</h3><p>At this point, I've had the privilege of running in every Novablast ASICS has released, and I have to say this might be the best one yet.</p><p>The FF TURBO 2 foam just works for me. It delivers the perfect combination of comfort and bounce, making easy miles feel effortless while still giving enough pop when it's time to pick up the pace. Compared to previous versions, I found myself naturally running faster, feeling fresher later into longer runs, and enjoying every step along the way.</p><p>While I could spend this entire review talking about the midsole, I'd be doing the upper a disservice. The lockdown is outstanding. My foot felt secure throughout every run without creating pressure points, and the fit worked exceptionally well for my slightly wider foot. It's one of those shoes you lace up, forget about, and simply enjoy the run.</p><p>This is also one of those rare daily trainers that feels incredibly versatile. Whether I was heading out for an easy run, a long run, or throwing in some faster miles, the Novablast 6 handled everything with confidence.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>The Midsole - putting FF Turbo2 in the forefoot of this shoe made such a difference to me. The 5 didn’t rebound back and provide as much “pop” as I would like and eventually bottomed out. It was a great daily model but lacked some versatility. The change in the foam to the 6 has created what I’d say is my favorite daily option of 2026.</p><p>The Fit/Upper - The NovaBlast 5 felt a little baggy and warm. The 6 seems to benefit from a more breathable upper and slightly more streamlined fit. It’s not a true race fit but it’s not supposed to be either. It strikes a great balance between performance and comfort</p></div><div class="paramount-reviewer"><h3>Emily</h3><p>I won't take you back too far, but I've had an interesting relationship with the Novablast. I've loved some, hated others and nothing came close to the magic of the OG. I finally feel like that's changed with the Novablast 6. It's not as outlandish as the first version in terms of bounce and instability, but honestly...that might be a good thing. It takes all the best elements from the original and makes them more digestible.</p><p>The midsole is a little bit of sorcery. Upon first glance, it looks like it just contains a full slab of FF BLAST MAX. A fun foam on its own that gives the runner plenty of protection, response and durability. But if you look under the hood of the car (or shoe, in this case) you'll find a "trampoline pod" of FF TURBO SQUARED in the center of the forefoot. This gives the ride an extra bit of OOMPH that I found especially enjoyable at faster paces. I was skeptical about this layout but the two foams work flawlessly together to make a versatile shoe that can really handle anything you throw at it.</p><p>The upper is fairly breathable and fit nicely. The outsole did its job.</p></div><div class="paramount-reviewer"><h3>Blake</h3><p>The Novablast 6 takes everything that made the Novablast 5 great and refines it. The redesigned midsole is noticeably more stable, especially in the heel, thanks to the updated geometry and outsole placement. While it initially feels a touch firmer, it softens up nicely as you run without losing its responsiveness or feeling packed down.</p><p>The biggest upgrade is the forefoot. The addition of FF Turbo² creates a much more energetic toe-off that makes it surprisingly easy to pick up the pace. I actually found myself turning an easy run into a progression run because the shoe felt so good when rolling onto my forefoot.</p><p>The new engineered woven mesh upper feels very similar to the Superblast 2. It’s comfortable, breathable, and secure. ASICS also upgraded the outsole with ASICSGRIP in the forefoot, improving both traction and durability while retaining AHAR LO rubber elsewhere.</p></div></section><div class="paramount-photo"><img alt="ASICS Novablast 6 side profile on pavement" src="images/asics-novablast-6-gallery-2.png"/></div>
+<section class="paramount-section"><h2>The Good</h2><div class="paramount-reviewer"><h3>Cody</h3><p>At this point, I've had the privilege of running in every Novablast ASICS has released, and I have to say this might be the best one yet.</p><p>The FF TURBO 2 foam just works for me. It delivers the perfect combination of comfort and bounce, making easy miles feel effortless while still giving enough pop when it's time to pick up the pace. Compared to previous versions, I found myself naturally running faster, feeling fresher later into longer runs, and enjoying every step along the way.</p><p>While I could spend this entire review talking about the midsole, I'd be doing the upper a disservice. The lockdown is outstanding. My foot felt secure throughout every run without creating pressure points, and the fit worked exceptionally well for my slightly wider foot. It's one of those shoes you lace up, forget about, and simply enjoy the run.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>The Midsole - putting FF Turbo2 in the forefoot of this shoe made such a difference to me. The 5 didn’t rebound back and provide as much “pop” as I would like and eventually bottomed out. It was a great daily model but lacked some versatility. The change in the foam to the 6 has created what I’d say is my favorite daily option of 2026.</p><p>The Fit/Upper - The NovaBlast 5 felt a little baggy and warm. The 6 seems to benefit from a more breathable upper and slightly more streamlined fit. It’s not a true race fit but it’s not supposed to be either. It strikes a great balance between performance and comfort</p></div><div class="paramount-reviewer"><h3>Emily</h3><p>I won't take you back too far, but I've had an interesting relationship with the Novablast. I've loved some, hated others and nothing came close to the magic of the OG. I finally feel like that's changed with the Novablast 6. It's not as outlandish as the first version in terms of bounce and instability, but honestly...that might be a good thing. It takes all the best elements from the original and makes them more digestible.</p><p>The midsole is a little bit of sorcery. Upon first glance, it looks like it just contains a full slab of FF BLAST MAX. A fun foam on its own that gives the runner plenty of protection, response and durability. But if you look under the hood of the car (or shoe, in this case) you'll find a "trampoline pod" of FF TURBO SQUARED in the center of the forefoot. This gives the ride an extra bit of OOMPH that I found especially enjoyable at faster paces. I was skeptical about this layout but the two foams work flawlessly together to make a versatile shoe that can really handle anything you throw at it.</p><p>The upper is fairly breathable and fit nicely. The outsole did its job.</p></div><div class="paramount-reviewer"><h3>Blake</h3><p>The Novablast 6 takes everything that made the Novablast 5 great and refines it. The redesigned midsole is noticeably more stable, especially in the heel, thanks to the updated geometry and outsole placement. While it initially feels a touch firmer, it softens up nicely as you run without losing its responsiveness or feeling packed down.</p><p>The biggest upgrade is the forefoot. The addition of FF Turbo² creates a much more energetic toe-off that makes it surprisingly easy to pick up the pace. I actually found myself turning an easy run into a progression run because the shoe felt so good when rolling onto my forefoot.</p><p>The new engineered woven mesh upper feels very similar to the Superblast 2. It’s comfortable, breathable, and secure. ASICS also upgraded the outsole with ASICSGRIP in the forefoot, improving both traction and durability while retaining AHAR LO rubber elsewhere.</p></div></section><div class="paramount-photo"><img alt="ASICS Novablast 6 side profile on pavement" src="images/asics-novablast-6-gallery-2.png"/></div>
 <section class="paramount-section"><h2>The Bad</h2><div class="paramount-reviewer"><h3>Cody</h3><p>I know they say real men wear pink...I'm just not sure I subscribe to that. While this certainly isn't the worst colorway I've seen, the launch color wasn't exactly my favorite. Fortunately, that's an easy issue to solve if another colorway catches your eye.</p><p>My only real performance complaint is that this shoe almost wants to run faster than I sometimes do. During recovery runs, I found myself fighting the foam a bit. The ride is so lively and energetic that slowing things down didn't feel quite as natural as it does in something like a Gel-Nimbus. That's certainly not a deal breaker, but it's worth mentioning if most of your miles are truly recovery pace.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>None - I’m not going to say this shoe is perfect as that’s subjective, however I don’t think there are any real notable weaknesses. The grip as far as I’ve tested is great, it’s more breathable, it’s comfortable, it’s versatile. The only thing I could maybe say isn’t great is potentially that it’s firmer than the 5 but that’s actually a pro for me</p></div><div class="paramount-reviewer"><h3>Emily</h3><p>I sound like a broken record on all these reviews but I wish the Novablast 6 had a rocker technology. I think that would take from A+++ to S tier for me.</p><p>Also, I like the Rose Dust/Illuminate Yellow colorway I was sent, but the others are a little meh.</p></div><div class="paramount-reviewer"><h3>Blake</h3><p>There honestly aren't many complaints with the Novablast 6. Runners who loved the softer, slightly wobblier feel of the Novablast 5 may notice that this version trades a bit of that sensation for added stability. It's still soft and bouncy, just in a more controlled package.</p></div></section>
 <section class="paramount-section"><h2>The Verdict</h2><div class="paramount-reviewer"><h3>Cody</h3><p>The Novablast 6 has quickly become one of my favorite running shoes of 2026.</p><p>The combination of the updated FF TURBO 2 midsole, excellent lockdown, and accommodating fit makes this a daily trainer that I genuinely look forward to running in. For my wider foot, the fit was excellent, and at $155, I think ASICS has delivered one of the best values on the market.</p><p>If you're looking for a shoe that can handle the majority of your weekly mileage while keeping every run fun, the Novablast 6 deserves to be near the top of your list.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>As you can imagine after reading my good and bad sections, I REALLY like this shoe. Easily a top shoe of the year for me and maybe THE top shoe of the year. While the shoe isn’t going to be the best of any particular usage, for a daily trainer which is supposed to be decent at everything I believe it stands at the top for 2026.</p></div><div class="paramount-reviewer"><h3>Emily</h3><p>Yes, yes, yes and yes. I would recommend the Novablast 6 whether you're a beginner runner or a seasoned veteran toeing the line of your 20th marathon. There's something here for everyone. It's also $155 which ain't so bad either. Go try it out.</p></div><div class="paramount-reviewer"><h3>Blake</h3><p>The Novablast 6 is a meaningful evolution rather than a complete overhaul. It keeps the fun, bouncy personality of the Novablast line while making the ride more stable and significantly improving the forefoot's energy return. If I previously described the Novablast 5 as a "mini Superblast," I'd call the Novablast 6 a "mini Megablast." It delivers a more energetic ride while remaining approachable for everyday training. It’s one of my top 5 favorite trainers of the year so far.</p></div></section>
 <section class="paramount-section"><h2>Worth The Upgrade?</h2><div class="paramount-reviewer"><h3>Cody</h3><p>Yes.</p><p>For the record, I really enjoyed the Novablast 5, but the Novablast 6 simply feels more refined. The updated foam gives the ride a smoother, more energetic feel, and the overall package feels more polished from top to bottom.</p><p>If you're coming from the Novablast 5, I do think the upgrade is worthwhile. If you're coming from an older Novablast, it's an even easier recommendation.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>YES, at least if you wanted more from the NovaBlast 5. The NovaBlast somewhat lost its way a little bit in a category that it invented. This year it’s back to its roots as a fast, bouncy, yet stable, and friendly daily option. The versatility of the shoe and the change from 5 to 6 definitely makes this upgrade worthy. Other notable changes are a more breathable fit and better forefoot grip which were 2 notable weaknesses of the 5.</p></div><div class="paramount-reviewer"><h3>Emily</h3><p>Totally worth the $155. You're getting a do-it-all shoe without having to empty your entire wallet. I also think you'll get tons of miles out of the Novablast 6, which makes it even more justifiable.</p></div><div class="paramount-reviewer"><h3>Blake</h3><p>At $155, the Novablast 6 I think it’s a fair price for a versatile daily trainer that can also pick up the pace. It delivers premium cushioning, impressive versatility, and technology borrowed from ASICS' higher-end shoes without the premium price tag. I personally think it’s worth the upgrade mainly to do the much more lively forefoot, and the more durable foam, however the Novablast 5 is still a great shoe if you find it on sale.</p></div></section>
-<section class="permanent-profiles"><div class="profile-graphic">
+<section class="paramount-callouts"><div class="two-col"><div class="callout"><h3>Buy If</h3><ul><li>You want one daily trainer that can handle easy runs, long runs, and faster efforts.</li><li>You enjoy a lively, energetic ride with a more responsive forefoot.</li><li>You want a secure upper that still works well for a slightly wider foot.</li><li>You are upgrading from the Novablast 5 or an older version and want a more refined ride.</li></ul></div><div class="callout"><h3>Skip If</h3><ul><li>Most of your running is at true recovery pace and you prefer a calmer, softer ride.</li><li>You want a strongly rockered shoe with a pronounced rolling sensation.</li><li>You preferred the softer, less controlled feel of the Novablast 5.</li></ul></div></div></section><section class="permanent-profiles"><div class="profile-graphic">
 <img alt="Cody runner profile" src="images/asset-1aedc199f244fb6c.png"/>
 <a aria-label="Cody YouTube" class="profile-link youtube" href="https://www.youtube.com/@The_Shoe_In_With_Cody" rel="noopener noreferrer" target="_blank"></a>
 <a aria-label="Cody Instagram" class="profile-link instagram" href="https://www.instagram.com/the_shoe_in_with_cody/" rel="noopener noreferrer" target="_blank"></a>

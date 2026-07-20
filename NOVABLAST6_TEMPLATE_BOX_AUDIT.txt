@@ -1,0 +1,8 @@
+Novablast 6 Template Box Audit
+================================
+
+Boxes located inside Worth The Upgrade: ['Buy If', 'Skip If']
+Standalone Buy/Skip section remains: NO
+Reviewer blocks: {'The Good': ['Cody', 'Eric', 'Emily', 'Blake'], 'The Bad': ['Cody', 'Eric', 'Emily', 'Blake'], 'The Verdict': ['Cody', 'Eric', 'Emily', 'Blake'], 'Worth The Upgrade?': ['Cody', 'Eric', 'Emily', 'Blake']}
+Broken local links: 0
+Missing local assets: 0

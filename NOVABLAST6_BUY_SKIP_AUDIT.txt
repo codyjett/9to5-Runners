@@ -1,0 +1,8 @@
+Novablast 6 Buy/Skip Update Audit
+==================================
+
+Requested Cody paragraph removed: YES
+Buy/Skip section present: YES
+Buy/Skip labels: ['Buy If', 'Skip If']
+Broken local links: 0
+Missing local assets: 0

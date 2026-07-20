@@ -1,0 +1,8 @@
+Novablast 6 Skip Bullet Removal Audit
+======================================
+
+Requested bullet removed: YES
+Remaining Skip If items: ['Most of your running is at true recovery pace and you prefer a calmer, softer ride.', 'You want a strongly rockered shoe with a pronounced rolling sensation.', 'You preferred the softer, less controlled feel of the Novablast 5.']
+Homepage and index identical: YES
+Broken local links: 0
+Missing local assets: 0

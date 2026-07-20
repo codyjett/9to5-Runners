@@ -1,0 +1,8 @@
+Novablast 6 Wide Callout Audit
+================================
+
+Boxes removed from Worth The Upgrade: YES
+Full-width callout section present: YES
+Labels: ['Buy If', 'Skip If']
+Broken local links: 0
+Missing local assets: 0

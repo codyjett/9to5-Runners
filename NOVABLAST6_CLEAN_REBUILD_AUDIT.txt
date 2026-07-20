@@ -1,0 +1,14 @@
+Novablast 6 Clean Rebuild Audit
+================================
+
+Reviewer separation:
+{'The Good': ['Cody', 'Eric', 'Emily', 'Blake'], 'The Bad': ['Cody', 'Eric', 'Emily', 'Blake'], 'The Verdict': ['Cody', 'Eric', 'Emily', 'Blake'], 'Worth The Upgrade?': ['Cody', 'Eric', 'Emily', 'Blake']}
+
+Page order:
+['The Good', 'The Bad', 'The Verdict', 'Worth The Upgrade?', 'Buy If / Skip If', 'Reviewer Profiles']
+
+Skip If items:
+['Most of your running is at true recovery pace and you prefer a calmer, softer ride.', 'You want a strongly rockered shoe with a pronounced rolling sensation.', 'You preferred the softer, less controlled feel of the Novablast 5.']
+
+Broken local links: 0
+Missing local assets: 0
