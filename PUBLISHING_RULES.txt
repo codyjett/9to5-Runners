@@ -1,10 +1,8 @@
 
 
-GEAR ARCHIVE FILTERS
-- Gear page uses the approved Shoes-page filter framework.
-- Brand filters: Dera, Janji, Suunto.
-- Category filters: Running Belts, Backpacks, Headphones, Clothes, Accessories.
-- Use filters: Trail, Road, Travel, Everyday.
-- Every new gear review must be tagged with brand, category, and use values.
-- If a required filter does not exist, add it without changing the approved framework.
-- Gear review cards display: Gear Review • Published Month Day, Year.
+NOVABLAST 6 REVIEW
+- ASICS Novablast 6 is the newest shoe review.
+- Reviewers: Cody, Eric, Emily, and Blake.
+- Miles Tested: Cody 37, Eric 32, Emily 60+, Blake 41.
+- Homepage title remains brand-focused even when the featured hero changes.
+- Shop by Brand links must never use placeholder # URLs.

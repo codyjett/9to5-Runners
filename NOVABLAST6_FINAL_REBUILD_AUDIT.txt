@@ -1,0 +1,11 @@
+Novablast 6 Final Rebuild Audit
+================================
+
+Novablast direct content order:
+['Image: images/asics-novablast-6-gallery-1.png', 'Tech Specs', 'Miles Tested', 'The Good', 'Image: images/asics-novablast-6-gallery-2.png', 'The Bad', 'The Verdict', 'Worth The Upgrade?']
+
+Shop by Brand present: NO
+Homepage and index identical: YES
+Review title/H1 mismatches: 0
+Broken local links: 0
+Missing local assets: 0

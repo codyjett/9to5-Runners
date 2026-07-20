@@ -539,9 +539,18 @@ img { max-width:100%; }
 <section>
 <div class="list-head">
 <h2 class="display">Recent Shoe Reviews</h2>
-<div class="post-count">3 posts</div>
+<div class="post-count">4 posts</div>
 </div>
-<div class="review-list"><article class="review-row" data-filter="daily peba puma road trainer uptempo">
+<div class="review-list"><article class="review-row" data-filter="road asics daily trainer long run cody eric emily blake">
+<a class="review-thumb" href="9to5_shoes_asics_novablast6.html"><img alt="ASICS Novablast 6" src="images/asics-novablast-6-hero.png"/></a>
+<div class="review-content">
+<div class="review-meta">Road Running Shoes • Published July 19, 2026</div>
+<h3><a href="9to5_shoes_asics_novablast6.html">ASICS Novablast 6 Review</a></h3>
+<p>Four reviewers logged more than 170 miles in ASICS' energetic, versatile daily trainer.</p>
+<div class="tag-row"><span>Road</span><span>Daily Trainer</span><span>ASICS</span></div>
+<a class="read-link" href="9to5_shoes_asics_novablast6.html">Read Review</a>
+</div>
+</article><article class="review-row" data-filter="daily peba puma road trainer uptempo">
 <a class="review-thumb" href="9to5_shoes_puma_deviatepurenitro.html"><img alt="Puma Deviate Pure Nitro" src="images/asset-924106f12f164d85.png"/></a>
 <div class="review-content">
 <div class="review-meta">Road Running Shoes • Published July 13, 2026</div>
@@ -588,6 +597,7 @@ img { max-width:100%; }
 </footer>
 <script>
 const searchIndex = [
+  { title: "ASICS Novablast 6 Review", type: "Shoe Review", tags: "asics novablast 6 daily trainer ff turbo 2 road versatile", url: "9to5_shoes_asics_novablast6.html" },
   { title: "Dera B01 Trail Running Belt Review", type: "Gear Review", tags: "dera b01 trail running belt hydrapak ultraflask dial fit no bounce", url: "9to5_gear_dera_b01.html" },
   { title: "Suunto Spark Review", type: "Gear Review", tags: "suunto spark open ear wireless headphones bluetooth running audio", url: "9to5_gear_suunto_spark.html" },
   { title: "Janji Revy Pack", type: "Gear Review", tags: "janji revy pack backpack fastpacking travel hydration laptop", url: "9to5_gear_janji_revy_pack.html" },
@@ -790,6 +800,17 @@ setupShoeFilters();
   }
 
   renderPage(1);
+})();
+</script>
+
+<script>
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const brand = (params.get("brand") || "").toLowerCase();
+  if (!brand) return;
+  const button = Array.from(document.querySelectorAll('button[data-filter]'))
+    .find(btn => (btn.dataset.filter || "").toLowerCase() === brand);
+  if (button && !button.classList.contains("active")) button.click();
 })();
 </script>
 </body>
