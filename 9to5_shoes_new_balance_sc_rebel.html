@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Puma Deviate Pure Nitro | 9to5 Runners</title>
+<title>New Balance SC Rebel Review | 9to5 Runners</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&amp;family=Oswald:wght@600;700&amp;display=swap" rel="stylesheet"/>
@@ -273,29 +273,10 @@ a { color:inherit; }
   border-radius:18px;
   display:block;
 }
-.two-col {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:26px;
-  margin-top:24px;
-}
-.callout {
-  background:#f3f3f3;
-  border-radius:22px;
-  padding:24px;
-}
-.callout h3 {
-  font-family:"Bowlby One SC", Impact, sans-serif;
-  font-size:28px;
-  line-height:1;
-  text-transform:uppercase;
-  margin-bottom:12px;
-}
-.callout ul {
-  padding-left:20px;
-  line-height:1.55;
-  font-size:16px;
-}
+
+
+
+
 
 .gallery {
   display:grid;
@@ -583,7 +564,7 @@ img { max-width:100%; }
   .search-results{left:0!important;right:auto!important;width:100%!important;}
   .hero{min-height:440px!important;}
   .hero-inner,.wrap,.review-shell,.shoe-wrap,.intro,.page-layout{padding-left:22px!important;padding-right:22px!important;}
-  .featured-grid,.reviews-grid,.videos-grid,.brand-grid,.intro-grid,.page-layout,.two-col{grid-template-columns:1fr!important;}
+  .featured-grid,.reviews-grid,.videos-grid,.brand-grid,.intro-grid,.page-layout,
   .filters{position:static!important;}
 }
 
@@ -697,6 +678,49 @@ img { max-width:100%; }
   }
   .miles-tested-item{
     flex:1 1 180px !important;
+  }
+}
+
+/* Shoe review callout boxes — template */
+.two-col {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:26px;
+  margin-top:24px;
+}
+.callout {
+  background:#f3f3f3;
+  border-radius:22px;
+  padding:24px;
+}
+.callout h3 {
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:28px;
+  line-height:1;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.callout ul {
+  padding-left:20px;
+  line-height:1.55;
+  font-size:16px;
+}
+@media(max-width:760px){
+  .two-col{grid-template-columns:1fr!important;}
+}
+
+/* Full-width shoe review callouts */
+.paramount-callouts{
+  margin:56px 0;
+  width:100%;
+}
+.paramount-callouts .two-col{
+  width:100%;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+}
+@media(max-width:760px){
+  .paramount-callouts .two-col{
+    grid-template-columns:1fr!important;
   }
 }
 
@@ -881,151 +905,7 @@ img { max-width:100%; }
   .profile-graphic{margin-bottom:4px;}
 }
 </style>
-<style>
-.deviate-hero{
-  min-height:560px;
-  background-size:cover !important;
-  background-position:center !important;
-}
-.review-shell{
-  max-width:1020px;
-  margin:0 auto;
-  padding:60px 34px 80px;
-}
-.intro-copy{
-  max-width:860px;
-  font-size:18px;
-  line-height:1.62;
-}
-.intro-copy p{margin-bottom:18px;}
-.spec-horizontal{
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  background:#fff;
-  border-radius:18px;
-  box-shadow:0 10px 30px rgba(0,0,0,.08);
-  border:1px solid #e8e8e8;
-  margin:34px 0 48px;
-  overflow:hidden;
-}
-.spec-item{
-  padding:22px 12px;
-  text-align:center;
-  border-right:1px solid #ececec;
-  min-height:112px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-}
-.spec-item:last-child{border-right:none;}
-.spec-item span{
-  font-family:"Oswald",Arial,sans-serif;
-  font-size:15px;
-  text-transform:uppercase;
-  letter-spacing:.8px;
-  color:#666;
-  margin-bottom:12px;
-}
-.spec-item strong{
-  font-family:"Bowlby One SC",Impact,sans-serif;
-  font-size:23px;
-  line-height:1;
-}
-.photo-block{
-  width:700px;
-  max-width:100%;
-  margin:36px auto;
-  border-radius:18px;
-  overflow:hidden;
-  background:#fff;
-}
-.photo-block img{
-  width:100%;
-  height:auto;
-  display:block;
-  object-fit:contain;
-}
-.review-section{margin-top:68px;}
-.review-section h2{
-  font-family:"Bowlby One SC",Impact,sans-serif;
-  font-size:44px;
-  line-height:1;
-  text-transform:uppercase;
-  margin-bottom:24px;
-}
-.reviewer{margin-bottom:28px;}
-.reviewer:last-child{margin-bottom:0;}
-.reviewer h3{
-  color:var(--blue);
-  font-family:"Bowlby One SC",Impact,sans-serif;
-  font-size:18px;
-  text-transform:uppercase;
-  margin-bottom:10px;
-}
-.reviewer p{
-  font-size:17px;
-  line-height:1.6;
-  margin-bottom:14px;
-}
-.buy-skip{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:22px;
-  margin:58px 0 46px;
-}
-.buy-skip article{
-  background:#f4f4f4;
-  border:1px solid #e4e4e4;
-  border-radius:18px;
-  padding:28px;
-}
-.buy-skip h2{
-  font-family:"Bowlby One SC",Impact,sans-serif;
-  font-size:30px;
-  text-transform:uppercase;
-  line-height:1;
-  margin-bottom:14px;
-}
-.buy-skip p{font-size:17px;line-height:1.55;}
-.runner-profiles{
-  max-width:1100px;
-  margin:48px auto 28px;
-  padding-top:18px;
-  border-top:1px solid #e5e5e5;
-}
-.profile-graphic{
-  position:relative;
-  width:100%;
-  margin:0 0 8px;
-  line-height:0;
-}
-.profile-graphic:last-child{margin-bottom:0;}
-.profile-graphic img{
-  width:100%;
-  height:auto;
-  display:block;
-  object-fit:contain;
-  background:#fff;
-}
-.profile-link{
-  position:absolute;
-  display:block;
-  z-index:4;
-  border-radius:10px;
-}
-.profile-link.youtube{left:70.5%;top:39%;width:8%;height:14%;}
-.profile-link.instagram{left:80.5%;top:38%;width:6.5%;height:15%;}
-.profile-link:hover{outline:3px solid rgba(40,120,217,.45);}
-@media(max-width:800px){
-  .review-shell{padding:42px 20px 60px;}
-  .spec-horizontal{grid-template-columns:repeat(2,1fr);}
-  .spec-item:last-child{grid-column:1/-1;}
-  .review-section h2{font-size:34px;}
-  .buy-skip{grid-template-columns:1fr;}
-}
-</style>
-<meta content="Puma Deviate Pure Nitro | 9to5 Runners" property="og:title"/><meta content="Puma Deviate Pure Nitro | 9to5 Runners" name="twitter:title"/></head>
+<meta content="New Balance SC Rebel Review | 9to5 Runners" property="og:title"/><meta content="New Balance SC Rebel Review | 9to5 Runners" name="twitter:title"/><meta content="Cody and Eric review the New Balance SC Rebel after 52 combined miles, covering its Infinion Foam, Energy Arc plate, fit, speed, stability, and value." name="description"/><meta content="Cody and Eric review the New Balance SC Rebel after 52 combined miles, covering its Infinion Foam, Energy Arc plate, fit, speed, stability, and value." property="og:description"/><meta content="Cody and Eric review the New Balance SC Rebel after 52 combined miles, covering its Infinion Foam, Energy Arc plate, fit, speed, stability, and value." name="twitter:description"/></head>
 <body>
 <header class="site-header">
 <nav aria-label="Main navigation" class="nav">
@@ -1039,54 +919,30 @@ img { max-width:100%; }
 <div aria-label="Search results" class="search-results"></div>
 </div>
 </header>
-<section class="hero deviate-hero" style="background-image:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.38),rgba(0,0,0,.12)),url('images/asset-924106f12f164d85.png')">
+<section class="hero paramount-hero" style="background-image:linear-gradient(90deg,rgba(0,0,0,.84),rgba(0,0,0,.35),rgba(0,0,0,.12)),url('images/new-balance-sc-rebel-hero.png')">
 <div class="hero-inner">
-<div class="kicker">Shoe Review</div>
-<h1 class="display">Puma Deviate Pure Nitro</h1>
-<p class="hero-sub">A lightweight daily trainer balancing comfort, stability, traction, and enough pop for faster miles.</p>
+<div class="kicker">Shoe Review • Published July 20, 2026</div>
+<h1 class="display">New Balance SC Rebel Review</h1>
+<p class="hero-sub">A lighter, faster plated trainer built for workouts, tempo runs, and runners who want speed first.</p>
 <a class="btn" href="9to5_shoes_page1.html">Back to Shoes</a>
 </div>
 </section>
-<main class="review-shell">
-<section class="intro-copy">
-<p>Puma has quietly become one of the most underrated brands in running, consistently producing shoes that punch above their price point. With the Deviate Pure Nitro, Puma isn't trying to build the next super trainer or race-day weapon. Instead, they've created a versatile daily trainer that blends comfort, stability, and just enough responsiveness to keep everyday miles fun.</p>
-<p>Featuring a PEBA-based Nitro midsole and the always dependable PUMAGRIP outsole, the Deviate Pure Nitro is designed to deliver a comfortable, stable ride with enough responsiveness to handle everything from easy miles to uptempo efforts.</p>
-<p>So, does the Deviate Pure Nitro deserve a spot in your daily rotation? Let's find out.</p>
-</section>
-<section class="spec-horizontal">
-<div class="spec-item"><span>Price</span><strong>$150</strong></div>
-<div class="spec-item"><span>Stack</span><strong>37 / 29 mm</strong></div>
-<div class="spec-item"><span>Drop</span><strong>8 mm</strong></div>
-<div class="spec-item"><span>Weight</span><strong>7.5 oz</strong></div>
-<div class="spec-item"><span>Category</span><strong>Daily Trainer</strong></div>
-</section><section class="miles-tested"><h2>Miles Tested</h2><div class="miles-tested-grid"><div class="miles-tested-item"><span>Blake</span><strong>32 miles</strong></div><div class="miles-tested-item"><span>Eric</span><strong>27 miles</strong></div><div class="miles-tested-item"><span>Emily</span><strong>35 miles</strong></div></div></section>
-<div class="photo-block"><img alt="Puma Deviate Pure Nitro" src="images/asset-924106f12f164d85.png"/></div>
-<section class="review-section"><h2>The Good</h2><div class="reviewer"><h3>Blake</h3><p>The Deviate Pure Nitro is lightweight, comfortable, and feels more stable than I expected for a shoe built around PEBA-based Nitro foam. At easy paces, it feels smooth and controlled, but once you start picking up the pace, the foam really comes alive with a responsive, energetic ride.</p><p>The versatility impressed me the most. It naturally encourages faster running while still feeling comfortable enough for everyday miles. The ride strikes a great balance between cushioning, stability, and responsiveness, making it a shoe that can handle a wide variety of runs.</p><p>The PUMAGRIP outsole continues to be one of the best on the market, delivering excellent traction and durability in a variety of conditions.</p></div><div class="reviewer"><h3>Eric</h3><p>The midsole was the biggest surprise for me. While I was initially disappointed to see Puma move to a PEBA-based foam instead of the ATPU foam they've used in previous models, the ride quickly won me over.</p><p>The Deviate Pure Nitro delivers a comfortable, stable ride with a slightly firmer feel that strikes a nice balance between cushioning and performance. It isn't an overly soft shoe, but it has enough pop to make everyday miles feel smooth and enjoyable.</p><p>Then there's the outsole. PUMAGRIP continues to be one of the best outsoles on the market. Whether you're running on dry roads, wet pavement, or light gravel, traction simply isn't something you'll have to think about.</p></div><div class="reviewer"><h3>Emily</h3><p>The Puma Deviate Pure Nitro fills the gap in Puma's lineup when it comes to lightweight daily trainers. Not only does this shoe look amazing, but it provides runners with a versatile option. The Pure can go from slow, to fast, back to slow again without skipping a beat.</p><p>The Nitro foam in this shoe is on the firmer side, but the ride doesn't feel harsh. I actually felt like it was making me go faster on days when I wanted to take it easy.</p><p>I had no issues with the upper, and as for the outsole...yeah, PUMAGRIP is some of the best material money can buy.</p></div></section>
-<section class="review-section"><h2>The Bad</h2><div class="reviewer"><h3>Blake</h3><p>I only have a few minor complaints.</p><p>The first is the tongue. It slid down slightly during my runs. It never caused discomfort or lace bite, but if you're someone who is sensitive to tongue movement, it's something to be aware of.</p><p>My other two complaints involve the midsole. Like a few other Puma Nitro shoes I've tested, this one required a short break-in period. After a few runs, the foam softened up and felt much better at easier paces. Out of the box, though, it definitely preferred running faster.</p><p>Lastly, I found myself wishing for a slightly more aggressive rocker. It's not a flaw, but I think adding a little more rocker geometry would make the shoe transition even quicker and improve its performance during speed workouts.</p></div><div class="reviewer"><h3>Eric</h3><p>The only real knock I have is the upper.</p><p>Calling it "bad" almost feels unfair because it fits well and provides a secure lockdown, but it runs warmer than I expected. Since this shoe is built as a daily trainer, I think Puma could have improved the experience with a more breathable upper.</p><p>It's not a deal breaker, but on hot summer runs, it's definitely something I noticed.</p></div><div class="reviewer"><h3>Emily</h3><p>Despite the fact that I liked the midsole, I do have some bones to pick with it.</p><p>For starters, I wish the foam was just a touch softer. A little goes a long way. Maybe it's a matter of changing this from an 8 mm drop to a 6 mm drop just to get a little more under the forefoot.</p><p>This shoe could also really use a rocker. When comparing the Pure to other shoes in its category, like the adidas EVO SL, it's lacking a bit of a roll through the toe that rocker technology could fix.</p></div></section>
-<section class="review-section"><h2>The Verdict</h2><div class="reviewer"><h3>Blake</h3><p>The Puma Deviate Pure Nitro is a lightweight, versatile trainer that doesn't sacrifice comfort or stability during easy runs, yet still feels fast and energetic when it's time to pick up the pace.</p><p>If you're looking for one shoe that can handle a little bit of everything, this is a strong option. It's durable, versatile, and capable of replacing multiple shoes in your rotation—especially if you're working within a budget.</p></div><div class="reviewer"><h3>Eric</h3><p>Overall, I think the Puma Deviate Pure Nitro is a really good daily trainer.</p><p>If you're expecting a super trainer, you'll probably come away disappointed because that's simply not what this shoe is trying to be. Instead, it focuses on being a stable, versatile option for logging everyday miles.</p><p>If you like a slightly firmer ride with dependable traction and enough responsiveness to keep things interesting, the Deviate Pure Nitro is absolutely worth a look.</p></div><div class="reviewer"><h3>Emily</h3><p>Overall, I think the Puma Deviate Pure Nitro is a really solid shoe.</p><p>We're starting to see a new category of shoes emerge that blends aesthetics, functionality, and "affordability"—at $150, it's one of the more sensible options these days—all into one. The Pure and the EVO SL are at the forefront of that category.</p><p>If you're looking for something that looks fresh on foot and can also bust out a solid 10-miler with some pickups, this is your shoe.</p></div></section>
-<section class="review-section"><h2>Worth The Price?</h2><div class="reviewer"><h3>Blake</h3><p>Absolutely.</p><p>At $150, I think the Deviate Pure Nitro offers excellent value. You're getting a lightweight trainer with a premium PEBA-based midsole, outstanding traction, and the versatility to handle everything from daily miles to uptempo efforts without paying premium super trainer prices.</p><p>If you're looking for one shoe that can do almost everything, the Deviate Pure Nitro is one of the better values currently on the market.</p></div><div class="reviewer"><h3>Eric</h3><p>For the most part, yes.</p><p>There are certainly shoes on the market with more premium foams, which gives me a little pause, but within its category, I think Puma priced this shoe fairly.</p><p>At the end of the day, if you want a dependable daily trainer that balances comfort, stability, and versatility, the Deviate Pure Nitro offers solid value for the money.</p></div><div class="reviewer"><h3>Emily</h3><p>$150 is a darn good price for a running shoe these days.</p><p>Yes. It's definitely worth the money for the versatility it provides.</p></div></section>
-<section class="buy-skip">
-<article>
-<h2>Buy If</h2>
-<p>You want one versatile shoe for easy runs, everyday training, and uptempo efforts, with a stable ride and excellent traction.</p>
-</article>
-<article>
-<h2>Skip If</h2>
-<p>You prefer a very soft max-cushioned ride, need a highly breathable upper, or want a true super trainer with aggressive rocker geometry.</p>
-</article>
-</section>
-<section class="review-disclosure"><h3>Disclosure</h3><p><strong>Disclosure: </strong>This product was provided by the manufacturer for review. As always, they had no input into our testing, opinions, or final verdict.</p></section><section class="runner-profiles">
-<div class="profile-graphic">
-<img alt="Blake runner profile" src="images/asset-10125957c16f6865.png"/>
-<a aria-label="Blake YouTube" class="profile-link youtube" href="https://www.youtube.com/@tfxcShoes" rel="noopener noreferrer" target="_blank"></a>
-<a aria-label="Blake Instagram" class="profile-link instagram" href="https://www.instagram.com/tfxcshoes/" rel="noopener noreferrer" target="_blank"></a>
-</div>
-<div class="profile-graphic">
+<main class="paramount-main">
+<section class="paramount-intro"><p>The plated trainer category continues to grow, but not every shoe is trying to accomplish the same thing. With the retirement of the SC Trainer, New Balance has introduced the SC Rebel—a lighter, more stripped-down option designed for runners who want to push the pace without carrying the bulk of a traditional super trainer. Featuring a full-length Energy Arc plate and Infinion Foam midsole, the SC Rebel promises speed first. After logging plenty of miles in the shoe, here's how it performed.</p></section><div class="paramount-photo"><img alt="New Balance SC Rebel side profile on pavement" src="images/new-balance-sc-rebel-detail-1.png"/></div>
+<section class="paramount-specs"><div class="paramount-spec"><span>Price</span><strong>$190</strong></div><div class="paramount-spec"><span>Stack</span><strong>40 / 36 mm</strong></div><div class="paramount-spec"><span>Drop</span><strong>4 mm</strong></div><div class="paramount-spec"><span>Weight</span><strong>7.66 oz</strong></div><div class="paramount-spec"><span>Category</span><strong>Plated Daily Trainer</strong></div></section><section class="miles-tested"><h2>Miles Tested</h2><div class="miles-tested-grid"><div class="miles-tested-item"><span>Cody</span><strong>27 miles</strong></div><div class="miles-tested-item"><span>Eric</span><strong>25 miles</strong></div></div></section>
+<section class="paramount-section"><h2>The Good</h2><div class="paramount-reviewer"><h3>Cody</h3><p>While we say goodbye to the SC Trainer, we now get to say hello to a lighter, faster, and more aggressive option. To me, the SC Rebel is built for speed days. Whether I was tackling interval workouts or cruising through long runs with marathon-paced efforts, this shoe constantly encouraged me to stay on my toes and keep the pace high. The updated Infinion Foam midsole delivers a responsive ride with plenty of pop, making every stride feel energetic.</p><p>The lockdown is another highlight. Heel counters on plated trainers can be hit or miss, but New Balance absolutely nailed this one. My foot stayed securely locked in throughout every run without creating pressure points or heel slip. The upper is lightweight, breathable, and comfortable, while the tongue stays in place and helps create an excellent overall fit.</p><p>And then there's the look. I probably could have started with this because everyone knows I'm a sucker for a clean white running shoe. The all-white colorway is incredibly sharp and easily one of my favorite-looking trainers on the market right now. It simply looks fast.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>The versatility of this shoe as a workout shoe is up there with the best of them. So many shoes are great tempo options but maybe lack in the top end speed space. The SC Rebel feels great at all workout paces and is a very capable training option</p><p>The upper balances a streamlined fit with comfort in all the best ways. It manages to stay away from being overbuilt and maintains structure while staying breathable.</p><p>The new outsole seems like it’s going to be a winner from both a traction and durability standpoint as well.</p></div></section><div class="paramount-photo"><img alt="New Balance SC Rebel side profile beside grass" src="images/new-balance-sc-rebel-detail-2.png"/></div>
+<section class="paramount-section"><h2>The Bad</h2><div class="paramount-reviewer"><h3>Cody</h3><p>My biggest complaint is the ride firmness. The updated foam is certainly responsive, but after runs that stretched into double-digit mileage, my legs felt noticeably more beat up than I expected. The SC Rebel isn't harsh by any means, but I do wish New Balance had added just a little more softness to balance out its aggressive personality.</p><p>The listed 4 mm drop also surprised me. On paper it sounds fairly moderate, but on the run it feels much more aggressive. The geometry naturally pushes you onto your forefoot, which works well when running fast but may not appeal to everyone.</p><p>Speaking of which, I wouldn't recommend this shoe for heel strikers. During a few easier efforts where I landed farther back on my foot, the platform felt unstable and I even had a couple moments where it felt like my ankle wanted to roll. This is definitely a shoe that rewards efficient, forward-leaning mechanics.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>The exposed plate sits very close to the ground and where not covered by rubber it does get pretty scuffed up. If this stays aesthetic it’s not a big deal but it may become a concern over time</p><p>While the shoe feels great for workout paces it feels a little firm and clunky at warm up or more relaxed paces. The foam is clearly meant for speed and isn’t the most comfortable if it’s not being used as intended</p></div></section>
+<section class="paramount-section"><h2>The Verdict</h2><div class="paramount-reviewer"><h3>Cody</h3><p>I like the SC Rebel, but I'm not sure I love it.</p><p>New Balance clearly built a shoe that wants to go fast, and it succeeds at exactly that. If you enjoy an aggressive rocker, responsive foam, and a plated shoe that constantly encourages faster paces, there's a lot to like here. For speed workouts, tempo runs, and marathon-pace efforts, the SC Rebel is a very fun option.</p><p>For me personally, I would have preferred a slightly softer midsole and a little more stability. Those two changes would have made it a much more versatile shoe.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>Overall I really like this shoe. Off the top of my head the only other options with the same level of workout versatility are maybe the Xiaonian and Megablast. It’s not going to be as versatile for daily use as some options as the Evo SL or Azura but I think it checks the boxes for a workout potential racing option.</p></div></section>
+<section class="paramount-section"><h2>Worth The Price?</h2><div class="paramount-reviewer"><h3>Cody</h3><p>At $190, the SC Rebel enters a very competitive category. Most plated trainers sit closer to the $150-$170 range, while true super trainers justify higher prices with more cushioning and greater versatility.</p><p>I don't personally view the SC Rebel as a super trainer. It's a plated performance trainer with a very specific purpose: running fast. While it performs well in that role, I think the price feels a bit ambitious given what else is available at or below this price point.</p><p>If your primary goal is crushing speed workouts and faster long runs, the SC Rebel delivers. But if you're looking for one plated shoe to do everything, there are more versatile options available for less money.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>I liked but didn’t love the SC Trainer v3 so to me the SC Rebel is a much better overall supertrainer. I think those with wide feet or those who prioritize comfort over speed then it may be worth snagging another pair of v3s. All in all $190 is a much better price than many other supertrainers on here market today</p></div></section>
+<section class="paramount-callouts"><div class="two-col"><div class="callout"><h3>Buy If</h3><ul><li>You want a plated trainer built primarily for speed workouts and tempo runs.</li><li>You're a midfoot or forefoot striker who enjoys an aggressive ride.</li><li>You want a lightweight alternative to bulkier super trainers.</li><li>You enjoy a responsive, energetic toe-off.</li></ul></div><div class="callout"><h3>Skip If</h3><ul><li>You're looking for a soft, cushioned daily trainer.</li><li>You're primarily a heel striker.</li><li>Most of your running is at easy or recovery pace.</li><li>You want one plated shoe to do absolutely everything.</li></ul></div></div></section><section class="review-disclosure"><h3>Disclosure</h3><p><strong>Disclosure: </strong>This product was provided by the manufacturer for review. As always, they had no input into our testing, opinions, or final verdict.</p></section><section class="permanent-profiles"><div class="profile-graphic">
+<img alt="Cody runner profile" src="images/asset-1aedc199f244fb6c.png"/>
+<a aria-label="Cody YouTube" class="profile-link youtube" href="https://www.youtube.com/@The_Shoe_In_With_Cody" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Cody Instagram" class="profile-link instagram" href="https://www.instagram.com/the_shoe_in_with_cody/" rel="noopener noreferrer" target="_blank"></a>
+</div><div class="profile-graphic">
 <img alt="Eric runner profile" src="images/asset-ed099a8cc8a077af.png"/>
 <a aria-label="Eric YouTube" class="profile-link youtube" href="https://www.youtube.com/@raddadbodtv" rel="noopener noreferrer" target="_blank"></a>
 <a aria-label="Eric Instagram" class="profile-link instagram" href="https://www.instagram.com/raddadbodtv/" rel="noopener noreferrer" target="_blank"></a>
-</div>
-<div class="profile-graphic"><img alt="Emily runner profile" src="images/emily-runner-profile.png"/><a aria-label="Emily YouTube" class="profile-link youtube" href="https://www.youtube.com/@RunLikeHeller" rel="noopener noreferrer" target="_blank"></a><a aria-label="Emily Instagram" class="profile-link instagram" href="https://www.instagram.com/runlikeheller" rel="noopener noreferrer" target="_blank"></a></div></section>
+</div></section>
 <a class="back-link" href="9to5_shoes_page1.html">← Back to all shoe reviews</a>
 </main>
 <footer class="footer">

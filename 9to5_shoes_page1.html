@@ -522,7 +522,7 @@ img { max-width:100%; }
 <button data-filter="saucony" type="button">Saucony</button>
 <button data-filter="salomon" type="button">Salomon</button>
 <button data-filter="hoka" type="button">HOKA</button>
-<button data-filter="puma" type="button">Puma</button></div>
+<button data-filter="puma" type="button">Puma</button><button data-filter="new balance" type="button">New Balance</button></div>
 </div>
 <div class="filter-group">
 <div class="filter-label">Use</div>
@@ -539,9 +539,18 @@ img { max-width:100%; }
 <section>
 <div class="list-head">
 <h2 class="display">Recent Shoe Reviews</h2>
-<div class="post-count">4 posts</div>
+<div class="post-count">5 posts</div>
 </div>
-<div class="review-list"><article class="review-row" data-filter="road asics daily trainer long run cody eric emily blake">
+<div class="review-list"><article class="review-row" data-filter="road new balance plated daily trainer speed workout cody eric">
+<a class="review-thumb" href="9to5_shoes_new_balance_sc_rebel.html"><img alt="New Balance SC Rebel" src="images/new-balance-sc-rebel-hero.png"/></a>
+<div class="review-content">
+<div class="review-meta">Road Running Shoes • Published July 20, 2026</div>
+<h3><a href="9to5_shoes_new_balance_sc_rebel.html">New Balance SC Rebel Review</a></h3>
+<p>A lightweight plated trainer built for speed workouts, tempo runs, and faster long-run efforts.</p>
+<div class="tag-row"><span>Road</span><span>Plated Trainer</span><span>New Balance</span></div>
+<a class="read-link" href="9to5_shoes_new_balance_sc_rebel.html">Read Review</a>
+</div>
+</article><article class="review-row" data-filter="road asics daily trainer long run cody eric emily blake">
 <a class="review-thumb" href="9to5_shoes_asics_novablast6.html"><img alt="ASICS Novablast 6" src="images/asics-novablast-6-hero.png"/></a>
 <div class="review-content">
 <div class="review-meta">Road Running Shoes • Published July 19, 2026</div>
@@ -597,6 +606,7 @@ img { max-width:100%; }
 </footer>
 <script>
 const searchIndex = [
+  { title: "New Balance SC Rebel Review", type: "Shoe Review", tags: "new balance sc rebel plated daily trainer energy arc infinion foam workout speed", url: "9to5_shoes_new_balance_sc_rebel.html" },
   { title: "ASICS Novablast 6 Review", type: "Shoe Review", tags: "asics novablast 6 daily trainer ff turbo 2 road versatile", url: "9to5_shoes_asics_novablast6.html" },
   { title: "Dera B01 Trail Running Belt Review", type: "Gear Review", tags: "dera b01 trail running belt hydrapak ultraflask dial fit no bounce", url: "9to5_gear_dera_b01.html" },
   { title: "Suunto Spark Review", type: "Gear Review", tags: "suunto spark open ear wireless headphones bluetooth running audio", url: "9to5_gear_suunto_spark.html" },
@@ -802,7 +812,6 @@ setupShoeFilters();
   renderPage(1);
 })();
 </script>
-
 <script>
 (function(){
   const params = new URLSearchParams(window.location.search);

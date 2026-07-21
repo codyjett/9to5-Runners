@@ -1,0 +1,10 @@
+SC Rebel Full Site Update Audit
+===============================
+
+New review page: YES
+Homepage hero: New Balance SC Rebel Review
+Shoes archive newest review: New Balance SC Rebel Review
+Shop by Brand removed: YES
+Homepage and index synchronized: YES
+Broken local links: 0
+Missing local assets: 0

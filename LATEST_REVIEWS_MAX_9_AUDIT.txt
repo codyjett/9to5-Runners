@@ -1,0 +1,10 @@
+Latest Reviews Max-9 Audit
+==========================
+
+Maximum configured: 9
+Current eligible reviews displayed: 7
+Hero review excluded: YES
+Current cards: ['ASICS Novablast 6 Review', 'Dera B01 Trail Running Belt Review', 'Suunto Spark Review', 'Janji Revy Pack Review', 'Puma Deviate Pure Nitro', 'Saucony Paramount Max', 'ASICS Gel-Nimbus 28']
+Homepage and index identical: YES
+Broken local links: 0
+Missing local assets: 0
