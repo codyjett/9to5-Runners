@@ -1,0 +1,19 @@
+{
+  "name": "9to5-runners",
+  "version": "1.0.0",
+  "description": "9to5 Runners - Honest Running Shoe & Gear Reviews",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": [
+    "running",
+    "reviews",
+    "shoes",
+    "gear"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
