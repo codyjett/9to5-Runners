@@ -1,0 +1,10 @@
+Vercel Web Analytics Implementation Audit
+========================================
+
+HTML pages updated: 13
+Pages with invalid analytics count: {}
+package.json present: True
+package-lock.json present: True
+.gitignore present: True
+Broken local links: 0
+Missing local assets: 97

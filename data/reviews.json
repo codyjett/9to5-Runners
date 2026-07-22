@@ -1,38 +1,134 @@
 [
   {
-    "id": "2026-004",
-    "internalOnly": true,
-    "title": "Puma Deviate Pure Nitro",
+    "title": "New Balance SC Rebel Review",
+    "url": "9to5_shoes_new_balance_sc_rebel.html",
     "type": "Shoe Review",
-    "published": "2026-07-13",
-    "page": "9to5_shoes_puma_deviatepurenitro.html",
-    "featured": true
+    "category": "Plated Daily Trainer",
+    "brand": "New Balance",
+    "published": "2026-07-20",
+    "image": "images/new-balance-sc-rebel-hero.png",
+    "hero": true,
+    "tags": [
+      "road",
+      "new balance",
+      "plated trainer",
+      "speed",
+      "workout",
+      "cody",
+      "eric"
+    ]
   },
   {
-    "id": "2026-003",
-    "internalOnly": true,
-    "title": "Saucony Paramount Max",
+    "title": "ASICS Novablast 6 Review",
+    "url": "9to5_shoes_asics_novablast6.html",
     "type": "Shoe Review",
-    "published": "2026-07-12",
-    "page": "9to5_shoes_saucony_paramountmax.html",
-    "featured": false
+    "category": "Daily Trainer",
+    "brand": "ASICS",
+    "published": "2026-07-19",
+    "image": "images/asics-novablast-6-hero.png",
+    "tags": [
+      "road",
+      "asics",
+      "daily trainer",
+      "cody",
+      "eric",
+      "emily",
+      "blake"
+    ]
   },
   {
-    "id": "2026-001",
-    "internalOnly": true,
-    "title": "ASICS Gel Nimbus 28",
-    "type": "Shoe Review",
-    "published": "2026-07-09",
-    "page": "9to5_shoes_asics_nimbus28.html",
-    "featured": false
-  },
-  {
-    "id": "2026-002",
-    "internalOnly": true,
-    "title": "Janji Revy Pack",
+    "title": "Dera B01 Trail Running Belt Review",
+    "url": "9to5_gear_dera_b01.html",
     "type": "Gear Review",
+    "category": "Trail Running Belt",
+    "brand": "Dera",
+    "published": "2026-07-16",
+    "image": "images/dera-b01-hero.png",
+    "tags": [
+      "trail",
+      "dera",
+      "running belt",
+      "ryan"
+    ]
+  },
+  {
+    "title": "Suunto Spark Review",
+    "url": "9to5_gear_suunto_spark.html",
+    "type": "Gear Review",
+    "category": "Open-Ear Headphones",
+    "brand": "Suunto",
+    "published": "2026-07-15",
+    "image": "images/suunto-spark-hero.jpg",
+    "tags": [
+      "road",
+      "everyday",
+      "suunto",
+      "headphones",
+      "cody"
+    ]
+  },
+  {
+    "title": "Janji Revy Pack Review",
+    "url": "9to5_gear_janji_revy_pack.html",
+    "type": "Gear Review",
+    "category": "Backpack",
+    "brand": "Janji",
     "published": "2026-07-09",
-    "page": "9to5_gear_janji_revy_pack.html",
-    "featured": false
+    "image": "images/asset-9c81e0327d710b5a.jpg",
+    "tags": [
+      "trail",
+      "travel",
+      "everyday",
+      "janji",
+      "backpack",
+      "cody"
+    ]
+  },
+  {
+    "title": "Puma Deviate Pure Nitro",
+    "url": "9to5_shoes_puma_deviatepurenitro.html",
+    "type": "Shoe Review",
+    "category": "Daily Trainer",
+    "brand": "Puma",
+    "published": "2026-07-08",
+    "image": "images/asset-924106f12f164d85.png",
+    "tags": [
+      "road",
+      "puma",
+      "daily trainer",
+      "blake",
+      "emily"
+    ]
+  },
+  {
+    "title": "Saucony Paramount Max",
+    "url": "9to5_shoes_saucony_paramountmax.html",
+    "type": "Shoe Review",
+    "category": "Max Cushion",
+    "brand": "Saucony",
+    "published": "2026-07-07",
+    "image": "images/asset-80d6b093ece4f430.png",
+    "tags": [
+      "road",
+      "saucony",
+      "max cushion",
+      "cody",
+      "emily"
+    ]
+  },
+  {
+    "title": "ASICS Gel-Nimbus 28",
+    "url": "9to5_shoes_asics_nimbus28.html",
+    "type": "Shoe Review",
+    "category": "Daily Trainer",
+    "brand": "ASICS",
+    "published": "2026-07-06",
+    "image": "images/asset-67c7d10077f18645.jpg",
+    "tags": [
+      "road",
+      "asics",
+      "daily trainer",
+      "cody"
+    ]
   }
 ]

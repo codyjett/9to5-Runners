@@ -1,0 +1,13 @@
+{
+  "name": "9to5-runners",
+  "version": "2.0.0",
+  "private": true,
+  "description": "9to5 Runners static HTML review website",
+  "scripts": {
+    "build": "node scripts/validate-site.js",
+    "check": "node scripts/validate-site.js"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
