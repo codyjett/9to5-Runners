@@ -1,0 +1,22 @@
+Vercel Static Build Fix Audit
+=============================
+
+npm run build exit code: 0
+npm run build output:
+> 9to5-runners@2.0.0 build
+> echo "Static HTML site — no build step required"
+
+Static HTML site — no build step required
+
+
+npm run check exit code: 0
+npm run check output:
+> 9to5-runners@2.0.0 check
+> node scripts/validate-site.js
+
+Validated 13 HTML pages and 8 reviews.
+
+
+vercel.json present: True
+Build command disabled for Vercel: YES
+Output directory: .

@@ -4,7 +4,7 @@
   "private": true,
   "description": "9to5 Runners static HTML review website",
   "scripts": {
-    "build": "node scripts/validate-site.js",
+    "build": "echo \"Static HTML site \u2014 no build step required\"",
     "check": "node scripts/validate-site.js"
   },
   "dependencies": {
