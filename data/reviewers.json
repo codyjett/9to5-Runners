@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Cody",
+    "url": "reviewer-cody.html",
+    "image": "images/cody-reviewer.jpg"
+  },
+  {
+    "name": "Emily",
+    "url": "reviewer-emily.html",
+    "image": "images/emily-reviewer.jpg"
+  },
+  {
+    "name": "Eric",
+    "url": "reviewer-eric.html",
+    "image": "images/eric-reviewer.jpg"
+  },
+  {
+    "name": "Blake",
+    "url": "reviewer-blake.html",
+    "image": "images/blake-reviewer.jpg"
+  },
+  {
+    "name": "Ryan",
+    "url": "reviewer-ryan.html",
+    "image": "images/ryan-reviewer.jpg"
+  }
+]

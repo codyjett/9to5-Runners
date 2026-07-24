@@ -1,0 +1,23 @@
+9to5 Runners Reviewer Bio Update
+
+Upload the extracted files into the matching repository locations.
+
+Root:
+- 9to5_about.html
+- reviewer-cody.html
+- reviewer-emily.html
+- reviewer-eric.html
+- reviewer-blake.html
+- reviewer-ryan.html
+
+/images:
+- cody-reviewer.jpg
+- emily-reviewer.jpg
+- eric-reviewer.jpg
+- blake-reviewer.jpg
+- ryan-reviewer.jpg
+
+/data:
+- reviewers.json
+
+Do not upload this ZIP file into the GitHub repository. Extract it first.

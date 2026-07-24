@@ -1,0 +1,10 @@
+Final Reviewer Bio Update Audit
+================================
+
+Reviewer pages: 5
+About page updated: YES
+Broken reviewer links: 0
+Missing reviewer images: 0
+Analytics issues: {}
+Total extracted size: 0.77 MB
+Largest included file: images/emily-reviewer.jpg (213.9 KB)
