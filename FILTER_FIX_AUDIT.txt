@@ -1,0 +1,12 @@
+HOKA Clifton Pro Shoe Filters Fix
+================================
+
+Clifton Pro data-filter:
+road hoka daily trainer max cushion long run cody blake emily eric
+
+Applicable filters:
+{'road': True, 'hoka': True, 'daily': True, 'max cushion': True, 'long run': True}
+
+Filter JavaScript present: True
+Clear All button present: True
+Post count present: True

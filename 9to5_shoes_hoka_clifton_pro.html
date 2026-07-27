@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HOKA Clifton Pro Review | 9to5 Runners</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&amp;family=Oswald:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --dark:#232323;
+  --blue:#2878d9;
+  --black:#050505;
+  --light:#f4f4f4;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:#fff;
+  color:#111;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:700;
+}
+a { color:inherit; }
+.display {
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.4px;
+  line-height:.9;
+}
+.site-header {
+  height:98px;
+  background:var(--dark);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:sticky;
+  top:0;
+  z-index:50;
+  box-shadow:0 8px 22px rgba(0,0,0,.2);
+}
+.nav {
+  position:absolute;
+  left:38px;
+  top:36px;
+  display:flex;
+  gap:55px;
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:18px;
+  text-transform:uppercase;
+}
+.nav a {
+  color:#fff;
+  text-decoration:underline;
+  text-decoration-thickness:2px;
+  text-underline-offset:3px;
+}
+.site-logo {
+  width:150px;
+  height:84px;
+  object-fit:contain;
+  display:block;
+}
+.search-wrap {
+  position:absolute;
+  right:34px;
+  top:24px;
+  width:260px;
+  z-index:60;
+}
+.search-input {
+  width:100%;
+  height:42px;
+  border:2px solid rgba(255,255,255,.22);
+  border-radius:999px;
+  background:#111;
+  color:#fff;
+  padding:0 18px;
+  font-family:"Oswald", Arial, sans-serif;
+  font-size:16px;
+  outline:none;
+}
+.search-input::placeholder { color:rgba(255,255,255,.72); }
+.search-input:focus { border-color:var(--blue); }
+.search-results {
+  display:none;
+  position:absolute;
+  top:50px;
+  right:0;
+  width:330px;
+  max-height:360px;
+  overflow:auto;
+  background:#101010;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:16px;
+  box-shadow:0 15px 35px rgba(0,0,0,.35);
+  padding:10px;
+}
+.search-results.active { display:block; }
+.search-result {
+  display:block;
+  padding:12px 13px;
+  border-radius:10px;
+  color:#fff;
+  text-decoration:none;
+}
+.search-result:hover { background:var(--blue); }
+.search-result-title {
+  display:block;
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:15px;
+  line-height:1;
+  text-transform:uppercase;
+}
+.search-result-meta {
+  display:block;
+  margin-top:5px;
+  color:rgba(255,255,255,.72);
+  font-size:13px;
+}
+
+.hero {
+  min-height:640px;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.84) 0%, rgba(0,0,0,.35) 48%, rgba(0,0,0,.12) 100%),
+    url("images/asset-67c7d10077f18645.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:flex-end;
+}
+.hero-inner {
+  width:100%;
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 34px 58px;
+  color:#fff;
+}
+.kicker {
+  font-family:"Oswald", Arial, sans-serif;
+  font-size:18px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  margin-bottom:14px;
+}
+.hero h1 {
+  font-size:clamp(54px, 8vw, 104px);
+  max-width:820px;
+  text-shadow:0 6px 12px rgba(0,0,0,.6);
+}
+.hero-sub {
+  max-width:640px;
+  font-size:22px;
+  line-height:1.32;
+  margin-top:20px;
+}
+.btn {
+  display:inline-block;
+  background:var(--blue);
+  color:#fff;
+  border-radius:999px;
+  padding:12px 22px 13px;
+  text-decoration:none;
+  font-family:"Oswald", Arial, sans-serif;
+  font-size:17px;
+  line-height:1;
+  margin-top:22px;
+}
+
+.review-shell {
+  max-width:1180px;
+  margin:0 auto;
+  padding:54px 34px 80px;
+}
+.intro-grid {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:42px;
+  align-items:start;
+}
+.intro-copy h2,
+.section h2,
+.spec-title,
+.profile-title {
+  font-size:48px;
+  margin-bottom:20px;
+}
+.intro-copy p,
+.section p {
+  font-size:18px;
+  line-height:1.55;
+  color:#222;
+  margin-bottom:18px;
+}
+.spec-card {
+  background:#111;
+  color:#fff;
+  border-radius:24px;
+  padding:24px;
+  position:sticky;
+  top:122px;
+}
+.spec-card h3 {
+  font-size:32px;
+  margin-bottom:18px;
+}
+.spec-list {
+  display:grid;
+  gap:13px;
+}
+.spec-row {
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid rgba(255,255,255,.16);
+  padding-bottom:10px;
+  gap:20px;
+}
+.spec-row span:first-child { color:#bbb; }
+.spec-row span:last-child {
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  text-transform:uppercase;
+}
+.runner-wrap {
+  text-align:center;
+  margin-top:20px;
+}
+.runner-wrap img {
+  width:100%;
+  max-width:260px;
+  object-fit:contain;
+}
+
+.takeaway {
+  margin:42px 0;
+  background:#f0f5ff;
+  border-left:8px solid var(--blue);
+  border-radius:20px;
+  padding:24px;
+}
+.takeaway h3 {
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:34px;
+  line-height:.95;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.takeaway p {
+  font-size:18px;
+  line-height:1.45;
+}
+
+.section {
+  margin:62px 0;
+}
+.section-label {
+  color:var(--blue);
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  text-transform:uppercase;
+  font-size:16px;
+  margin-bottom:10px;
+}
+.photo-block{
+  max-width:700px;
+  margin:34px auto 0;
+}
+.photo-block img{
+  width:100%;
+  height:320px;
+  object-fit:contain;
+  object-position:center;
+  background:#fff;
+  border-radius:18px;
+  display:block;
+}
+
+
+
+
+
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin-top:24px;
+}
+.gallery img {
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  border-radius:18px;
+  display:block;
+}
+.profile-card {
+  margin-top:70px;
+  background:#111;
+  color:#fff;
+  border-radius:28px;
+  padding:30px;
+  display:grid;
+  grid-template-columns:140px 1fr;
+  gap:24px;
+  align-items:center;
+}
+.profile-card img {
+  width:140px;
+  height:140px;
+  object-fit:cover;
+  border-radius:50%;
+}
+.profile-name {
+  color:var(--blue);
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:54px;
+  line-height:.9;
+  text-transform:uppercase;
+}
+.profile-card p {
+  margin-top:10px;
+  line-height:1.45;
+  color:#e8e8e8;
+}
+.back-link {
+  display:inline-block;
+  margin-top:34px;
+  color:var(--blue);
+  font-family:"Oswald", Arial, sans-serif;
+  font-size:18px;
+}
+
+.footer {
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:28px 20px 34px;
+}
+.footer-title {
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:34px;
+  line-height:1;
+  margin-bottom:14px;
+}
+.instagram {
+  display:inline-flex;
+  color:#fff;
+  text-decoration:none;
+}
+.instagram svg {
+  width:52px;
+  height:52px;
+  display:block;
+}
+
+@media(max-width:900px) {
+  .site-header {
+    flex-wrap:wrap;
+    height:auto !important;
+    min-height:118px;
+    padding-bottom:10px;
+  }
+  .site-logo { width:122px; height:70px; }
+  .nav { left:14px; top:32px; gap:20px; font-size:12px; }
+  .search-wrap {
+    position:static;
+    width:calc(100% - 28px);
+    margin:8px auto 10px;
+    order:3;
+  }
+  .search-results { left:0; right:auto; width:100%; }
+  .hero { min-height:500px; }
+  .review-shell,
+  .hero-inner { padding-left:20px; padding-right:20px; }
+  .intro-grid,
+  .two-col,
+  .profile-card {
+    grid-template-columns:1fr;
+  }
+  .spec-card { position:static; }
+  .gallery { grid-template-columns:1fr; }
+  .intro-copy h2,
+  .section h2,
+  .spec-title,
+  .profile-title { font-size:38px; }
+}
+
+
+.spec-horizontal{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+background:#fff;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+border:1px solid #e8e8e8;
+margin:34px 0 10px;
+overflow:hidden;
+align-items:stretch;
+}
+.spec-item{
+padding:22px 12px;
+text-align:center;
+border-right:1px solid #ececec;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+min-height:112px;
+}
+.spec-item:last-child{border-right:none;}
+.spec-item span{
+display:block;
+font-family:"Oswald",Arial,sans-serif;
+font-size:15px;
+text-transform:uppercase;
+letter-spacing:.8px;
+color:#666;
+margin-bottom:12px;
+line-height:1;
+}
+.spec-item strong{
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:"Bowlby One SC",Impact,sans-serif;
+font-size:24px;
+line-height:1;
+min-height:50px;
+text-align:center;
+}
+
+@media(max-width:900px){
+
+.spec-horizontal{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+background:#fff;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+border:1px solid #e8e8e8;
+margin:34px 0 10px;
+overflow:hidden;
+align-items:stretch;
+}
+.spec-item{
+padding:22px 12px;
+text-align:center;
+border-right:1px solid #ececec;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+min-height:112px;
+}
+.spec-item:last-child{border-right:none;}
+.spec-item span{
+display:block;
+font-family:"Oswald",Arial,sans-serif;
+font-size:15px;
+text-transform:uppercase;
+letter-spacing:.8px;
+color:#666;
+margin-bottom:12px;
+line-height:1;
+}
+.spec-item strong{
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:"Bowlby One SC",Impact,sans-serif;
+font-size:24px;
+line-height:1;
+min-height:50px;
+text-align:center;
+}
+
+@media(max-width:900px){
+  .runner-profile-row{
+  display:grid;
+  grid-template-columns:200px 1fr;
+  gap:40px;
+  align-items:center;
+}
+  .runner-profile-photo{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+}
+  .runner-profile-top {
+    flex-direction:column;
+  }
+  .runner-stats {
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+
+.reviewer-clean-photo {
+    margin: 0 auto;
+  }
+  .reviewer-clean-top {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .reviewer-clean-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.runner-profile-mock {
+  max-width:1100px;
+  margin:80px auto 40px;
+  padding-top:30px;
+  border-top:1px solid #e5e5e5;
+}
+.runner-profile-image-wrap {
+  position:relative;
+  width:100%;
+}
+.runner-profile-image-wrap img {
+  width:100%;
+  display:block;
+  border-radius:8px;
+}
+.profile-hotspot {
+  position:absolute;
+  display:block;
+  z-index:5;
+}
+.youtube-hotspot {
+  left:70.5%;
+  top:39%;
+  width:8%;
+  height:14%;
+}
+.instagram-hotspot {
+  left:80.5%;
+  top:38%;
+  width:6.5%;
+  height:15%;
+}
+.profile-hotspot:hover {
+  outline:3px solid rgba(40,120,217,.45);
+  border-radius:12px;
+}
+@media(max-width:700px) {
+  .runner-profile-mock {
+    margin:56px auto 30px;
+  }
+}
+
+
+/* 9to5 Runners Responsive System */
+html { scroll-behavior:smooth; }
+img { max-width:100%; }
+
+@media (max-width:1100px){
+  .site-header{min-height:118px!important;height:auto!important;flex-wrap:wrap;padding:12px 16px 14px;gap:10px;}
+  .nav{position:static!important;order:1;width:100%;justify-content:center;gap:28px!important;font-size:14px!important;}
+  .site-header > a[aria-label*="Home"]{order:0;}
+  .site-logo{width:124px!important;height:70px!important;}
+  .search-wrap{position:static!important;order:2;width:min(520px,100%)!important;margin:0 auto!important;}
+  .search-results{left:0!important;right:auto!important;width:100%!important;}
+  .hero{min-height:440px!important;}
+  .hero-inner,.wrap,.review-shell,.shoe-wrap,.intro,.page-layout{padding-left:22px!important;padding-right:22px!important;}
+  .featured-grid,.reviews-grid,.videos-grid,.brand-grid,.intro-grid,.page-layout,
+  .filters{position:static!important;}
+}
+
+@media (max-width:768px){
+  body{overflow-x:hidden;}
+  .nav{gap:18px!important;font-size:12px!important;}
+  .hero{min-height:360px!important;background-position:center!important;}
+  .hero h1,.hero-title{font-size:clamp(42px,12vw,64px)!important;}
+  .hero-copy,.hero-sub{font-size:18px!important;}
+  .section-title,.page-title,.intro h2,.intro-copy h2,.section h2{font-size:34px!important;}
+  .review-shell{padding-top:34px!important;}
+  .intro-copy p,.section p{font-size:16px!important;line-height:1.6!important;}
+  .spec-horizontal{grid-template-columns:repeat(2,1fr)!important;margin:28px 0 12px!important;}
+  .spec-item{min-height:92px!important;padding:18px 10px!important;border-bottom:1px solid #ececec;}
+  .spec-item:nth-child(2n){border-right:none!important;}
+  .spec-item:last-child{grid-column:1/-1;border-bottom:none!important;}
+  .spec-item strong{font-size:20px!important;min-height:auto!important;}
+  .spec-item span{font-size:13px!important;}
+  .photo-block{max-width:100%!important;margin-top:24px!important;}
+  .photo-block img{width:100%!important;height:auto!important;max-height:320px!important;object-fit:contain!important;}
+  .review-row{grid-template-columns:1fr!important;gap:18px!important;}
+  .review-thumb img{height:auto!important;max-height:260px!important;object-fit:contain!important;}
+  .review-content h3,.review-name,.card-title{font-size:26px!important;}
+  .filter-pills{gap:8px!important;}
+  .filter-pills button,.clear-filters,.btn,.read-link,.page-btn{min-height:42px;}
+  .runner-profile-mock{margin:48px auto 28px!important;padding-top:22px!important;}
+  .runner-profile-image-wrap img{border-radius:6px!important;}
+  .youtube-hotspot{left:68%!important;top:37%!important;width:10%!important;height:16%!important;}
+  .instagram-hotspot{left:80%!important;top:36%!important;width:9%!important;height:18%!important;}
+  .footer{padding:28px 16px 34px!important;}
+}
+
+@media (max-width:480px){
+  .site-header{min-height:132px!important;}
+  .nav{gap:14px!important;font-size:11px!important;}
+  .site-logo{width:112px!important;height:62px!important;}
+  .hero{min-height:320px!important;}
+  .hero-inner,.wrap,.review-shell,.shoe-wrap,.intro,.page-layout{padding-left:16px!important;padding-right:16px!important;}
+  .spec-horizontal{grid-template-columns:1fr!important;}
+  .spec-item{border-right:none!important;}
+  .runner-profile-mock{display:none;}
+}
+
+
+
+/* Miles Tested */
+.miles-tested{
+  margin:34px 0 42px;
+  padding:24px 26px;
+  background:#fff;
+  border:1px solid #e8e8e8;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+.miles-tested h2{
+  margin:0 0 18px;
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:26px;
+  line-height:1;
+  text-transform:uppercase;
+}
+.miles-tested-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+.miles-tested-item{
+  padding:16px 18px;
+  border:1px solid #ececec;
+  border-radius:14px;
+  background:#fafafa;
+}
+.miles-tested-item span{
+  display:block;
+  margin-bottom:6px;
+  color:#666;
+  font-family:"Oswald",Arial,sans-serif;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+}
+.miles-tested-item strong{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:20px;
+  line-height:1.1;
+}
+@media(max-width:760px){
+  .miles-tested-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+
+/* Miles Tested — single-row desktop layout */
+.miles-tested-grid{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:stretch !important;
+  gap:12px !important;
+  flex-wrap:nowrap !important;
+}
+.miles-tested-item{
+  flex:1 1 0 !important;
+  min-width:0 !important;
+  max-width:none !important;
+}
+@media(max-width:760px){
+  .miles-tested-grid{
+    flex-wrap:wrap !important;
+  }
+  .miles-tested-item{
+    flex:1 1 180px !important;
+  }
+}
+
+/* Shoe review callout boxes — template */
+.two-col {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:26px;
+  margin-top:24px;
+}
+.callout {
+  background:#f3f3f3;
+  border-radius:22px;
+  padding:24px;
+}
+.callout h3 {
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:28px;
+  line-height:1;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.callout ul {
+  padding-left:20px;
+  line-height:1.55;
+  font-size:16px;
+}
+@media(max-width:760px){
+  .two-col{grid-template-columns:1fr!important;}
+}
+
+/* Full-width shoe review callouts */
+.paramount-callouts{
+  margin:56px 0;
+  width:100%;
+}
+.paramount-callouts .two-col{
+  width:100%;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+}
+@media(max-width:760px){
+  .paramount-callouts .two-col{
+    grid-template-columns:1fr!important;
+  }
+}
+
+/* Review disclosure */
+.review-disclosure{
+  width:100%;
+  margin:26px 0 54px;
+  padding:22px 24px;
+  background:#f3f3f3;
+  border-radius:22px;
+}
+.review-disclosure h3{
+  margin:0 0 10px;
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:20px;
+  line-height:1;
+  text-transform:uppercase;
+}
+.review-disclosure p{
+  margin:0;
+  font-size:15px;
+  line-height:1.55;
+}
+</style>
+<style>
+/* Paramount Max review-specific layout */
+.paramount-hero{
+  min-height:560px;
+  background-size:cover !important;
+  background-position:center !important;
+}
+.paramount-main{
+  max-width:1020px;
+  margin:0 auto;
+  padding:60px 34px 80px;
+}
+.paramount-intro{
+  max-width:860px;
+  font-size:18px;
+  line-height:1.62;
+}
+.paramount-intro p{margin-bottom:18px;}
+.paramount-specs{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  background:#fff;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  border:1px solid #e8e8e8;
+  margin:34px 0 48px;
+  overflow:hidden;
+}
+.paramount-spec{
+  padding:22px 12px;
+  text-align:center;
+  border-right:1px solid #ececec;
+  min-height:112px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+.paramount-spec:last-child{border-right:none;}
+.paramount-spec span{
+  font-family:"Oswald",Arial,sans-serif;
+  font-size:15px;
+  text-transform:uppercase;
+  letter-spacing:.8px;
+  color:#666;
+  margin-bottom:12px;
+}
+.paramount-spec strong{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:24px;
+  line-height:1;
+}
+.paramount-photo{
+  width:700px;
+  max-width:100%;
+  height:320px;
+  margin:36px auto;
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+}
+.paramount-photo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+.paramount-section{margin-top:68px;}
+.paramount-section h2{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:44px;
+  line-height:1;
+  text-transform:uppercase;
+  margin-bottom:24px;
+}
+.paramount-reviewer{margin-bottom:26px;}
+.paramount-reviewer:last-child{margin-bottom:0;}
+.paramount-reviewer h3{
+  color:var(--blue);
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:18px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.paramount-reviewer p{
+  font-size:17px;
+  line-height:1.6;
+  margin-bottom:14px;
+}
+.buy-skip{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+  margin:58px 0 46px;
+}
+.buy-skip article{
+  background:#f4f4f4;
+  border:1px solid #e4e4e4;
+  border-radius:18px;
+  padding:28px;
+}
+.buy-skip h2{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:30px;
+  text-transform:uppercase;
+  line-height:1;
+  margin-bottom:14px;
+}
+.buy-skip p{font-size:17px;line-height:1.55;}
+.permanent-profiles{
+  max-width:1100px;
+  margin:48px auto 28px;
+  padding-top:18px;
+  border-top:1px solid #e5e5e5;
+}
+.profile-graphic{
+  position:relative;
+  width:100%;
+  margin:0 0 8px;
+  line-height:0;
+}
+.profile-graphic:last-child{margin-bottom:0;}
+.profile-graphic img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:contain;
+  background:#fff;
+}
+.profile-link{
+  position:absolute;
+  display:block;
+  z-index:4;
+  border-radius:10px;
+}
+.profile-link.youtube{
+  left:70.5%;
+  top:39%;
+  width:8%;
+  height:14%;
+}
+.profile-link.instagram{
+  left:80.5%;
+  top:38%;
+  width:6.5%;
+  height:15%;
+}
+.profile-link:hover{outline:3px solid rgba(40,120,217,.45);}
+@media(max-width:800px){
+  .paramount-main{padding:42px 20px 60px;}
+  .paramount-specs{grid-template-columns:repeat(2,1fr);}
+  .paramount-spec:last-child{grid-column:1/-1;}
+  .paramount-photo{height:auto;}
+  .paramount-photo img{height:auto;}
+  .paramount-section h2{font-size:34px;}
+  .buy-skip{grid-template-columns:1fr;}
+  .permanent-profiles{margin-top:38px;padding-top:14px;}
+  .profile-graphic{margin-bottom:4px;}
+}
+</style>
+<meta content="HOKA Clifton Pro Review | 9to5 Runners" property="og:title"/><meta content="HOKA Clifton Pro Review | 9to5 Runners" name="twitter:title"/><meta content="Cody, Blake, Emily, and Eric review the HOKA Clifton Pro after 131 combined miles, covering its PROGLIDE+ SCF EVA midsole, MetaRocker ride, fit, versatility, and value." name="description"/><meta content="Cody, Blake, Emily, and Eric review the HOKA Clifton Pro after 131 combined miles, covering its PROGLIDE+ SCF EVA midsole, MetaRocker ride, fit, versatility, and value." property="og:description"/><meta content="Cody, Blake, Emily, and Eric review the HOKA Clifton Pro after 131 combined miles, covering its PROGLIDE+ SCF EVA midsole, MetaRocker ride, fit, versatility, and value." name="twitter:description"/><script defer="" src="https://cdn.vercel-insights.com/v1/script.js"></script></head>
+<body>
+<header class="site-header">
+<nav aria-label="Main navigation" class="nav">
+<a href="9to5_shoes_page1.html">Shoes</a>
+<a href="9to5_gear_page1.html">Gear</a>
+<a href="9to5_about.html">About</a>
+</nav>
+<a aria-label="9to5 Runners Home" href="9to5_Homepage.html"><img alt="9to5 Runners logo" class="site-logo" src="images/asset-313d0f249b137e11.jpg"/></a>
+<div class="search-wrap">
+<input aria-label="Search 9to5 Runners" class="search-input" placeholder="Search" type="search"/>
+<div aria-label="Search results" class="search-results"></div>
+</div>
+</header>
+<section class="hero paramount-hero" style="background-image:linear-gradient(90deg,rgba(0,0,0,.84),rgba(0,0,0,.35),rgba(0,0,0,.12)),url('images/hoka-clifton-pro-hero.jpg')">
+<div class="hero-inner">
+<div class="kicker">Shoe Review • Published July 26, 2026</div>
+<h1 class="display">HOKA Clifton Pro Review</h1>
+<p class="hero-sub">A smoother, livelier Clifton built to handle daily miles, long runs, and a little more pace.</p>
+<a class="btn" href="9to5_shoes_page1.html">Back to Shoes</a>
+</div>
+</section>
+<main class="paramount-main"><section class="paramount-intro"><p>The HOKA Clifton has been one of the most recognizable daily trainers on the market for years, so when HOKA introduced the Clifton Pro, our ears definitely perked up. Was this going to be a true premium version of one of running's most popular shoes, or simply a Clifton with a new name? After putting plenty of miles into the Clifton Pro, here's what we found.</p></section><div class="paramount-photo"><img alt="HOKA Clifton Pro side profile beside a lake" src="images/hoka-clifton-pro-detail-1.jpg"/></div><section class="paramount-specs"><div class="paramount-spec"><span>Price</span><strong>$165</strong></div><div class="paramount-spec"><span>Stack</span><strong>46 / 38 mm</strong></div><div class="paramount-spec"><span>Drop</span><strong>8 mm</strong></div><div class="paramount-spec"><span>Weight</span><strong>9.4 oz</strong></div><div class="paramount-spec"><span>Category</span><strong>Daily Trainer</strong></div></section><section class="miles-tested"><h2>Miles Tested</h2><div class="miles-tested-grid"><div class="miles-tested-item"><span>Cody</span><strong>29 miles</strong></div><div class="miles-tested-item"><span>Blake</span><strong>31 miles</strong></div><div class="miles-tested-item"><span>Emily</span><strong>45 miles</strong></div><div class="miles-tested-item"><span>Eric</span><strong>26 miles</strong></div></div></section><section class="paramount-section"><h2>The Good</h2><div class="paramount-reviewer"><h3>Cody</h3><p>I've been lucky enough to run in most of the recent Clifton models, so I had a pretty good idea of what to expect. The biggest surprise came from the midsole. HOKA gave the Clifton Pro a lively ride thanks to its SCF EVA (Supercritically Foamed EVA) midsole. I've been critical of HOKA in the past for some of their midsoles feeling a little "meh," but that's not the case here. The foam feels noticeably more energetic, and the rocker geometry helps create a smooth, effortless ride.</p><p>The Clifton Pro is also more versatile than I expected. It handles easy runs, daily miles, and long runs with ease, but what impressed me most was how comfortable it felt when picking up the pace. I wouldn't call it a speed-day shoe, but if your long run finishes with marathon pace or you decide to push the final few miles, the Clifton Pro responds much better than previous Clifton models.</p><p>Finally, the upper deserves some praise. It's breathable, comfortable, and true to size. HOKA's sizing has been a little inconsistent throughout 2026, so when they get it right, it's worth mentioning. This is one of the better-fitting uppers I've worn from the brand recently.</p></div><div class="paramount-reviewer"><h3>Blake</h3><p>The Clifton Pro feels like a more refined and energetic take on the regular Clifton. This is also happens to be a replacement for the Skyflow. The Clifton Pro is softer, bouncier, and noticeably roomier than the Skyflow, making it a more comfortable option for just about every type of run. The rocker is incredibly smooth (and slightly more aggressive than the one found on the regular Clifton), and the midsole has a lively bounce thanks to the SCF EVA (Supercritically Foamed EVA).</p><p>What surprised me most is that, despite not being a particularly lightweight shoe, I found myself getting up on my toes and picking up the pace from time to time simply because the rocker and forefoot bounce felt so good. The midsole also reminds me a lot of the Mach, offering a similar responsive, energetic feel.</p><p>The Clifton Pro also fills a nice gap in Hoka's lineup. If you've always felt the standard Clifton was a little too soft or mushy, this offers a more responsive ride without giving up the comfort people expect from the Clifton name.</p></div><div class="paramount-reviewer"><h3>Emily</h3><p>There's a lot of good to talk about here. For starters, I loved the upper. It's more premium than the Clifton 11 and the midfoot area of the shoe has a great lockdown. The mesh material is thin and breathes well for a shoe that's max cush. I'm really glad Hoka didn't totally overdo it here with the upper and managed to find a balance of comfort and performance, for the most part.</p><p>My favorite thing about the Clifton PRO is the PROGLIDE+ midsole. Made of Supercritical EVA, it has a little more punch than the standard EVA in the Clifton 11. The foam is just an absolute joy to run in. It won't WOW you, but it's everything you need to get your day-to-day miles in. The aggressive Metarocker technology really brings it all together, providing a seamless roll through the toe with every stride. I used this shoe for everything from daily training runs, to long runs, and even a tempo workout! While it wouldn't be my first choice for a faster effort, the Clifton PRO really held its own in all scenarios.</p><p>I also loved the traction pattern and performance of the outsole. Hoka is using Super Abrasion Rubber that grips surfaces with ease. I felt the rubber doing its job throughout each phase of my stride.</p><p>If I didn't have a ton of shoes to review, it could easily be the one shoe I'd always rock.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>Comfort is great on these across the board. A thicker tongue that isn’t too overwhelming, cushioned heel, all while staying decently breathable. Underfoot the SCF EVA foam is soft and supportive without being overly mushy. This is the type of shoe that just rolls through really nice and keeps your legs feeling relatively fresh</p></div></section><div class="paramount-photo"><img alt="HOKA Clifton Pro side profile on gravel" src="images/hoka-clifton-pro-detail-2.jpg"/></div><section class="paramount-section"><h2>The Bad</h2><div class="paramount-reviewer"><h3>Cody</h3><p>The biggest issue isn't how the shoe runs—it's the name.</p><p>I'm still confused by the decision to call this the Clifton Pro. When I hear "Pro," I expect something that feels truly premium or significantly different. While I genuinely enjoyed this shoe, it honestly feels more like what the Clifton 11 or Clifton 12 could have been rather than the start of an entirely new lineup. It seems like HOKA wanted to improve the Clifton without moving too far away from a shoe that runners already love, and that makes the "Pro" branding feel a little forced.</p><p>The other minor complaint is the break-in period. I have a slightly wider foot, and on the first run the forefoot felt a little cramped. Thankfully, after a few miles the upper relaxed and the fit became much more comfortable.</p></div><div class="paramount-reviewer"><h3>Blake</h3><p>The biggest thing holding the Clifton Pro back is the midsole. Yes, I enjoyed the foam, and it's a fun ride, but after trying Hoka's ATPU foam in the Rocket X Trail, it's hard not to imagine how much better this shoe could be with that same material. With "Pro" in the name, people naturally expect race day foams or other premium technologies. The current foam is good, but there's another level of energy return and responsiveness this shoe could've achieved with ATPU.</p><p>Besides that, the weight is a bit heavy on paper compared to some of today's lighter premium trainers, even if the smooth rocker helps disguise it once you're running.</p></div><div class="paramount-reviewer"><h3>Emily</h3><p>Not a ton to complain about here. While I did like the upper, I don't love the gigantic Hoka logo on the medial side. Not only is aesthetic not my vibe but I think they could have done more with the breathability if it wasn't there. It might also be a little lighter if they got rid of that giant thing.</p><p>I also do not like a single colorway of this shoe so far. They just look kinda...dorky?</p><p>My main gripe isn't even with the shoe and is more about the marketing. When you put the word "PRO" in the name, it insinuates that the shoe is about speed and performance. That's not what the Clifton PRO is about. Perhaps Hoka should have used "PLUS" instead. This should have just been the Clifton 11 but that's another conversation entirely.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>I don’t know how you can have a more runner friendly version of a shoe that weights more than its standard counterpart! That paired with the continual usage of EVA (though as mentioned it’s nice) leaves me a little confused regarding where Hoka was going with this one. There isn’t anything in particular that I want to know on this shoe necessarily. Maybe that it’s not the most pace versatile and having the “Pro” naming next to essentially just a nice cushioned daily trainer is deceiving</p></div></section><section class="paramount-section"><h2>The Verdict</h2><div class="paramount-reviewer"><h3>Cody</h3><p>To be honest, I went into this review looking for reasons not to like the Clifton Pro. Instead, the more miles I put into it, the more I enjoyed it.</p><p>The improved midsole, smoother ride, and added versatility have made this one of my favorite daily trainers from HOKA. If I were choosing between the Clifton 11 and the Clifton Pro, I'd take the Clifton Pro every time.</p><p>Just don't expect a revolutionary leap. This isn't a completely new shoe—it's a better Clifton. If you go in with that expectation, I think you'll be really happy.</p></div><div class="paramount-reviewer"><h3>Blake</h3><p>The Clifton Pro feels like the Clifton got injected with some Mach DNA. It's for runners who've always wanted a little more speed and responsiveness from the Clifton. While the "Pro" name may be a bit misleading, I found myself enjoying this shoe more than the regular Clifton 11, especially on everyday runs and long runs. That being said, I think I do like the regular Clifton 11 better for slower, easier days.</p><p>I think the midsole still has room to evolve, but this is a welcome addition to Hoka's lineup. And if a future Clifton Pro 2 gets a more premium foam, it could be something really special.</p></div><div class="paramount-reviewer"><h3>Emily</h3><p>I love this shoe. I honestly didn't think I would. I thought it was going to be bulky, heavy, slow, etc, when in reality it's a smooth operator for miles. Again, if I wasn't reviewing shoes, this would be my workhorse.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>Overall the Clifton Pro is a solid shoe. I do think that people need to have shoes like this in their rotation, work horses that will take on a lot of miles. That being said for this to be the pro version is a little strange to me. This could have easily been the Clifton 11 and I think more people would have been happy with it. Again, the shoe is good, not amazing, not special, but good.</p></div></section><section class="paramount-section"><h2>Worth The Price?</h2><div class="paramount-reviewer"><h3>Cody</h3><p>If you're buying the Clifton Pro for running, the $165 price tag is absolutely worth it. At only $10 more than the Clifton 11, the upgraded midsole and improved ride easily justify the extra cost.</p><p>If you're primarily looking for a walking or casual everyday shoe, I'd save the $10 and grab the Clifton 11. But if your goal is logging running miles, I'd spend the extra money and choose the Clifton Pro.</p></div><div class="paramount-reviewer"><h3>Blake</h3><p>The Clifton Pro makes sense if you're looking for a cushioned trainer that leans a little more toward performance than the standard Clifton. It offers a smoother, more responsive ride than the Skyflow while still being comfortable enough for everyday miles. If your priority is a lively, rockered daily trainer, it's easy to recommend. I'm glad this shoe isn't $180 though, because I think it would be harder to justify, but at $165 you get a good amount of protection for the price.</p></div><div class="paramount-reviewer"><h3>Emily</h3><p>YES. For $165 you're getting a durable shoe that can handle the majority of paces. If you're between the Clifton PRO or the standard Clifton 11, spend the extra $10 and get the PRO. I think you'll be happy you did.</p></div><div class="paramount-reviewer"><h3>Eric</h3><p>At this price point you’re competing against the 1080v15 and Triumph 24. Both of those options have better foams in terms of responsiveness but are equally as good for daily and recovery miles. Now the Pro IS $5 cheaper so I’ll say that ultimately it comes down to preference of foam density and feel. While I don’t think it’s overpriced, I do think there are subjectively “better” options there</p></div></section><section class="paramount-callouts"><div class="two-col"><div class="callout"><h3>Buy If</h3><ul><li>You want a smooth, cushioned daily trainer with more energy than the standard Clifton.</li><li>You need one shoe for daily miles, long runs, and occasional faster finishes.</li><li>You enjoy an aggressive rocker that keeps you rolling forward.</li><li>You are deciding between the Clifton 11 and Clifton Pro for running.</li></ul></div><div class="callout"><h3>Skip If</h3><ul><li>You expect the word “Pro” to mean race-day foam or a lightweight speed shoe.</li><li>You want the lightest premium daily trainer available.</li><li>You primarily need a walking or casual shoe and can save money with the Clifton 11.</li><li>You prefer a highly responsive ATPU-style ride over a smoother EVA-based feel.</li></ul></div></div></section><section class="review-disclosure"><h3>Disclosure</h3><p><strong>Disclosure: </strong>This product was provided by the manufacturer for review. As always, they had no input into our testing, opinions, or final verdict.</p></section><section class="permanent-profiles"><div class="profile-graphic">
+<img alt="Cody runner profile" src="images/asset-1aedc199f244fb6c.png"/>
+<a aria-label="Cody YouTube" class="profile-link youtube" href="https://www.youtube.com/@The_Shoe_In_With_Cody" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Cody Instagram" class="profile-link instagram" href="https://www.instagram.com/the_shoe_in_with_cody/" rel="noopener noreferrer" target="_blank"></a>
+</div><div class="profile-graphic">
+<img alt="Blake runner profile" src="images/asset-10125957c16f6865.png"/>
+<a aria-label="Blake YouTube" class="profile-link youtube" href="https://www.youtube.com/@tfxcShoes" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Blake Instagram" class="profile-link instagram" href="https://www.instagram.com/tfxcshoes/" rel="noopener noreferrer" target="_blank"></a>
+</div><div class="profile-graphic"><img alt="Emily runner profile" src="images/emily-runner-profile.png"/><a aria-label="Emily YouTube" class="profile-link youtube" href="https://www.youtube.com/@RunLikeHeller" rel="noopener noreferrer" target="_blank"></a><a aria-label="Emily Instagram" class="profile-link instagram" href="https://www.instagram.com/runlikeheller" rel="noopener noreferrer" target="_blank"></a></div><div class="profile-graphic">
+<img alt="Eric runner profile" src="images/asset-ed099a8cc8a077af.png"/>
+<a aria-label="Eric YouTube" class="profile-link youtube" href="https://www.youtube.com/@raddadbodtv" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Eric Instagram" class="profile-link instagram" href="https://www.instagram.com/raddadbodtv/" rel="noopener noreferrer" target="_blank"></a>
+</div></section><a class="back-link" href="9to5_shoes_page1.html">← Back to all shoe reviews</a></main>
+<footer class="footer">
+<div class="footer-title">Connect</div>
+<a aria-label="Follow 9to5 Runners on Instagram" class="instagram" href="https://www.instagram.com/9to5runners/" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+<rect height="18" rx="5" stroke="currentColor" stroke-width="2" width="18" x="3" y="3"></rect>
+<circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="17.2" cy="6.8" fill="currentColor" r="1.1"></circle>
+</svg>
+</a>
+</footer>
+<script>
+const searchIndex = [
+  { title: "HOKA Clifton Pro Review", type: "Shoe Review", tags: "hoka clifton pro daily trainer proglide scf eva rocker", url: "9to5_shoes_hoka_clifton_pro.html" },
+  { title: "New Balance SC Rebel Review", type: "Shoe Review", tags: "new balance sc rebel plated daily trainer energy arc infinion foam workout speed", url: "9to5_shoes_new_balance_sc_rebel.html" },
+  { title: "ASICS Novablast 6 Review", type: "Shoe Review", tags: "asics novablast 6 daily trainer ff turbo 2 road versatile", url: "9to5_shoes_asics_novablast6.html" },
+  { title: "Dera B01 Trail Running Belt Review", type: "Gear Review", tags: "dera b01 trail running belt hydrapak ultraflask dial fit no bounce", url: "9to5_gear_dera_b01.html" },
+  { title: "Suunto Spark Review", type: "Gear Review", tags: "suunto spark open ear wireless headphones bluetooth running audio", url: "9to5_gear_suunto_spark.html" },
+  { title: "Janji Revy Pack", type: "Gear Review", tags: "janji revy pack backpack fastpacking travel hydration laptop", url: "9to5_gear_janji_revy_pack.html" },
+  { title: "Puma Deviate Pure Nitro", type: "Shoe Review", tags: "puma deviate pure nitro peba pumagrip daily trainer uptempo", url: "9to5_shoes_puma_deviatepurenitro.html" },
+  { title: "Saucony Paramount Max", type: "Shoe Review", tags: "saucony paramount max incredirun max cushion easy recovery long run", url: "9to5_shoes_saucony_paramountmax.html" },
+  { title: "ASICS Gel Nimbus 28", type: "Shoe Review", tags: "asics road max cushion daily trainer", url: "9to5_shoes_asics_nimbus28.html" },
+  { title: "Cody", type: "Reviewer", tags: "shoe in with cody youtube instagram reviewer", url: "9to5_about.html" },
+  { title: "Blake", type: "Reviewer", tags: "tfxc shoes youtube instagram reviewer", url: "9to5_about.html" },
+  { title: "Eric", type: "Reviewer", tags: "raddadbodtv youtube instagram reviewer", url: "9to5_about.html" },
+  { title: "The North Face Altamesa 500v2", type: "Shoe Review", tags: "north face trail door to trail", url: "9to5_shoes_page1.html" },
+  { title: "Saucony Azura", type: "Shoe Review", tags: "saucony retro lifestyle", url: "9to5_shoes_page1.html" },
+  { title: "Salomon Ultra Glide 4", type: "Shoe Review", tags: "salomon trail long run", url: "9to5_shoes_page1.html" }
+];
+
+function setupSiteSearch() {
+  const input = document.querySelector(".search-input");
+  const results = document.querySelector(".search-results");
+  if (!input || !results) return;
+
+  function render(query) {
+    const q = query.trim().toLowerCase();
+    if (!q) {
+      results.classList.remove("active");
+      results.innerHTML = "";
+      return;
+    }
+
+    const matches = searchIndex
+      .filter(item => `${item.title} ${item.type} ${item.tags}`.toLowerCase().includes(q))
+      .slice(0, 8);
+
+    results.classList.add("active");
+    results.innerHTML = matches.length
+      ? matches.map(item => `
+          <a class="search-result" href="${item.url}">
+            <span class="search-result-title">${item.title}</span>
+            <span class="search-result-meta">${item.type}</span>
+          </a>
+        `).join("")
+      : `<div class="search-empty">No results found.</div>`;
+  }
+
+  input.addEventListener("input", event => render(event.target.value));
+  document.addEventListener("click", event => {
+    if (!event.target.closest(".search-wrap")) results.classList.remove("active");
+  });
+}
+setupSiteSearch();
+</script>
+<script defer="" src="assets/site.js"></script></body>
+</html>

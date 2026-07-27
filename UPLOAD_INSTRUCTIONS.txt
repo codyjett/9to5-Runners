@@ -1,10 +1,16 @@
-SC Rebel Review Update
+HOKA Clifton Pro Site Update
 
-Replace:
-- 9to5_shoes_new_balance_sc_rebel.html
+Upload the extracted files into the matching repository locations.
 
-Add to /images:
-- emily-runner-profile.png
-- asset-10125957c16f6865.png
+Root:
+- 9to5_shoes_hoka_clifton_pro.html
+- 9to5_shoes_page1.html
+- 9to5_Homepage.html
+- index.html
 
-The existing Cody and Eric profile assets remain unchanged.
+/images:
+- hoka-clifton-pro-hero.jpg
+- hoka-clifton-pro-detail-1.jpg
+- hoka-clifton-pro-detail-2.jpg
+
+Do not upload this ZIP file itself. Extract it first.

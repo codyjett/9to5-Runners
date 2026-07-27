@@ -1,12 +1,11 @@
-Homepage Fix Audit
-==================
+HOKA Clifton Pro Homepage Fix
+==============================
 
-Homepage hero updated:
-- Category: YES
-- Title: YES
-- Description: YES
-- Button link: YES
-- Hero image in CSS: YES
-
-Broken local links:
-None found.
+Hero title: HOKA Clifton Pro Review
+Hero link: 9to5_shoes_hoka_clifton_pro.html
+Hero uses Clifton image: True
+Newest Latest Review: HOKA Clifton Pro Review
+Latest Reviews count: 9
+Homepage and index identical: True
+Missing required files: 0
+Broken Clifton Pro links: 0

@@ -1,0 +1,9 @@
+Homepage Featured Review Rule
+=============================
+
+Featured hero: HOKA Clifton Pro Review
+Featured hero link: 9to5_shoes_hoka_clifton_pro.html
+Featured review repeated in Latest Reviews: False
+First Latest Review: New Balance SC Rebel Review
+Latest Reviews count: 8
+Homepage and index identical: True

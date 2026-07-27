@@ -1,17 +1,11 @@
-SC Rebel Complete Review Update
-================================
+HOKA Clifton Pro Site Update
+============================
 
-Miles Tested:
-{'Cody': '27 miles', 'Eric': '25 miles', 'Emily': '23 miles', 'Blake': '25 miles'}
-
-Reviewers by section:
-{'The Good': ['Cody', 'Eric', 'Emily', 'Blake'], 'The Bad': ['Cody', 'Eric', 'Emily', 'Blake'], 'The Verdict': ['Cody', 'Eric', 'Emily', 'Blake'], 'Worth The Price?': ['Cody', 'Eric', 'Blake']}
-
-Profile cards:
-['Cody runner profile', 'Eric runner profile', 'Emily runner profile', 'Blake runner profile']
-
-Template preserved:
-- Buy If / Skip If: YES
-- Disclosure: YES
-- Permanent profile graphics: 4
-- Back to reviews link: YES
+Tech Specs order: ['Price', 'Stack', 'Drop', 'Weight', 'Category']
+Miles Tested: {'Cody': '29 miles', 'Blake': '31 miles', 'Emily': '45 miles', 'Eric': '26 miles'}
+Meta description uses 131 combined miles: True
+Homepage latest review count: 9
+Homepage first review: HOKA Clifton Pro Review
+Shoes page first review: HOKA Clifton Pro Review
+Broken update links: 0
+Missing new assets: 0
