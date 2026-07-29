@@ -1,0 +1,11 @@
+norda 055 Full Site Update
+==========================
+
+Homepage hero: norda 055 Review
+Hero link: 9to5_shoes_norda_055.html
+norda duplicated in Latest Reviews: False
+First Latest Review: HOKA Clifton Pro Review
+Latest Reviews count: 9
+Shoes page first review: norda 055 Review
+norda filter button present: True
+Homepage and index identical: True
