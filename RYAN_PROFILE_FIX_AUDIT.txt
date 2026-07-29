@@ -1,0 +1,8 @@
+norda 055 Ryan Profile Fix
+===========================
+
+Profiles:
+[{'alt': 'Cody runner profile', 'src': 'images/asset-1aedc199f244fb6c.png', 'href': 'reviewer-cody-jett.html'}, {'alt': 'Ryan runner profile', 'src': 'images/ryan-runner-profile.png', 'href': 'reviewer-ryan-fitzpatrick.html'}]
+
+Missing linked files/assets: ['images/asset-1aedc199f244fb6c.png']
+Ryan uses full-width runner profile: True

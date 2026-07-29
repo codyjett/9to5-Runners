@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cody Jett | 9to5 Runners</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&amp;family=Oswald:wght@700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --dark:#232323;
+      --blue:#2878d9;
+      --white:#ffffff;
+      --black:#050505;
+      --orange:#fc6900;
+      --red:#ff0000;
+    }
+
+    * {
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body {
+      background:#fff;
+      color:#000;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color:inherit;
+    }
+
+    .display {
+      font-family:"Bowlby One SC", Impact, sans-serif;
+      letter-spacing:.5px;
+      line-height:.95;
+      text-transform:uppercase;
+    }
+
+    .site-header {
+      height: 82px;
+      background:var(--dark);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:20;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .nav {
+      position:absolute;
+      left:29px;
+      top:31px;
+      display:flex;
+      gap:45px;
+      font-family:"Bowlby One SC", Impact, sans-serif;
+      font-size:16px;
+      line-height:1;
+      text-transform:uppercase;
+    }
+
+    .nav a {
+      color:#fff;
+      text-decoration:underline;
+      text-decoration-thickness:2px;
+      text-underline-offset:3px;
+    }
+
+    .site-logo {
+      width: 138px;
+      height: 76px;
+      object-fit:contain;
+      display:block;
+    }
+
+    .about {
+      max-width:1024px;
+      margin:0 auto;
+      text-align:center;
+      padding:74px 28px 0;
+    }
+
+    h1 {
+      font-size:52px;
+      margin-bottom:74px;
+    }
+
+    .intro {
+      max-width:840px;
+      margin:0 auto;
+      font-size:30px;
+      line-height:1.28;
+      letter-spacing:.4px;
+    }
+
+    .intro p + p {
+      margin-top:44px;
+    }
+
+    .team-title {
+      font-size:48px;
+      margin:16px 0 69px;
+    }
+
+    .team {
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:62px;
+      align-items:start;
+      margin-bottom:180px;
+    }
+
+    .member {
+      text-align:center;
+    }
+
+    .headshot {
+      width:245px;
+      height:245px;
+      object-fit:cover;
+      border-radius:50%;
+      display:block;
+      margin:0 auto 11px;
+    }
+
+    .name {
+      color:var(--blue);
+      font-size:68px;
+      line-height:.85;
+      margin-bottom:17px;
+    }
+
+    .role {
+      font-family:"Bowlby One SC", Impact, sans-serif;
+      font-size:16px;
+      line-height:1;
+      text-transform:uppercase;
+      margin-bottom:17px;
+    }
+
+    .icons {
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:22px;
+      min-height:45px;
+      margin-bottom:24px;
+    }
+
+    .icon {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      color:#000;
+    }
+
+    .youtube svg {
+      width:63px;
+      height:44px;
+      display:block;
+    }
+
+    .instagram svg {
+      width:44px;
+      height:44px;
+      display:block;
+    }
+
+    .strava {
+      color:var(--orange);
+    }
+
+    .strava svg {
+      width:39px;
+      height:39px;
+      display:block;
+    }
+
+    .learn {
+      display:inline-block;
+      min-width:126px;
+      padding:12px 24px 13px;
+      background:var(--blue);
+      border-radius:999px;
+      color:#fff;
+      font-family:"Oswald", Arial, sans-serif;
+      font-size:17px;
+      line-height:1;
+      text-decoration:none;
+    }
+
+    .footer {
+      text-align:center;
+      padding-bottom:23px;
+    }
+
+    .footer h2 {
+      font-family:"Bowlby One SC", Impact, sans-serif;
+      font-size:36px;
+      line-height:1;
+      margin-bottom:21px;
+    }
+
+    .footer .instagram svg {
+      width:48px;
+      height:48px;
+    }
+
+    @media (max-width:860px) {
+      .site-header {
+        height: 76px;
+      }
+
+      .site-logo {
+        width:100px;
+      }
+
+      .nav {
+        left:14px;
+        gap:18px;
+        font-size:12px;
+      }
+
+      .about {
+        padding-top:54px;
+      }
+
+      h1 {
+        font-size:34px;
+        margin-bottom:42px;
+      }
+
+      .intro {
+        font-size:22px;
+      }
+
+      .team-title {
+        font-size:34px;
+        margin-top:30px;
+        margin-bottom:42px;
+      }
+
+      .team {
+        grid-template-columns:1fr;
+        gap:56px;
+        margin-bottom:90px;
+      }
+
+      .name {
+        font-size:58px;
+      }
+    }
+  
+/* Global Search */
+.search-wrap {
+  position: absolute;
+  right: 34px;
+  top: 24px;
+  width: 260px;
+  z-index: 60;
+}
+.search-input {
+  width: 100%;
+  height: 42px;
+  border: 2px solid rgba(255,255,255,.22);
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  padding: 0 18px;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 16px;
+  outline: none;
+}
+.search-input::placeholder {
+  color: rgba(255,255,255,.72);
+}
+.search-input:focus {
+  border-color: #2878d9;
+}
+.search-results {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 330px;
+  max-height: 360px;
+  overflow: auto;
+  background: #101010;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.35);
+  padding: 10px;
+}
+.search-results.active {
+  display: block;
+}
+.search-result {
+  display: block;
+  padding: 12px 13px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.search-result:hover {
+  background: #2878d9;
+}
+.search-result-title {
+  display: block;
+  font-family: "Bowlby One SC", Impact, sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.search-result-meta {
+  display: block;
+  margin-top: 5px;
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
+}
+.search-empty {
+  padding: 12px 13px;
+  color: rgba(255,255,255,.72);
+  font-size: 14px;
+}
+@media (max-width: 900px) {
+  .site-header {
+    flex-wrap: wrap;
+    height: auto !important;
+    min-height: 118px;
+    padding-bottom: 10px;
+  }
+  .search-wrap {
+    position: static;
+    width: calc(100% - 28px);
+    margin: 8px auto 10px;
+    order: 3;
+  }
+  .search-results {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+
+/* 9to5 Runners Responsive System */
+html { scroll-behavior:smooth; }
+img { max-width:100%; }
+
+@media (max-width:1100px){
+  .site-header{min-height:118px!important;height:auto!important;flex-wrap:wrap;padding:12px 16px 14px;gap:10px;}
+  .nav{position:static!important;order:1;width:100%;justify-content:center;gap:28px!important;font-size:14px!important;}
+  .site-header > a[aria-label*="Home"]{order:0;}
+  .site-logo{width:124px!important;height:70px!important;}
+  .search-wrap{position:static!important;order:2;width:min(520px,100%)!important;margin:0 auto!important;}
+  .search-results{left:0!important;right:auto!important;width:100%!important;}
+  .hero{min-height:440px!important;}
+  .hero-inner,.wrap,.review-shell,.shoe-wrap,.intro,.page-layout{padding-left:22px!important;padding-right:22px!important;}
+  .featured-grid,.reviews-grid,.videos-grid,.brand-grid,.intro-grid,.page-layout,.two-col{grid-template-columns:1fr!important;}
+  .filters{position:static!important;}
+}
+
+@media (max-width:768px){
+  body{overflow-x:hidden;}
+  .nav{gap:18px!important;font-size:12px!important;}
+  .hero{min-height:360px!important;background-position:center!important;}
+  .hero h1,.hero-title{font-size:clamp(42px,12vw,64px)!important;}
+  .hero-copy,.hero-sub{font-size:18px!important;}
+  .section-title,.page-title,.intro h2,.intro-copy h2,.section h2{font-size:34px!important;}
+  .review-shell{padding-top:34px!important;}
+  .intro-copy p,.section p{font-size:16px!important;line-height:1.6!important;}
+  .spec-horizontal{grid-template-columns:repeat(2,1fr)!important;margin:28px 0 12px!important;}
+  .spec-item{min-height:92px!important;padding:18px 10px!important;border-bottom:1px solid #ececec;}
+  .spec-item:nth-child(2n){border-right:none!important;}
+  .spec-item:last-child{grid-column:1/-1;border-bottom:none!important;}
+  .spec-item strong{font-size:20px!important;min-height:auto!important;}
+  .spec-item span{font-size:13px!important;}
+  .photo-block{max-width:100%!important;margin-top:24px!important;}
+  .photo-block img{width:100%!important;height:auto!important;max-height:320px!important;object-fit:contain!important;}
+  .review-row{grid-template-columns:1fr!important;gap:18px!important;}
+  .review-thumb img{height:auto!important;max-height:260px!important;object-fit:contain!important;}
+  .review-content h3,.review-name,.card-title{font-size:26px!important;}
+  .filter-pills{gap:8px!important;}
+  .filter-pills button,.clear-filters,.btn,.read-link,.page-btn{min-height:42px;}
+  .runner-profile-mock{margin:48px auto 28px!important;padding-top:22px!important;}
+  .runner-profile-image-wrap img{border-radius:6px!important;}
+  .youtube-hotspot{left:68%!important;top:37%!important;width:10%!important;height:16%!important;}
+  .instagram-hotspot{left:80%!important;top:36%!important;width:9%!important;height:18%!important;}
+  .footer{padding:28px 16px 34px!important;}
+}
+
+@media (max-width:480px){
+  .site-header{min-height:132px!important;}
+  .nav{gap:14px!important;font-size:11px!important;}
+  .site-logo{width:112px!important;height:62px!important;}
+  .hero{min-height:320px!important;}
+  .hero-inner,.wrap,.review-shell,.shoe-wrap,.intro,.page-layout{padding-left:16px!important;padding-right:16px!important;}
+  .spec-horizontal{grid-template-columns:1fr!important;}
+  .spec-item{border-right:none!important;}
+  .runner-profile-mock{display:none;}
+}
+
+
+
+
+
+/* Ryan social icon fix */
+.member .icons .icon{
+  width:34px;
+  height:34px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 34px;
+}
+.member .icons .icon svg,
+.member .icons .icon img{
+  width:28px;
+  height:28px;
+  display:block;
+  object-fit:contain;
+}
+.member .icons .icon.youtube svg{
+  width:34px;
+  height:auto;
+}
+
+.reviewer-bio-page{max-width:980px;margin:0 auto;padding:64px 28px 90px}.reviewer-bio-card{text-align:center}.reviewer-bio-card h1{margin:0 0 32px;font-family:"Bowlby One SC",Impact,sans-serif;font-size:clamp(48px,8vw,88px);line-height:.95;text-transform:uppercase}.reviewer-bio-photo{display:block;width:min(100%,520px);aspect-ratio:1/1;object-fit:cover;margin:0 auto 34px;border-radius:24px}.reviewer-prs{max-width:760px;margin:0 auto 42px;text-align:center}.reviewer-prs h2{margin:0 0 18px;font-family:"Bowlby One SC",Impact,sans-serif;font-size:24px;text-transform:uppercase}.pr-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:18px;background:#f3f3f3}.pr-table th,.pr-table td{padding:16px 10px;text-align:center}.pr-table th{background:#111;color:#fff;font-size:14px;text-transform:uppercase}.pr-table td{border-top:1px solid #d9d9d9;font-size:21px;font-weight:800}.pr-table th+th,.pr-table td+td{border-left:1px solid #d9d9d9}.reviewer-bio-copy{max-width:760px;margin:0 auto;text-align:left}.reviewer-bio-copy p{margin:0 0 20px;font-size:18px;line-height:1.7}.reviewer-bio-copy .lead{font-size:21px;font-weight:800}.bio-back-link{display:inline-block;margin-top:22px;font-weight:800;color:inherit;text-decoration:none}.member-bio-link{display:inline-block;margin-top:18px;padding:10px 16px;border:2px solid #111;border-radius:999px;color:#111;text-decoration:none;font-weight:800}.member-bio-link:hover{background:#111;color:#fff}@media(max-width:620px){.reviewer-bio-page{padding:46px 18px 70px}.reviewer-bio-photo{border-radius:18px}.pr-table th{padding:12px 5px;font-size:10px}.pr-table td{padding:14px 5px;font-size:16px}.reviewer-bio-copy p{font-size:17px}}
+</style>
+<meta content="About the Team | 9to5 Runners" property="og:title"/><meta content="About the Team | 9to5 Runners" name="twitter:title"/><meta content="Meet the 9to5 Runners review team and connect with Cody, Blake, Eric, Emily, and Ryan." name="description"/><link href="https://www.9to5runners.com/9to5_about.html" rel="canonical"/><meta content="website" property="og:type"/><meta content="Meet the 9to5 Runners review team and connect with Cody, Blake, Eric, Emily, and Ryan." property="og:description"/><meta content="https://www.9to5runners.com/9to5_about.html" property="og:url"/><meta content="https://www.9to5runners.com/images/asset-313d0f249b137e11.jpg" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Meet the 9to5 Runners review team and connect with Cody, Blake, Eric, Emily, and Ryan." name="twitter:description"/><meta content="https://www.9to5runners.com/images/asset-313d0f249b137e11.jpg" name="twitter:image"/><script defer="" src="https://cdn.vercel-insights.com/v1/script.js"></script></head>
+<body>
+<header class="site-header">
+<nav aria-label="Main navigation" class="nav">
+<a href="9to5_shoes_page1.html">Shoes</a>
+<a href="9to5_gear_page1.html">Gear</a>
+<a href="9to5_about.html">About</a>
+</nav>
+<a aria-label="9to5 Runners Home" href="9to5_Homepage.html"><img alt="9to5 Runners logo" class="site-logo" src="images/asset-34bb454b7ed54eed.jpg"/></a>
+<div class="search-wrap">
+<input aria-label="Search 9to5 Runners" class="search-input" placeholder="Search" type="search"/>
+<div aria-label="Search results" class="search-results"></div>
+</div>
+</header>
+<main class="reviewer-bio-page"><section class="reviewer-bio-card"><h1>Cody Jett</h1><img alt="Cody Jett running during a race" class="reviewer-bio-photo" src="images/cody-jett-reviewer.png"/><section class="reviewer-prs"><h2>Personal Bests</h2><table class="pr-table"><thead><tr><th>50K</th><th>Marathon</th><th>Half Marathon</th><th>5K</th></tr></thead><tbody><tr><td>5:19:45</td><td>3:07:36</td><td>1:33:17</td><td>18:55</td></tr></tbody></table></section><div class="reviewer-bio-copy"><p class="lead">Husband. Father of two. Data analytics nerd by day. Marathon runner by choice (and questionable judgment).</p><p>When he’s not leading analytics teams or coaching youth soccer, Cody is chasing a sub-3 marathon and testing the latest running shoes in search of the next great ride. He has an unhealthy obsession with foam compounds, carbon plates, and the kind of running data most people happily ignore.</p><p>His mission at 9 to 5 Runners is simple: cut through the marketing hype, review every shoe honestly, and help runners find the right gear for their next adventure. Because the next quest is always one run away.</p><a class="bio-back-link" href="9to5_about.html">← Back to Meet the Team</a></div></section></main>
+<footer class="footer">
+<h2>Connect</h2>
+<a aria-label="Follow 9to5 Runners on Instagram" class="icon instagram" href="https://www.instagram.com/9to5runners/" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><rect height="18" rx="5" stroke="currentColor" stroke-width="2" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="2"></circle><circle cx="17.2" cy="6.8" fill="currentColor" r="1.1"></circle></svg>
+</a>
+</footer>
+<script>
+const searchIndex = [
+  { title: "New Balance SC Rebel Review", type: "Shoe Review", tags: "new balance sc rebel plated daily trainer energy arc infinion foam workout speed", url: "9to5_shoes_new_balance_sc_rebel.html" },
+  { title: "ASICS Novablast 6 Review", type: "Shoe Review", tags: "asics novablast 6 daily trainer ff turbo 2 road versatile", url: "9to5_shoes_asics_novablast6.html" },
+  { title: "Dera B01 Trail Running Belt Review", type: "Gear Review", tags: "dera b01 trail running belt hydrapak ultraflask dial fit no bounce", url: "9to5_gear_dera_b01.html" },
+  { title: "Suunto Spark Review", type: "Gear Review", tags: "suunto spark open ear wireless headphones bluetooth running audio", url: "9to5_gear_suunto_spark.html" },
+  { title: "Janji Revy Pack", type: "Gear Review", tags: "janji revy pack backpack fastpacking travel hydration laptop", url: "9to5_gear_janji_revy_pack.html" },
+  { title: "Puma Deviate Pure Nitro", type: "Shoe Review", tags: "puma deviate pure nitro peba pumagrip daily trainer uptempo", url: "9to5_shoes_puma_deviatepurenitro.html" },
+  { title: "Saucony Paramount Max", type: "Shoe Review", tags: "saucony paramount max incredirun max cushion easy recovery long run", url: "9to5_shoes_saucony_paramountmax.html" },
+  { title: "ASICS Gel Nimbus 28", type: "Shoe Review", tags: "asics road max cushion daily trainer", url: "9to5_shoes_asics_nimbus28.html" },
+  { title: "Cody", type: "Reviewer", tags: "shoe in with cody youtube instagram reviewer", url: "9to5_about.html" },
+  { title: "Blake", type: "Reviewer", tags: "tfxc shoes youtube instagram reviewer", url: "9to5_about.html" },
+  { title: "Eric", type: "Reviewer", tags: "raddadbodtv youtube instagram reviewer", url: "9to5_about.html" },
+  { title: "The North Face Altamesa 500v2", type: "Shoe Review", tags: "north face trail door to trail", url: "9to5_shoes_page1.html" },
+  { title: "Saucony Azura", type: "Shoe Review", tags: "saucony retro lifestyle", url: "9to5_shoes_page1.html" },
+  { title: "Salomon Ultra Glide 4", type: "Shoe Review", tags: "salomon trail long run", url: "9to5_shoes_page1.html" }
+];
+
+function setupSiteSearch() {
+  const input = document.querySelector(".search-input");
+  const results = document.querySelector(".search-results");
+  if (!input || !results) return;
+
+  function render(query) {
+    const q = query.trim().toLowerCase();
+
+    if (!q) {
+      results.classList.remove("active");
+      results.innerHTML = "";
+      return;
+    }
+
+    const matches = searchIndex
+      .filter(item => `${item.title} ${item.type} ${item.tags}`.toLowerCase().includes(q))
+      .slice(0, 8);
+
+    results.classList.add("active");
+    results.innerHTML = matches.length
+      ? matches.map(item => `
+          <a class="search-result" href="${item.url}">
+            <span class="search-result-title">${item.title}</span>
+            <span class="search-result-meta">${item.type}</span>
+          </a>
+        `).join("")
+      : `<div class="search-empty">No results found.</div>`;
+  }
+
+  input.addEventListener("input", event => render(event.target.value));
+
+  input.addEventListener("keydown", event => {
+    if (event.key === "Enter") {
+      const first = results.querySelector(".search-result");
+      if (first) first.click();
+    }
+
+    if (event.key === "Escape") {
+      input.value = "";
+      results.classList.remove("active");
+    }
+  });
+
+  document.addEventListener("click", event => {
+    if (!event.target.closest(".search-wrap")) {
+      results.classList.remove("active");
+    }
+  });
+}
+
+setupSiteSearch();
+</script>
+<script defer="" src="assets/site.js"></script></body>
+</html>
