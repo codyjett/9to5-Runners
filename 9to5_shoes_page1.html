@@ -506,31 +506,22 @@ img { max-width:100%; }
 <section class="page-layout">
 <aside class="filters">
 <h3>Filters</h3>
-<div class="filter-group">
+<div class="filter-group" data-filter-group="type">
 <div class="filter-label">Type</div>
-<div class="filter-pills">
-<button class="active" data-filter="all" type="button">All</button>
-<button data-filter="road" type="button">Road</button>
-<button data-filter="trail" type="button">Trail</button>
-<button data-filter="race" type="button">Race</button>
-<button data-filter="norda" type="button">norda</button></div>
+<div class="filter-pills" id="typeFilters">
+<button class="active" data-value="all" type="button">All</button>
+<button data-value="road" type="button">Road</button>
+<button data-value="trail" type="button">Trail</button>
+<button data-value="race" type="button">Race</button>
 </div>
-<div class="filter-group">
+</div>
+<div class="filter-group" data-filter-group="brand">
 <div class="filter-label">Brand</div>
-<div class="filter-pills">
-<button data-filter="asics" type="button">ASICS</button>
-<button data-filter="saucony" type="button">Saucony</button>
-<button data-filter="salomon" type="button">Salomon</button>
-<button data-filter="hoka" type="button">HOKA</button>
-<button data-filter="puma" type="button">Puma</button><button data-filter="new balance" type="button">New Balance</button><button data-filter="mizuno" type="button">Mizuno</button></div>
+<div class="filter-pills" id="brandFilters"></div>
 </div>
-<div class="filter-group">
-<div class="filter-label">Use</div>
-<div class="filter-pills">
-<button data-filter="daily" type="button">Daily</button>
-<button data-filter="max cushion" type="button">Max Cushion</button>
-<button data-filter="long run" type="button">Long Run</button>
-</div>
+<div class="filter-group" data-filter-group="category">
+<div class="filter-label">Category</div>
+<div class="filter-pills" id="categoryFilters"></div>
 </div>
 <div class="filter-clear-wrap">
 <button class="clear-filters" type="button">Clear All</button>
@@ -541,7 +532,7 @@ img { max-width:100%; }
 <h2 class="display">Recent Shoe Reviews</h2>
 <div class="post-count">8 posts</div>
 </div>
-<div class="review-list"><article class="review-row" data-filter="road mizuno daily trainer cody emily"><a class="review-thumb" href="9to5_shoes_mizuno_wave_rider_30.html"><img alt="Mizuno Wave Rider 30 Review" src="images/mizuno-wave-rider-30-hero.jpg"/></a><div class="review-content"><div class="review-meta">Road Running Shoes • Published July 30, 2026</div><h3><a href="9to5_shoes_mizuno_wave_rider_30.html">Mizuno Wave Rider 30 Review</a></h3><p>A modern update to Mizuno's longstanding daily trainer with an 8 mm drop and dual-density MIZUNO ENERZY NXT midsole.</p><div class="tag-row"><span>Road</span><span>Daily Trainer</span><span>Mizuno</span></div><a class="read-link" href="9to5_shoes_mizuno_wave_rider_30.html">Read Review</a></div></article><article class="review-row" data-filter="trail norda max cushion long run all mountain cody ryan">
+<div class="review-list"><article class="review-row" data-brand="mizuno" data-category="daily trainer" data-filter="road mizuno daily trainer cody emily" data-type="road"><a class="review-thumb" href="9to5_shoes_mizuno_wave_rider_30.html"><img alt="Mizuno Wave Rider 30 Review" src="images/mizuno-wave-rider-30-hero.jpg"/></a><div class="review-content"><div class="review-meta">Road Running Shoes • Published July 30, 2026</div><h3><a href="9to5_shoes_mizuno_wave_rider_30.html">Mizuno Wave Rider 30 Review</a></h3><p>A modern update to Mizuno's longstanding daily trainer with an 8 mm drop and dual-density MIZUNO ENERZY NXT midsole.</p><div class="tag-row"><span>Road</span><span>Daily Trainer</span><span>Mizuno</span></div><a class="read-link" href="9to5_shoes_mizuno_wave_rider_30.html">Read Review</a></div></article><article class="review-row" data-brand="norda" data-category="all mountain" data-filter="trail norda max cushion long run all mountain cody ryan" data-type="trail">
 <a class="review-thumb" href="9to5_shoes_norda_055.html"><img alt="norda 055 Review" src="images/norda-055-hero.jpg"/></a>
 <div class="review-content">
 <div class="review-meta">Trail Running Shoes • Published July 28, 2026</div>
@@ -550,7 +541,7 @@ img { max-width:100%; }
 <div class="tag-row"><span>Trail</span><span>All Mountain</span><span>norda</span></div>
 <a class="read-link" href="9to5_shoes_norda_055.html">Read Review</a>
 </div>
-</article><article class="review-row" data-filter="road hoka daily trainer max cushion long run cody blake emily eric">
+</article><article class="review-row" data-brand="hoka" data-category="daily trainer" data-filter="road hoka daily trainer max cushion long run cody blake emily eric" data-type="road">
 <a class="review-thumb" href="9to5_shoes_hoka_clifton_pro.html"><img alt="HOKA Clifton Pro Review" src="images/hoka-clifton-pro-hero.jpg"/></a>
 <div class="review-content">
 <div class="review-meta">Road Running Shoes • Published July 26, 2026</div>
@@ -559,7 +550,7 @@ img { max-width:100%; }
 <div class="tag-row"><span>Road</span><span>Daily Trainer</span><span>HOKA</span></div>
 <a class="read-link" href="9to5_shoes_hoka_clifton_pro.html">Read Review</a>
 </div>
-</article><article class="review-row" data-filter="road new balance plated daily trainer speed workout cody eric">
+</article><article class="review-row" data-brand="new balance" data-category="plated trainer" data-filter="road new balance plated daily trainer speed workout cody eric" data-type="road">
 <a class="review-thumb" href="9to5_shoes_new_balance_sc_rebel.html"><img alt="New Balance SC Rebel" src="images/new-balance-sc-rebel-hero.png"/></a>
 <div class="review-content">
 <div class="review-meta">Road Running Shoes • Published July 20, 2026</div>
@@ -568,7 +559,7 @@ img { max-width:100%; }
 <div class="tag-row"><span>Road</span><span>Plated Trainer</span><span>New Balance</span></div>
 <a class="read-link" href="9to5_shoes_new_balance_sc_rebel.html">Read Review</a>
 </div>
-</article><article class="review-row" data-filter="road asics daily trainer long run cody eric emily blake">
+</article><article class="review-row" data-brand="asics" data-category="daily trainer" data-filter="road asics daily trainer long run cody eric emily blake" data-type="road">
 <a class="review-thumb" href="9to5_shoes_asics_novablast6.html"><img alt="ASICS Novablast 6" src="images/asics-novablast-6-hero.png"/></a>
 <div class="review-content">
 <div class="review-meta">Road Running Shoes • Published July 19, 2026</div>
@@ -577,7 +568,7 @@ img { max-width:100%; }
 <div class="tag-row"><span>Road</span><span>Daily Trainer</span><span>ASICS</span></div>
 <a class="read-link" href="9to5_shoes_asics_novablast6.html">Read Review</a>
 </div>
-</article><article class="review-row" data-filter="daily peba puma road trainer uptempo">
+</article><article class="review-row" data-brand="puma" data-category="daily trainer" data-filter="daily peba puma road trainer uptempo" data-type="road">
 <a class="review-thumb" href="9to5_shoes_puma_deviatepurenitro.html"><img alt="Puma Deviate Pure Nitro" src="images/asset-924106f12f164d85.png"/></a>
 <div class="review-content">
 <div class="review-meta">Road Running Shoes • Published July 13, 2026</div>
@@ -586,7 +577,7 @@ img { max-width:100%; }
 <div class="tag-row"><span>Road</span><span>Daily Trainer</span><span>Puma</span></div>
 <a class="read-link" href="9to5_shoes_puma_deviatepurenitro.html">Read Review</a>
 </div>
-</article><article class="review-row" data-filter="road saucony max cushion daily long run">
+</article><article class="review-row" data-brand="saucony" data-category="max cushion" data-filter="road saucony max cushion daily long run" data-type="road">
 <a class="review-thumb" href="9to5_shoes_saucony_paramountmax.html"><img alt="Saucony Paramount Max" src="images/asset-80d6b093ece4f430.png"/></a>
 <div class="review-content">
 <div class="review-meta">Road Running Shoes • Published July 12, 2026</div>
@@ -596,7 +587,7 @@ img { max-width:100%; }
 <a class="read-link" href="9to5_shoes_saucony_paramountmax.html">Read Review</a>
 </div>
 </article>
-<article class="review-row" data-filter="road asics max cushion daily">
+<article class="review-row" data-brand="asics" data-category="max cushion" data-filter="road asics max cushion daily" data-type="road">
 <a class="review-thumb" href="9to5_shoes_asics_nimbus28.html"><img alt="ASICS Gel Nimbus 28" src="images/asset-c28025710b95b484.jpg"/></a>
 <div class="review-content">
 <div class="review-meta">Road Running Shoes • Published July 9, 2026</div>
@@ -692,67 +683,7 @@ function setupSiteSearch() {
 
 setupSiteSearch();
 </script>
-<script>
-function setupShoeFilters() {
-  const buttons = document.querySelectorAll(".filter-pills button[data-filter]");
-  const clearButton = document.querySelector(".clear-filters");
-  const cards = document.querySelectorAll(".review-row[data-filter]");
-  const count = document.querySelector(".post-count");
-  const noResults = document.querySelector(".no-results");
 
-  if (!buttons.length || !cards.length) return;
-
-  const activeFilters = new Set();
-
-  function updateButtonStates() {
-    buttons.forEach(button => {
-      button.classList.toggle("active", activeFilters.has(button.dataset.filter));
-    });
-  }
-
-  function applyFilters() {
-    const filters = Array.from(activeFilters).filter(value => value !== "all");
-    let visible = 0;
-
-    cards.forEach(card => {
-      const tags = (card.dataset.filter || "").toLowerCase();
-      const show = filters.length === 0 || filters.every(filter => tags.includes(filter));
-      card.style.display = show ? "" : "none";
-      if (show) visible++;
-    });
-
-    if (count) count.textContent = `${visible} ${visible === 1 ? "post" : "posts"}`;
-    if (noResults) noResults.classList.toggle("active", visible === 0);
-    updateButtonStates();
-  }
-
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      const value = button.dataset.filter;
-
-      if (value === "all") {
-        activeFilters.clear();
-      } else if (activeFilters.has(value)) {
-        activeFilters.delete(value);
-      } else {
-        activeFilters.add(value);
-      }
-
-      applyFilters();
-    });
-  });
-
-  if (clearButton) {
-    clearButton.addEventListener("click", () => {
-      activeFilters.clear();
-      applyFilters();
-    });
-  }
-
-  applyFilters();
-}
-setupShoeFilters();
-</script>
 <style>
 .pagination .page-btn{
   border:0;
@@ -768,82 +699,151 @@ setupShoeFilters();
   cursor:default;
 }
 </style>
+
+
 <script>
 (function () {
   const REVIEWS_PER_PAGE = 25;
-  const reviewList = document.querySelector('.review-list');
-  const pagination = document.querySelector('.pagination');
+  const cards = Array.from(document.querySelectorAll(".review-row"));
+  const brandWrap = document.getElementById("brandFilters");
+  const categoryWrap = document.getElementById("categoryFilters");
+  const typeWrap = document.getElementById("typeFilters");
+  const clearButton = document.querySelector(".clear-filters");
+  const count = document.querySelector(".post-count");
+  const noResults = document.querySelector(".no-results");
+  const pagination = document.querySelector(".pagination");
+  if (!cards.length) return;
 
-  if (!reviewList || !pagination) return;
+  const pretty = value => value.split(" ").map(word =>
+    word === "norda" ? "norda" : word.charAt(0).toUpperCase() + word.slice(1)
+  ).join(" ");
 
-  const allReviews = Array.from(reviewList.querySelectorAll('.review-row'));
-  let currentPage = 1;
+  const uniqueValues = key => [...new Set(
+    cards.map(card => (card.dataset[key] || "").trim().toLowerCase()).filter(Boolean)
+  )].sort((a, b) => a.localeCompare(b));
 
-  function renderPage(page) {
-    const totalPages = Math.max(1, Math.ceil(allReviews.length / REVIEWS_PER_PAGE));
-    currentPage = Math.min(Math.max(page, 1), totalPages);
+  function buildButtons(container, values) {
+    if (!container) return;
+    container.innerHTML = values.map(value =>
+      `<button type="button" data-value="${value}">${pretty(value)}</button>`
+    ).join("");
+  }
 
-    const start = (currentPage - 1) * REVIEWS_PER_PAGE;
-    const end = start + REVIEWS_PER_PAGE;
+  buildButtons(brandWrap, uniqueValues("brand"));
+  buildButtons(categoryWrap, uniqueValues("category"));
 
-    allReviews.forEach((review, index) => {
-      review.style.display = index >= start && index < end ? '' : 'none';
+  const state = { type: "all", brand: "", category: "", page: 1 };
+
+  function updateButtons() {
+    [["type", typeWrap], ["brand", brandWrap], ["category", categoryWrap]].forEach(([key, wrap]) => {
+      Array.from(wrap?.querySelectorAll("button[data-value]") || []).forEach(button => {
+        const active = key === "type"
+          ? button.dataset.value === state.type
+          : button.dataset.value === state[key];
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", String(active));
+      });
     });
+  }
 
-    pagination.innerHTML = '';
+  function matches() {
+    return cards.filter(card =>
+      (state.type === "all" || card.dataset.type === state.type) &&
+      (!state.brand || card.dataset.brand === state.brand) &&
+      (!state.category || card.dataset.category === state.category)
+    );
+  }
 
-    if (totalPages <= 1) {
-      pagination.style.display = 'none';
+  function renderPagination(total) {
+    if (!pagination) return;
+    const pages = Math.max(1, Math.ceil(total / REVIEWS_PER_PAGE));
+    state.page = Math.min(Math.max(state.page, 1), pages);
+    pagination.innerHTML = "";
+
+    if (pages <= 1) {
+      pagination.style.display = "none";
       return;
     }
 
-    pagination.style.display = 'flex';
-
-    const previous = document.createElement('button');
-    previous.type = 'button';
-    previous.className = 'page-btn';
-    previous.textContent = 'Previous';
-    previous.disabled = currentPage === 1;
-    previous.addEventListener('click', () => renderPage(currentPage - 1));
-    pagination.appendChild(previous);
-
-    for (let pageNumber = 1; pageNumber <= totalPages; pageNumber += 1) {
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.className = 'page-btn';
-      button.textContent = String(pageNumber);
-      button.setAttribute('aria-label', `Go to review page ${pageNumber}`);
-      if (pageNumber === currentPage) {
-        button.classList.add('active');
-        button.setAttribute('aria-current', 'page');
-      }
-      button.addEventListener('click', () => renderPage(pageNumber));
+    pagination.style.display = "flex";
+    const add = (label, page, disabled, active) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "page-btn";
+      button.textContent = label;
+      button.disabled = disabled;
+      if (active) button.classList.add("active");
+      button.addEventListener("click", () => {
+        state.page = page;
+        render();
+      });
       pagination.appendChild(button);
-    }
+    };
 
-    const next = document.createElement('button');
-    next.type = 'button';
-    next.className = 'page-btn';
-    next.textContent = 'Next';
-    next.disabled = currentPage === totalPages;
-    next.addEventListener('click', () => renderPage(currentPage + 1));
-    pagination.appendChild(next);
+    add("Previous", state.page - 1, state.page === 1, false);
+    for (let page = 1; page <= pages; page++) add(String(page), page, false, page === state.page);
+    add("Next", state.page + 1, state.page === pages, false);
   }
 
-  renderPage(1);
-})();
-</script>
-<script>
-(function(){
+  function render() {
+    const filtered = matches();
+    const start = (state.page - 1) * REVIEWS_PER_PAGE;
+    const visible = new Set(filtered.slice(start, start + REVIEWS_PER_PAGE));
+
+    cards.forEach(card => {
+      const show = visible.has(card);
+      card.style.display = show ? "" : "none";
+      card.setAttribute("aria-hidden", String(!show));
+    });
+
+    if (count) count.textContent = `${filtered.length} ${filtered.length === 1 ? "post" : "posts"}`;
+    if (noResults) noResults.classList.toggle("active", filtered.length === 0);
+
+    updateButtons();
+    renderPagination(filtered.length);
+  }
+
+  function bind(wrap, key) {
+    wrap?.addEventListener("click", event => {
+      const button = event.target.closest("button[data-value]");
+      if (!button) return;
+      const value = button.dataset.value;
+
+      if (key === "type") {
+        state.type = value;
+      } else {
+        state[key] = state[key] === value ? "" : value;
+      }
+
+      state.page = 1;
+      render();
+    });
+  }
+
+  bind(typeWrap, "type");
+  bind(brandWrap, "brand");
+  bind(categoryWrap, "category");
+
+  clearButton?.addEventListener("click", () => {
+    state.type = "all";
+    state.brand = "";
+    state.category = "";
+    state.page = 1;
+    render();
+  });
+
   const params = new URLSearchParams(window.location.search);
+  const type = (params.get("type") || "").toLowerCase();
   const brand = (params.get("brand") || "").toLowerCase();
-  if (!brand) return;
-  const button = Array.from(document.querySelectorAll('button[data-filter]'))
-    .find(btn => (btn.dataset.filter || "").toLowerCase() === brand);
-  if (button && !button.classList.contains("active")) button.click();
+  const category = (params.get("category") || "").toLowerCase().replace(/-/g, " ");
+
+  if (["road", "trail", "race"].includes(type)) state.type = type;
+  if (uniqueValues("brand").includes(brand)) state.brand = brand;
+  if (uniqueValues("category").includes(category)) state.category = category;
+
+  render();
 })();
-</script>
-<script defer="" src="assets/site.js"></script></body>
+</script><script defer="" src="assets/site.js"></script></body>
 </html>
 <style>
 .shoe-archive-hero{min-height:420px!important;}
