@@ -1,82 +1,837 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Privacy Policy | 9to5 Runners</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&amp;family=Oswald:wght@600;700&amp;display=swap" rel="stylesheet"/>
 <style>
-body{font-family:Arial,sans-serif;background:#050505;color:#f5f5f5;line-height:1.7;margin:0}
-header{background:#232323;padding:30px;text-align:center}
-h1,h2{color:#2878d9}
-main{max-width:900px;margin:auto;padding:40px 24px}
-a{color:#5fa8ff}
-section{margin-bottom:36px}
-footer{border-top:1px solid #333;padding:24px;text-align:center;color:#aaa}
+    :root {
+      --black:#050505;
+      --charcoal:#151515;
+      --white:#fffaf0;
+      --blue:#2878d9;
+      --muted:#b8b8b8;
+      --card:#101010;
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body {
+      background:var(--black);
+      color:var(--white);
+      font-family:"Oswald", Arial, sans-serif;
+      font-weight:700;
+    }
+    a { color:inherit; }
+    .display {
+      font-family:"Bowlby One SC", Impact, sans-serif;
+      text-transform:uppercase;
+      letter-spacing:.5px;
+      line-height:.9;
+    }
+    .site-header {
+      height:86px;
+      background:#232323;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:sticky;
+      top:0;
+      z-index:20;
+      box-shadow:0 8px 22px rgba(0,0,0,.35);
+    }
+    .nav {
+      position:absolute;
+      left:34px;
+      top:33px;
+      display:flex;
+      gap:38px;
+      font-family:"Bowlby One SC", Impact, sans-serif;
+      font-size:15px;
+      text-transform:uppercase;
+    }
+    .nav a {
+      text-decoration:underline;
+      text-underline-offset:3px;
+      text-decoration-thickness:2px;
+    }
+    .site-logo {
+      width:138px;
+      height:76px;
+      object-fit:contain;
+    }
+    .hero{
+  min-height:560px;
+  background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.35),rgba(0,0,0,.08)),url("images/asset-9c81e0327d710b5a.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:flex-end;
+}
+    .hero::after {
+      content:"";
+      position:absolute;
+      inset:auto 0 0 0;
+      height:150px;
+      background:linear-gradient(to bottom, transparent, var(--black));
+    }
+    .hero-inner {
+      position:relative;
+      z-index:2;
+      max-width:1100px;
+      width:100%;
+      margin:0 auto;
+      padding:0 34px 58px;
+    }
+    .badge {
+      display:block;
+      background:none;
+      color:#ffffff;
+      padding:0;
+      margin-bottom:12px;
+      font-family:"Oswald", Arial, sans-serif;
+      font-size:18px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+    }
+    .hero-title {
+      font-size:clamp(52px, 8vw, 105px);
+      max-width:760px;
+      text-shadow:0 7px 10px rgba(0,0,0,.7);
+      margin-bottom:17px;
+    }
+    .hero-copy {
+      max-width:560px;
+      color:#eee;
+      font-size:22px;
+      line-height:1.25;
+      margin-bottom:25px;
+    }
+    .hero-actions {
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .btn {
+      display:inline-block;
+      background:var(--blue);
+      color:#fff;
+      border-radius:999px;
+      padding:12px 24px 13px;
+      text-decoration:none;
+      line-height:1;
+      font-size:18px;
+      box-shadow:0 3px 0 rgba(0,0,0,.35);
+    }
+    .btn.secondary {
+      background:transparent;
+      border:2px solid rgba(255,255,255,.85);
+      box-shadow:none;
+    }
+    .wrap {
+      max-width:1100px;
+      margin:0 auto;
+      padding:44px 34px;
+    }
+    .section-head {
+      display:flex;
+      justify-content:space-between;
+      align-items:end;
+      gap:24px;
+      margin-bottom:24px;
+    }
+    .section-title {
+      font-size:clamp(38px, 5vw, 62px);
+    }
+    .view-all {
+      color:#fff;
+      font-size:17px;
+      text-decoration:underline;
+      text-underline-offset:3px;
+      white-space:nowrap;
+    }
+    .featured-grid {
+      display:grid;
+      grid-template-columns:1.3fr .7fr;
+      gap:22px;
+    }
+    .lead-card, .side-stack article, .review-card, .video-card, .brand-card {
+      background:var(--card);
+      border:1px solid rgba(255,255,255,.1);
+      overflow:hidden;
+    }
+    .lead-card {
+      min-height:390px;
+      position:relative;
+    }
+    .lead-card img, .review-card img, .video-card img {
+      width:100%;
+      display:block;
+      object-fit:cover;
+    }
+    .lead-card img {
+      height:390px;
+    }
+    .card-overlay {
+      position:absolute;
+      inset:auto 0 0 0;
+      padding:24px;
+      background:linear-gradient(to bottom, transparent, rgba(0,0,0,.92));
+    }
+    .kicker {
+      color:var(--blue);
+      font-size:15px;
+      text-transform:uppercase;
+      letter-spacing:.8px;
+      margin-bottom:7px;
+    }
+    .card-title {
+      font-size:31px;
+      line-height:1;
+      text-transform:uppercase;
+      margin-bottom:10px;
+    }
+    .side-stack {
+      display:grid;
+      gap:22px;
+    }
+    .side-stack article {
+      min-height:184px;
+      padding:22px;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-end;
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.9)),
+        url("images/asset-4de38e04226af557.jpg");
+      background-size:cover;
+      background-position:center;
+    }
+    .side-stack article:nth-child(2) {
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.9)),
+        url("images/asset-ac8bcd28b0a36ad1.jpg");
+      background-size:cover;
+      background-position:center;
+    }
+    .reviews-grid, .videos-grid, .brand-grid {
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:22px;
+    }
+    .review-card img {
+      height:250px;
+    }
+    .review-body {
+      padding:16px;
+    }
+    .review-name {
+      font-size:25px;
+      line-height:1;
+      text-transform:uppercase;
+      margin-bottom:8px;
+    }
+    .meta {
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.25;
+    }
+    .videos-grid {
+      grid-template-columns:repeat(4, 1fr);
+    }
+    .video-card {
+      text-align:center;
+    }
+    .video-card img {
+      aspect-ratio:16/9;
+      object-fit:contain;
+      background:#111;
+      padding:12px;
+    }
+    .video-card .btn {
+      margin:16px 0 18px;
+      padding:10px 19px 11px;
+      font-size:16px;
+    }
+    .brand-grid {
+      grid-template-columns:repeat(5, 1fr);
+    }
+    .brand-card {
+      text-align:center;
+      padding:22px 12px;
+      font-family:"Bowlby One SC", Impact, sans-serif;
+      text-decoration:none;
+      text-transform:uppercase;
+      transition:transform .18s ease, border-color .18s ease;
+    }
+    .brand-card:hover {
+      transform:translateY(-3px);
+      border-color:var(--blue);
+    }
+    .footer {
+      border-top:1px solid rgba(255,255,255,.1);
+      text-align:center;
+      padding:36px 20px 42px;
+    }
+    .footer-title {
+      font-size:34px;
+      margin-bottom:14px;
+    }
+    .socials {
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      margin-top:18px;
+    }
+    .socials a {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:46px;
+      height:46px;
+      border:1px solid rgba(255,255,255,.25);
+      border-radius:50%;
+      text-decoration:none;
+    }
+    .socials svg { width:26px; height:26px; }
+
+    .youtube-live-note {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.35;
+    }
+    .video-card .channel-label {
+      display:block;
+      padding: 13px 14px 0;
+      color: var(--blue);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .7px;
+      text-align:left;
+    }
+    .video-card .video-title {
+      padding: 6px 14px 0;
+      min-height: 56px;
+      color:#fff;
+      font-size:20px;
+      line-height:1.05;
+      text-align:left;
+      text-transform:uppercase;
+    }
+    .video-card .video-date {
+      padding: 8px 14px 0;
+      color: var(--muted);
+      font-size: 14px;
+      text-align:left;
+    }
+    .video-card.loading {
+      min-height: 270px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color: var(--muted);
+      padding: 24px;
+    }
+
+    @media (max-width:850px) {
+      .site-header { height:76px; }
+      .site-logo { width:118px; height:66px; }
+      .nav { left:14px; top:30px; gap:17px; font-size:12px; }
+      .hero { min-height:540px; background-position:center; }
+      .hero-inner, .wrap { padding-left:18px; padding-right:18px; }
+      .featured-grid, .reviews-grid, .videos-grid, .brand-grid {
+        grid-template-columns:1fr;
+      }
+      .brand-grid { gap:12px; }
+      .section-head { align-items:flex-start; flex-direction:column; gap:10px; }
+      .lead-card img { height:330px; }
+    }
+  
+/* Global Search */
+.search-wrap {
+  position: absolute;
+  right: 34px;
+  top: 24px;
+  width: 260px;
+  z-index: 60;
+}
+.search-input {
+  width: 100%;
+  height: 42px;
+  border: 2px solid rgba(255,255,255,.22);
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  padding: 0 18px;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 16px;
+  outline: none;
+}
+.search-input::placeholder {
+  color: rgba(255,255,255,.72);
+}
+.search-input:focus {
+  border-color: #2878d9;
+}
+.search-results {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 330px;
+  max-height: 360px;
+  overflow: auto;
+  background: #101010;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.35);
+  padding: 10px;
+}
+.search-results.active {
+  display: block;
+}
+.search-result {
+  display: block;
+  padding: 12px 13px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.search-result:hover {
+  background: #2878d9;
+}
+.search-result-title {
+  display: block;
+  font-family: "Bowlby One SC", Impact, sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.search-result-meta {
+  display: block;
+  margin-top: 5px;
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
+}
+.search-empty {
+  padding: 12px 13px;
+  color: rgba(255,255,255,.72);
+  font-size: 14px;
+}
+@media (max-width: 900px) {
+  .site-header {
+    flex-wrap: wrap;
+    height: auto !important;
+    min-height: 118px;
+    padding-bottom: 10px;
+  }
+  .search-wrap {
+    position: static;
+    width: calc(100% - 28px);
+    margin: 8px auto 10px;
+    order: 3;
+  }
+  .search-results {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+/* 9to5 Runners Responsive System */
+html { scroll-behavior:smooth; }
+img { max-width:100%; }
+
+@media (max-width:1100px){
+  .site-header{min-height:118px!important;height:auto!important;flex-wrap:wrap;padding:12px 16px 14px;gap:10px;}
+  .nav{position:static!important;order:1;width:100%;justify-content:center;gap:28px!important;font-size:14px!important;}
+  .site-header > a[aria-label*="Home"]{order:0;}
+  .site-logo{width:124px!important;height:70px!important;}
+  .search-wrap{position:static!important;order:2;width:min(520px,100%)!important;margin:0 auto!important;}
+  .search-results{left:0!important;right:auto!important;width:100%!important;}
+  .hero{min-height:440px!important;}
+  .hero-inner,.wrap,.review-shell,.shoe-wrap,.intro,.page-layout{padding-left:22px!important;padding-right:22px!important;}
+  .featured-grid,.reviews-grid,.videos-grid,.brand-grid,.intro-grid,.page-layout,.two-col{grid-template-columns:1fr!important;}
+  .filters{position:static!important;}
+}
+
+@media (max-width:768px){
+  body{overflow-x:hidden;}
+  .nav{gap:18px!important;font-size:12px!important;}
+  .hero{min-height:360px!important;background-position:center!important;}
+  .hero h1,.hero-title{font-size:clamp(42px,12vw,64px)!important;}
+  .hero-copy,.hero-sub{font-size:18px!important;}
+  .section-title,.page-title,.intro h2,.intro-copy h2,.section h2{font-size:34px!important;}
+  .review-shell{padding-top:34px!important;}
+  .intro-copy p,.section p{font-size:16px!important;line-height:1.6!important;}
+  .spec-horizontal{grid-template-columns:repeat(2,1fr)!important;margin:28px 0 12px!important;}
+  .spec-item{min-height:92px!important;padding:18px 10px!important;border-bottom:1px solid #ececec;}
+  .spec-item:nth-child(2n){border-right:none!important;}
+  .spec-item:last-child{grid-column:1/-1;border-bottom:none!important;}
+  .spec-item strong{font-size:20px!important;min-height:auto!important;}
+  .spec-item span{font-size:13px!important;}
+  .photo-block{max-width:100%!important;margin-top:24px!important;}
+  .photo-block img{width:100%!important;height:auto!important;max-height:320px!important;object-fit:contain!important;}
+  .review-row{grid-template-columns:1fr!important;gap:18px!important;}
+  .review-thumb img{height:auto!important;max-height:260px!important;object-fit:contain!important;}
+  .review-content h3,.review-name,.card-title{font-size:26px!important;}
+  .filter-pills{gap:8px!important;}
+  .filter-pills button,.clear-filters,.btn,.read-link,.page-btn{min-height:42px;}
+  .runner-profile-mock{margin:48px auto 28px!important;padding-top:22px!important;}
+  .runner-profile-image-wrap img{border-radius:6px!important;}
+  .youtube-hotspot{left:68%!important;top:37%!important;width:10%!important;height:16%!important;}
+  .instagram-hotspot{left:80%!important;top:36%!important;width:9%!important;height:18%!important;}
+  .footer{padding:28px 16px 34px!important;}
+}
+
+@media (max-width:480px){
+  .site-header{min-height:132px!important;}
+  .nav{gap:14px!important;font-size:11px!important;}
+  .site-logo{width:112px!important;height:62px!important;}
+  .hero{min-height:320px!important;}
+  .hero-inner,.wrap,.review-shell,.shoe-wrap,.intro,.page-layout{padding-left:16px!important;padding-right:16px!important;}
+  .spec-horizontal{grid-template-columns:1fr!important;}
+  .spec-item{border-right:none!important;}
+  .runner-profile-mock{display:none;}
+}
+
+/* Featured Stories heading fix */
+.featured-stories h2,
+.featured-stories .display {
+  line-height: 1.12 !important;
+  padding-bottom: 8px !important;
+  overflow: visible !important;
+}
+.featured-stories {
+  overflow: visible !important;
+}
+
+/* Latest Reviews grid: 3 per row, maximum 9 published reviews */
+#shoes .reviews-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+}
+#shoes .review-card:nth-child(n+10){
+  display:none !important;
+}
+@media(max-width:900px){
+  #shoes .reviews-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+@media(max-width:640px){
+  #shoes .reviews-grid{
+    grid-template-columns:1fr !important;
+  }
+}
+
+
+/* The 9to5 Picks */
+.picks-section{
+  margin-top:64px;
+}
+.picks-meta{
+  margin:0 0 8px;
+  color:var(--muted);
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.3px;
+  text-transform:uppercase;
+}
+.picks-subtitle{
+  max-width:760px;
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.55;
+}
+.picks-category{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  text-transform:uppercase;
+  font-size:22px;
+  margin:0 0 20px;
+}
+.picks-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:22px;
+}
+.picks-column{
+  background:var(--card);
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:16px;
+  padding:24px;
+}
+.picks-column h3{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  text-transform:uppercase;
+  font-size:24px;
+  margin:0 0 18px;
+}
+.picks-column ol{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.picks-column li{
+  display:grid;
+  grid-template-columns:34px 1fr;
+  align-items:center;
+  gap:10px;
+  font-size:16px;
+  line-height:1.35;
+}
+.picks-column .rank{
+  width:30px;
+  height:30px;
+  border-radius:999px;
+  background:var(--blue);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:13px;
+}
+@media(max-width:900px){
+  .picks-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+
+@media(max-width:1050px){
+  .picks-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+/* Trail Picks */
+.trail-picks-block{
+  margin-top:34px;
+}
+.trail-picks-grid{
+  grid-template-columns:minmax(0,1fr);
+  max-width:calc((100% - 66px) / 4);
+}
+@media(max-width:1050px){
+  .trail-picks-grid{
+    max-width:calc((100% - 22px) / 2);
+  }
+}
+@media(max-width:900px){
+  .trail-picks-grid{
+    max-width:none;
+  }
+}
+
+/* Latest Reviews 3x3 grid */
+#shoes .reviews-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+}
+@media(max-width:900px){
+  #shoes .reviews-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:620px){
+  #shoes .reviews-grid{
+    grid-template-columns:1fr;
+  }
+}
 </style>
+<style>
+  .privacy-hero {
+    background:linear-gradient(135deg,#151515,#050505);
+    border-bottom:1px solid rgba(255,255,255,.1);
+  }
+  .privacy-hero-inner {
+    max-width:1100px;
+    margin:0 auto;
+    padding:68px 34px 52px;
+  }
+  .privacy-hero h1 {
+    font-family:"Bowlby One SC",Impact,sans-serif;
+    font-size:clamp(44px,7vw,78px);
+    text-transform:uppercase;
+    line-height:1;
+    margin-bottom:14px;
+  }
+  .privacy-hero p {
+    color:var(--muted);
+    font-size:17px;
+  }
+  .privacy-shell {
+    max-width:900px;
+    margin:0 auto;
+    padding:48px 34px 70px;
+  }
+  .privacy-shell section {
+    margin-bottom:38px;
+    padding-bottom:34px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+  }
+  .privacy-shell section:last-child {
+    border-bottom:none;
+  }
+  .privacy-shell h2 {
+    font-family:"Bowlby One SC",Impact,sans-serif;
+    color:var(--blue);
+    font-size:27px;
+    line-height:1.1;
+    text-transform:uppercase;
+    margin-bottom:13px;
+  }
+  .privacy-shell p {
+    color:#e7e7e7;
+    font-family:"Oswald",Arial,sans-serif;
+    font-weight:600;
+    font-size:17px;
+    line-height:1.7;
+  }
+  .home-return {
+    display:inline-block;
+    margin-top:24px;
+    background:var(--blue);
+    color:#fff;
+    border-radius:999px;
+    padding:12px 22px;
+    text-decoration:none;
+    font-size:17px;
+  }
+  @media(max-width:768px) {
+    .privacy-hero-inner,.privacy-shell {
+      padding-left:18px;
+      padding-right:18px;
+    }
+  }
+</style>
+<meta name="description" content="Read the 9to5 Runners privacy policy, including information about analytics, cookies, affiliate links, and products provided for review."/>
+<link rel="canonical" href="https://www.9to5runners.com/privacy-policy.html"/>
 </head>
 <body>
-<header>
-<h1>Privacy Policy</h1>
-<p>Last Updated: July 31, 2026</p>
+<header class="site-header">
+<nav aria-label="Main navigation" class="nav">
+<a href="9to5_shoes_page1.html">Shoes</a>
+<a href="9to5_gear_page1.html">Gear</a>
+<a href="9to5_about.html">About</a>
+</nav>
+<a aria-label="9to5 Runners Home" href="index.html"><img alt="9to5 Runners logo" class="site-logo" src="images/asset-313d0f249b137e11.jpg"/></a>
+<div class="search-wrap">
+<input aria-label="Search 9to5 Runners" class="search-input" placeholder="Search" type="search"/>
+<div aria-label="Search results" class="search-results"></div>
+</div>
 </header>
-
-<main>
+<section class="privacy-hero">
+  <div class="privacy-hero-inner">
+    <h1>Privacy Policy</h1>
+    <p>Last Updated: July 31, 2026</p>
+    <a class="home-return" href="index.html">← Back to Homepage</a>
+  </div>
+</section>
+<main class="privacy-shell">
 
 <section>
 <h2>Who We Are</h2>
 <p>9to5 Runners is an independent running shoe and gear review website dedicated to providing honest reviews from everyday runners.</p>
 </section>
-
 <section>
 <h2>Information We Collect</h2>
 <p>We may collect limited information such as website analytics, browser information, device information, and information you voluntarily provide through contact forms or email.</p>
 </section>
-
 <section>
 <h2>Analytics</h2>
 <p>We use analytics tools, including Vercel Analytics, to understand how visitors use our website and improve the experience.</p>
 </section>
-
 <section>
 <h2>Cookies</h2>
 <p>This website may use cookies and similar technologies to improve functionality, remember preferences, and measure website performance.</p>
 </section>
-
 <section>
 <h2>Affiliate Links</h2>
 <p>Some links on this website are affiliate links. If you purchase a product through one of these links, 9to5 Runners may earn a commission at no additional cost to you. Affiliate partnerships never influence our reviews or recommendations.</p>
 </section>
-
 <section>
 <h2>Products for Review</h2>
 <p>Some products reviewed on this website are provided by manufacturers for testing. Receiving a product does not guarantee a positive review, and all opinions are our own.</p>
 </section>
-
 <section>
 <h2>Third-Party Services</h2>
 <p>Our website may link to or embed content from services such as YouTube, Instagram, and other platforms. Those services have their own privacy policies.</p>
 </section>
-
 <section>
 <h2>Do Not Sell or Share My Personal Information</h2>
 <p>9to5 Runners does <strong>not</strong> sell personal information for monetary compensation. We do not knowingly share personal information for cross-context behavioral advertising.</p>
 </section>
-
 <section>
 <h2>Your Rights</h2>
 <p>Depending on your location, you may have rights regarding your personal information, including requesting access, correction, or deletion where applicable.</p>
 </section>
-
 <section>
 <h2>Contact</h2>
 <p>Questions about this Privacy Policy can be directed to the 9to5 Runners team through the contact information provided on the website.</p>
 </section>
 
 </main>
-
-<footer>
-&copy; 2026 9to5 Runners. All Rights Reserved.
+<footer class="footer">
+  <h2 class="display footer-title">Connect</h2>
+  <p class="meta">Built for runners who clock in, log miles, and keep chasing big goals.</p>
+  <div style="margin-top:18px;"><a href="index.html">Home</a></div>
+  <div class="socials">
+    <a aria-label="Instagram" href="https://www.instagram.com/9to5runners/" rel="noopener noreferrer" target="_blank">
+      <svg fill="none" viewBox="0 0 24 24"><rect height="18" rx="5" stroke="currentColor" stroke-width="2" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="2"></circle><circle cx="17.2" cy="6.8" fill="currentColor" r="1.1"></circle></svg>
+    </a>
+  </div>
 </footer>
-
+<script>
+const searchIndex = [
+  { title: "Mizuno Wave Rider 30 Review", type: "Shoe Review", tags: "mizuno wave rider daily trainer", url: "9to5_shoes_mizuno_wave_rider_30.html" },
+  { title: "Shoes", type: "Archive", tags: "running shoe reviews", url: "9to5_shoes_page1.html" },
+  { title: "Gear", type: "Archive", tags: "running gear reviews", url: "9to5_gear_page1.html" },
+  { title: "About 9to5 Runners", type: "Page", tags: "reviewers team", url: "9to5_about.html" },
+  { title: "Privacy Policy", type: "Page", tags: "privacy analytics cookies affiliate", url: "privacy-policy.html" }
+];
+function setupSiteSearch() {
+  const input = document.querySelector(".search-input");
+  const results = document.querySelector(".search-results");
+  if (!input || !results) return;
+  function render(query) {
+    const q = query.trim().toLowerCase();
+    if (!q) {
+      results.classList.remove("active");
+      results.innerHTML = "";
+      return;
+    }
+    const matches = searchIndex.filter(item =>
+      `${item.title} ${item.type} ${item.tags}`.toLowerCase().includes(q)
+    ).slice(0,8);
+    results.classList.add("active");
+    results.innerHTML = matches.length
+      ? matches.map(item => `<a class="search-result" href="${item.url}"><span class="search-result-title">${item.title}</span><span class="search-result-meta">${item.type}</span></a>`).join("")
+      : `<div class="search-empty">No results found.</div>`;
+  }
+  input.addEventListener("input", e => render(e.target.value));
+  input.addEventListener("keydown", e => {
+    if (e.key === "Enter") {
+      const first = results.querySelector(".search-result");
+      if (first) first.click();
+    }
+    if (e.key === "Escape") {
+      input.value = "";
+      results.classList.remove("active");
+    }
+  });
+  document.addEventListener("click", e => {
+    if (!e.target.closest(".search-wrap")) results.classList.remove("active");
+  });
+}
+setupSiteSearch();
+</script>
 </body>
 </html>
