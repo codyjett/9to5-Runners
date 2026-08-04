@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ON Cloudboom Strike 2 Review | 9to5 Runners</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&amp;family=Oswald:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --dark:#232323;
+  --blue:#2878d9;
+  --black:#050505;
+  --light:#f4f4f4;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:#fff;
+  color:#111;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:700;
+}
+a { color:inherit; }
+.display {
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.4px;
+  line-height:.9;
+}
+.site-header {
+  height:98px;
+  background:var(--dark);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:sticky;
+  top:0;
+  z-index:50;
+  box-shadow:0 8px 22px rgba(0,0,0,.2);
+}
+.nav {
+  position:absolute;
+  left:38px;
+  top:36px;
+  display:flex;
+  gap:55px;
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:18px;
+  text-transform:uppercase;
+}
+.nav a {
+  color:#fff;
+  text-decoration:underline;
+  text-decoration-thickness:2px;
+  text-underline-offset:3px;
+}
+.site-logo {
+  width:150px;
+  height:84px;
+  object-fit:contain;
+  display:block;
+}
+.search-wrap {
+  position:absolute;
+  right:34px;
+  top:24px;
+  width:260px;
+  z-index:60;
+}
+.search-input {
+  width:100%;
+  height:42px;
+  border:2px solid rgba(255,255,255,.22);
+  border-radius:999px;
+  background:#111;
+  color:#fff;
+  padding:0 18px;
+  font-family:"Oswald", Arial, sans-serif;
+  font-size:16px;
+  outline:none;
+}
+.search-input::placeholder { color:rgba(255,255,255,.72); }
+.search-input:focus { border-color:var(--blue); }
+.search-results {
+  display:none;
+  position:absolute;
+  top:50px;
+  right:0;
+  width:330px;
+  max-height:360px;
+  overflow:auto;
+  background:#101010;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:16px;
+  box-shadow:0 15px 35px rgba(0,0,0,.35);
+  padding:10px;
+}
+.search-results.active { display:block; }
+.search-result {
+  display:block;
+  padding:12px 13px;
+  border-radius:10px;
+  color:#fff;
+  text-decoration:none;
+}
+.search-result:hover { background:var(--blue); }
+.search-result-title {
+  display:block;
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:15px;
+  line-height:1;
+  text-transform:uppercase;
+}
+.search-result-meta {
+  display:block;
+  margin-top:5px;
+  color:rgba(255,255,255,.72);
+  font-size:13px;
+}
+
+.hero {
+  min-height:640px;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.84) 0%, rgba(0,0,0,.35) 48%, rgba(0,0,0,.12) 100%),
+    url("images/asset-67c7d10077f18645.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:flex-end;
+}
+.hero-inner {
+  width:100%;
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 34px 58px;
+  color:#fff;
+}
+.kicker {
+  font-family:"Oswald", Arial, sans-serif;
+  font-size:18px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  margin-bottom:14px;
+}
+.hero h1 {
+  font-size:clamp(54px, 8vw, 104px);
+  max-width:820px;
+  text-shadow:0 6px 12px rgba(0,0,0,.6);
+}
+.hero-sub {
+  max-width:640px;
+  font-size:22px;
+  line-height:1.32;
+  margin-top:20px;
+}
+.btn {
+  display:inline-block;
+  background:var(--blue);
+  color:#fff;
+  border-radius:999px;
+  padding:12px 22px 13px;
+  text-decoration:none;
+  font-family:"Oswald", Arial, sans-serif;
+  font-size:17px;
+  line-height:1;
+  margin-top:22px;
+}
+
+.review-shell {
+  max-width:1180px;
+  margin:0 auto;
+  padding:54px 34px 80px;
+}
+.intro-grid {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:42px;
+  align-items:start;
+}
+.intro-copy h2,
+.section h2,
+.spec-title,
+.profile-title {
+  font-size:48px;
+  margin-bottom:20px;
+}
+.intro-copy p,
+.section p {
+  font-size:18px;
+  line-height:1.55;
+  color:#222;
+  margin-bottom:18px;
+}
+.spec-card {
+  background:#111;
+  color:#fff;
+  border-radius:24px;
+  padding:24px;
+  position:sticky;
+  top:122px;
+}
+.spec-card h3 {
+  font-size:32px;
+  margin-bottom:18px;
+}
+.spec-list {
+  display:grid;
+  gap:13px;
+}
+.spec-row {
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid rgba(255,255,255,.16);
+  padding-bottom:10px;
+  gap:20px;
+}
+.spec-row span:first-child { color:#bbb; }
+.spec-row span:last-child {
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  text-transform:uppercase;
+}
+.runner-wrap {
+  text-align:center;
+  margin-top:20px;
+}
+.runner-wrap img {
+  width:100%;
+  max-width:260px;
+  object-fit:contain;
+}
+
+.takeaway {
+  margin:42px 0;
+  background:#f0f5ff;
+  border-left:8px solid var(--blue);
+  border-radius:20px;
+  padding:24px;
+}
+.takeaway h3 {
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:34px;
+  line-height:.95;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.takeaway p {
+  font-size:18px;
+  line-height:1.45;
+}
+
+.section {
+  margin:62px 0;
+}
+.section-label {
+  color:var(--blue);
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  text-transform:uppercase;
+  font-size:16px;
+  margin-bottom:10px;
+}
+.photo-block{
+  max-width:700px;
+  margin:34px auto 0;
+}
+.photo-block img{
+  width:100%;
+  height:320px;
+  object-fit:contain;
+  object-position:center;
+  background:#fff;
+  border-radius:18px;
+  display:block;
+}
+
+
+
+
+
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin-top:24px;
+}
+.gallery img {
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  border-radius:18px;
+  display:block;
+}
+.profile-card {
+  margin-top:70px;
+  background:#111;
+  color:#fff;
+  border-radius:28px;
+  padding:30px;
+  display:grid;
+  grid-template-columns:140px 1fr;
+  gap:24px;
+  align-items:center;
+}
+.profile-card img {
+  width:140px;
+  height:140px;
+  object-fit:cover;
+  border-radius:50%;
+}
+.profile-name {
+  color:var(--blue);
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:54px;
+  line-height:.9;
+  text-transform:uppercase;
+}
+.profile-card p {
+  margin-top:10px;
+  line-height:1.45;
+  color:#e8e8e8;
+}
+.back-link {
+  display:inline-block;
+  margin-top:34px;
+  color:var(--blue);
+  font-family:"Oswald", Arial, sans-serif;
+  font-size:18px;
+}
+
+.footer {
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:28px 20px 34px;
+}
+.footer-title {
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:34px;
+  line-height:1;
+  margin-bottom:14px;
+}
+.instagram {
+  display:inline-flex;
+  color:#fff;
+  text-decoration:none;
+}
+.instagram svg {
+  width:52px;
+  height:52px;
+  display:block;
+}
+
+@media(max-width:900px) {
+  .site-header {
+    flex-wrap:wrap;
+    height:auto !important;
+    min-height:118px;
+    padding-bottom:10px;
+  }
+  .site-logo { width:122px; height:70px; }
+  .nav { left:14px; top:32px; gap:20px; font-size:12px; }
+  .search-wrap {
+    position:static;
+    width:calc(100% - 28px);
+    margin:8px auto 10px;
+    order:3;
+  }
+  .search-results { left:0; right:auto; width:100%; }
+  .hero { min-height:500px; }
+  .review-shell,
+  .hero-inner { padding-left:20px; padding-right:20px; }
+  .intro-grid,
+  .two-col,
+  .profile-card {
+    grid-template-columns:1fr;
+  }
+  .spec-card { position:static; }
+  .gallery { grid-template-columns:1fr; }
+  .intro-copy h2,
+  .section h2,
+  .spec-title,
+  .profile-title { font-size:38px; }
+}
+
+
+.spec-horizontal{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+background:#fff;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+border:1px solid #e8e8e8;
+margin:34px 0 10px;
+overflow:hidden;
+align-items:stretch;
+}
+.spec-item{
+padding:22px 12px;
+text-align:center;
+border-right:1px solid #ececec;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+min-height:112px;
+}
+.spec-item:last-child{border-right:none;}
+.spec-item span{
+display:block;
+font-family:"Oswald",Arial,sans-serif;
+font-size:15px;
+text-transform:uppercase;
+letter-spacing:.8px;
+color:#666;
+margin-bottom:12px;
+line-height:1;
+}
+.spec-item strong{
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:"Bowlby One SC",Impact,sans-serif;
+font-size:24px;
+line-height:1;
+min-height:50px;
+text-align:center;
+}
+
+@media(max-width:900px){
+
+.spec-horizontal{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+background:#fff;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+border:1px solid #e8e8e8;
+margin:34px 0 10px;
+overflow:hidden;
+align-items:stretch;
+}
+.spec-item{
+padding:22px 12px;
+text-align:center;
+border-right:1px solid #ececec;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+min-height:112px;
+}
+.spec-item:last-child{border-right:none;}
+.spec-item span{
+display:block;
+font-family:"Oswald",Arial,sans-serif;
+font-size:15px;
+text-transform:uppercase;
+letter-spacing:.8px;
+color:#666;
+margin-bottom:12px;
+line-height:1;
+}
+.spec-item strong{
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:"Bowlby One SC",Impact,sans-serif;
+font-size:24px;
+line-height:1;
+min-height:50px;
+text-align:center;
+}
+
+@media(max-width:900px){
+  .runner-profile-row{
+  display:grid;
+  grid-template-columns:200px 1fr;
+  gap:40px;
+  align-items:center;
+}
+  .runner-profile-photo{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+}
+  .runner-profile-top {
+    flex-direction:column;
+  }
+  .runner-stats {
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+
+.reviewer-clean-photo {
+    margin: 0 auto;
+  }
+  .reviewer-clean-top {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .reviewer-clean-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.runner-profile-mock {
+  max-width:1100px;
+  margin:80px auto 40px;
+  padding-top:30px;
+  border-top:1px solid #e5e5e5;
+}
+.runner-profile-image-wrap {
+  position:relative;
+  width:100%;
+}
+.runner-profile-image-wrap img {
+  width:100%;
+  display:block;
+  border-radius:8px;
+}
+.profile-hotspot {
+  position:absolute;
+  display:block;
+  z-index:5;
+}
+.youtube-hotspot {
+  left:70.5%;
+  top:39%;
+  width:8%;
+  height:14%;
+}
+.instagram-hotspot {
+  left:80.5%;
+  top:38%;
+  width:6.5%;
+  height:15%;
+}
+.profile-hotspot:hover {
+  outline:3px solid rgba(40,120,217,.45);
+  border-radius:12px;
+}
+@media(max-width:700px) {
+  .runner-profile-mock {
+    margin:56px auto 30px;
+  }
+}
+
+
+/* 9to5 Runners Responsive System */
+html { scroll-behavior:smooth; }
+img { max-width:100%; }
+
+@media (max-width:1100px){
+  .site-header{min-height:118px!important;height:auto!important;flex-wrap:wrap;padding:12px 16px 14px;gap:10px;}
+  .nav{position:static!important;order:1;width:100%;justify-content:center;gap:28px!important;font-size:14px!important;}
+  .site-header > a[aria-label*="Home"]{order:0;}
+  .site-logo{width:124px!important;height:70px!important;}
+  .search-wrap{position:static!important;order:2;width:min(520px,100%)!important;margin:0 auto!important;}
+  .search-results{left:0!important;right:auto!important;width:100%!important;}
+  .hero{min-height:440px!important;}
+  .hero-inner,.wrap,.review-shell,.shoe-wrap,.intro,.page-layout{padding-left:22px!important;padding-right:22px!important;}
+  .featured-grid,.reviews-grid,.videos-grid,.brand-grid,.intro-grid,.page-layout,
+  .filters{position:static!important;}
+}
+
+@media (max-width:768px){
+  body{overflow-x:hidden;}
+  .nav{gap:18px!important;font-size:12px!important;}
+  .hero{min-height:360px!important;background-position:center!important;}
+  .hero h1,.hero-title{font-size:clamp(42px,12vw,64px)!important;}
+  .hero-copy,.hero-sub{font-size:18px!important;}
+  .section-title,.page-title,.intro h2,.intro-copy h2,.section h2{font-size:34px!important;}
+  .review-shell{padding-top:34px!important;}
+  .intro-copy p,.section p{font-size:16px!important;line-height:1.6!important;}
+  .spec-horizontal{grid-template-columns:repeat(2,1fr)!important;margin:28px 0 12px!important;}
+  .spec-item{min-height:92px!important;padding:18px 10px!important;border-bottom:1px solid #ececec;}
+  .spec-item:nth-child(2n){border-right:none!important;}
+  .spec-item:last-child{grid-column:1/-1;border-bottom:none!important;}
+  .spec-item strong{font-size:20px!important;min-height:auto!important;}
+  .spec-item span{font-size:13px!important;}
+  .photo-block{max-width:100%!important;margin-top:24px!important;}
+  .photo-block img{width:100%!important;height:auto!important;max-height:320px!important;object-fit:contain!important;}
+  .review-row{grid-template-columns:1fr!important;gap:18px!important;}
+  .review-thumb img{height:auto!important;max-height:260px!important;object-fit:contain!important;}
+  .review-content h3,.review-name,.card-title{font-size:26px!important;}
+  .filter-pills{gap:8px!important;}
+  .filter-pills button,.clear-filters,.btn,.read-link,.page-btn{min-height:42px;}
+  .runner-profile-mock{margin:48px auto 28px!important;padding-top:22px!important;}
+  .runner-profile-image-wrap img{border-radius:6px!important;}
+  .youtube-hotspot{left:68%!important;top:37%!important;width:10%!important;height:16%!important;}
+  .instagram-hotspot{left:80%!important;top:36%!important;width:9%!important;height:18%!important;}
+  .footer{padding:28px 16px 34px!important;}
+}
+
+@media (max-width:480px){
+  .site-header{min-height:132px!important;}
+  .nav{gap:14px!important;font-size:11px!important;}
+  .site-logo{width:112px!important;height:62px!important;}
+  .hero{min-height:320px!important;}
+  .hero-inner,.wrap,.review-shell,.shoe-wrap,.intro,.page-layout{padding-left:16px!important;padding-right:16px!important;}
+  .spec-horizontal{grid-template-columns:1fr!important;}
+  .spec-item{border-right:none!important;}
+  .runner-profile-mock{display:none;}
+}
+
+
+
+/* Miles Tested */
+.miles-tested{
+  margin:34px 0 42px;
+  padding:24px 26px;
+  background:#fff;
+  border:1px solid #e8e8e8;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+.miles-tested h2{
+  margin:0 0 18px;
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:26px;
+  line-height:1;
+  text-transform:uppercase;
+}
+.miles-tested-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+.miles-tested-item{
+  padding:16px 18px;
+  border:1px solid #ececec;
+  border-radius:14px;
+  background:#fafafa;
+}
+.miles-tested-item span{
+  display:block;
+  margin-bottom:6px;
+  color:#666;
+  font-family:"Oswald",Arial,sans-serif;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+}
+.miles-tested-item strong{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:20px;
+  line-height:1.1;
+}
+@media(max-width:760px){
+  .miles-tested-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+
+/* Miles Tested — single-row desktop layout */
+.miles-tested-grid{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:stretch !important;
+  gap:12px !important;
+  flex-wrap:nowrap !important;
+}
+.miles-tested-item{
+  flex:1 1 0 !important;
+  min-width:0 !important;
+  max-width:none !important;
+}
+@media(max-width:760px){
+  .miles-tested-grid{
+    flex-wrap:wrap !important;
+  }
+  .miles-tested-item{
+    flex:1 1 180px !important;
+  }
+}
+
+/* Shoe review callout boxes — template */
+.two-col {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:26px;
+  margin-top:24px;
+}
+.callout {
+  background:#f3f3f3;
+  border-radius:22px;
+  padding:24px;
+}
+.callout h3 {
+  font-family:"Bowlby One SC", Impact, sans-serif;
+  font-size:28px;
+  line-height:1;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.callout ul {
+  padding-left:20px;
+  line-height:1.55;
+  font-size:16px;
+}
+@media(max-width:760px){
+  .two-col{grid-template-columns:1fr!important;}
+}
+
+/* Full-width shoe review callouts */
+.paramount-callouts{
+  margin:56px 0;
+  width:100%;
+}
+.paramount-callouts .two-col{
+  width:100%;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+}
+@media(max-width:760px){
+  .paramount-callouts .two-col{
+    grid-template-columns:1fr!important;
+  }
+}
+
+/* Review disclosure */
+.review-disclosure{
+  width:100%;
+  margin:26px 0 54px;
+  padding:22px 24px;
+  background:#f3f3f3;
+  border-radius:22px;
+}
+.review-disclosure h3{
+  margin:0 0 10px;
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:20px;
+  line-height:1;
+  text-transform:uppercase;
+}
+.review-disclosure p{
+  margin:0;
+  font-size:15px;
+  line-height:1.55;
+}
+</style>
+<style>
+/* Paramount Max review-specific layout */
+.paramount-hero{
+  min-height:560px;
+  background-size:cover !important;
+  background-position:center !important;
+}
+.paramount-main{
+  max-width:1020px;
+  margin:0 auto;
+  padding:60px 34px 80px;
+}
+.paramount-intro{
+  max-width:860px;
+  font-size:18px;
+  line-height:1.62;
+}
+.paramount-intro p{margin-bottom:18px;}
+.paramount-specs{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  background:#fff;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  border:1px solid #e8e8e8;
+  margin:34px 0 48px;
+  overflow:hidden;
+}
+.paramount-spec{
+  padding:22px 12px;
+  text-align:center;
+  border-right:1px solid #ececec;
+  min-height:112px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+.paramount-spec:last-child{border-right:none;}
+.paramount-spec span{
+  font-family:"Oswald",Arial,sans-serif;
+  font-size:15px;
+  text-transform:uppercase;
+  letter-spacing:.8px;
+  color:#666;
+  margin-bottom:12px;
+}
+.paramount-spec strong{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:24px;
+  line-height:1;
+}
+.paramount-photo{
+  width:700px;
+  max-width:100%;
+  height:320px;
+  margin:36px auto;
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+}
+.paramount-photo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+.paramount-section{margin-top:68px;}
+.paramount-section h2{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:44px;
+  line-height:1;
+  text-transform:uppercase;
+  margin-bottom:24px;
+}
+.paramount-reviewer{margin-bottom:26px;}
+.paramount-reviewer:last-child{margin-bottom:0;}
+.paramount-reviewer h3{
+  color:var(--blue);
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:18px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.paramount-reviewer p{
+  font-size:17px;
+  line-height:1.6;
+  margin-bottom:14px;
+}
+.buy-skip{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+  margin:58px 0 46px;
+}
+.buy-skip article{
+  background:#f4f4f4;
+  border:1px solid #e4e4e4;
+  border-radius:18px;
+  padding:28px;
+}
+.buy-skip h2{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:30px;
+  text-transform:uppercase;
+  line-height:1;
+  margin-bottom:14px;
+}
+.buy-skip p{font-size:17px;line-height:1.55;}
+.permanent-profiles{
+  max-width:1100px;
+  margin:48px auto 28px;
+  padding-top:18px;
+  border-top:1px solid #e5e5e5;
+}
+.profile-graphic{
+  position:relative;
+  width:100%;
+  margin:0 0 8px;
+  line-height:0;
+}
+.profile-graphic:last-child{margin-bottom:0;}
+.profile-graphic img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:contain;
+  background:#fff;
+}
+.profile-link{
+  position:absolute;
+  display:block;
+  z-index:4;
+  border-radius:10px;
+}
+.profile-link.youtube{
+  left:70.5%;
+  top:39%;
+  width:8%;
+  height:14%;
+}
+.profile-link.instagram{
+  left:80.5%;
+  top:38%;
+  width:6.5%;
+  height:15%;
+}
+.profile-link:hover{outline:3px solid rgba(40,120,217,.45);}
+@media(max-width:800px){
+  .paramount-main{padding:42px 20px 60px;}
+  .paramount-specs{grid-template-columns:repeat(2,1fr);}
+  .paramount-spec:last-child{grid-column:1/-1;}
+  .paramount-photo{height:auto;}
+  .paramount-photo img{height:auto;}
+  .paramount-section h2{font-size:34px;}
+  .buy-skip{grid-template-columns:1fr;}
+  .permanent-profiles{margin-top:38px;padding-top:14px;}
+  .profile-graphic{margin-bottom:4px;}
+}
+</style>
+<meta content="ON Cloudboom Strike 2 Review | 9to5 Runners" property="og:title"/><meta content="ON Cloudboom Strike 2 Review | 9to5 Runners" name="twitter:title"/><meta content="Cody, Emily, Eric, and Blake review the ON Cloudboom Strike 2 after 113 combined miles, covering its stable ride, fit, speed, and $250 price." name="description"/><meta content="Cody, Emily, Eric, and Blake review the ON Cloudboom Strike 2 after 113 combined miles, covering its stable ride, fit, speed, and $250 price." property="og:description"/><meta content="Cody, Emily, Eric, and Blake review the ON Cloudboom Strike 2 after 113 combined miles, covering its stable ride, fit, speed, and $250 price." name="twitter:description"/><script defer="" src="https://cdn.vercel-insights.com/v1/script.js"></script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Review", "name": "ON Cloudboom Strike 2 Review", "itemReviewed": {"@type": "Product", "name": "ON Cloudboom Strike 2", "brand": {"@type": "Brand", "name": "On"}, "offers": {"@type": "Offer", "price": "250", "priceCurrency": "USD"}}, "author": [{"@type": "Person", "name": "Cody"}, {"@type": "Person", "name": "Emily"}, {"@type": "Person", "name": "Eric"}, {"@type": "Person", "name": "Blake"}], "publisher": {"@type": "Organization", "name": "9to5 Runners"}, "datePublished": "2026-08-03"}</script><style>
+.permanent-profiles{
+  max-width:1100px;
+  margin:48px auto 28px;
+  padding-top:18px;
+  border-top:1px solid #e5e5e5;
+}
+.profile-graphic{
+  position:relative;
+  width:100%;
+  margin:0 0 8px;
+  line-height:0;
+}
+.profile-graphic:last-child{margin-bottom:0;}
+.profile-graphic img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:contain;
+  background:#fff;
+}
+.profile-link{
+  position:absolute;
+  display:block;
+  z-index:4;
+  border-radius:10px;
+}
+.profile-link.youtube{
+  left:70.5%;
+  top:39%;
+  width:8%;
+  height:14%;
+}
+.profile-link.instagram{
+  left:80.5%;
+  top:38%;
+  width:6.5%;
+  height:15%;
+}
+.profile-link:hover{outline:3px solid rgba(40,120,217,.45);}
+@media(max-width:800px){
+  .permanent-profiles{margin-top:38px;padding-top:14px;}
+  .profile-graphic{margin-bottom:4px;}
+}
+</style><style>
+.review-bottom-links{
+  max-width:1100px;
+  margin:20px auto 8px;
+  padding-top:22px;
+  border-top:1px solid #e5e5e5;
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
+}
+.review-bottom-links a{
+  color:#2878d9;
+  text-decoration:none;
+  font-size:16px;
+  font-weight:700;
+}
+.review-bottom-links a:hover{
+  text-decoration:underline;
+}
+@media(max-width:700px){
+  .review-bottom-links{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+</style><style data-disclosure-style="true">
+.review-disclosure{
+  max-width:1100px;
+  margin:40px auto 0;
+  padding:22px 24px;
+  background:#f3f3f3;
+  border-radius:18px;
+}
+.review-disclosure h3{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:24px;
+  line-height:1;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.review-disclosure p{
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:15px;
+  line-height:1.55;
+  color:#444;
+}
+</style><style data-buy-skip-style="true">
+.buy-skip{
+  max-width:1100px;
+  margin:44px auto 0;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+.buy-skip article{
+  background:#f3f3f3;
+  border-radius:20px;
+  padding:26px;
+}
+.buy-skip h2{
+  font-family:"Bowlby One SC",Impact,sans-serif;
+  font-size:30px;
+  line-height:1;
+  text-transform:uppercase;
+  margin-bottom:16px;
+}
+.buy-skip ul{
+  margin:0;
+  padding-left:20px;
+}
+.buy-skip li{
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:16px;
+  line-height:1.55;
+  color:#333;
+  margin-bottom:10px;
+}
+.buy-skip li:last-child{margin-bottom:0;}
+@media(max-width:800px){
+  .buy-skip{grid-template-columns:1fr;}
+}
+</style></head>
+<body>
+<header class="site-header">
+<nav aria-label="Main navigation" class="nav">
+<a href="9to5_shoes_page1.html">Shoes</a>
+<a href="9to5_gear_page1.html">Gear</a>
+<a href="9to5_about.html">About</a>
+</nav>
+<a aria-label="9to5 Runners Home" href="index.html"><img alt="9to5 Runners logo" class="site-logo" src="images/asset-313d0f249b137e11.jpg"/></a>
+<div class="search-wrap">
+<input aria-label="Search 9to5 Runners" class="search-input" placeholder="Search" type="search"/>
+<div aria-label="Search results" class="search-results"></div>
+</div>
+</header>
+<section class="hero paramount-hero" style="background-image:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.35),rgba(0,0,0,.08)),url('images/on-cloudboom-strike-2-hero.jpg');background-size:cover;background-position:center;">
+<div class="hero-inner">
+<div class="kicker">Road Shoe Review</div>
+<h1 class="display">ON Cloudboom Strike 2 Review</h1>
+<p class="hero-sub">A stable, comfortable super shoe built for marathon miles.</p>
+<a class="btn" href="9to5_shoes_page1.html">Back to Shoes</a>
+</div>
+</section>
+<main class="paramount-main">
+<section class="paramount-intro">
+<p>Has ON finally made a super shoe that's worth your hard-earned money?</p>
+<p>The Cloudboom Strike 2 is ON's latest shot at taking on the big names like Nike, adidas, ASICS, and New Balance. On paper, it has everything you'd want from a modern marathon racer—but does it actually deliver when the miles start adding up?</p>
+<p>After putting 113 combined miles into the Cloudboom Strike 2, we're breaking down everything you need to know: how it fits, where it shines, where it falls short, and whether it's actually worth spending $250 on. Let's find out if ON has finally built a super shoe that deserves a spot on your marathon starting line.</p>
+</section>
+<div class="paramount-photo"><img alt="ON Cloudboom Strike 2 pair" src="images/on-cloudboom-strike-2-detail-1.jpg"/></div>
+<section class="paramount-specs">
+<div class="paramount-spec"><span>Price</span><strong>$250</strong></div>
+<div class="paramount-spec"><span>Stack Height</span><strong>40 / 35 mm</strong></div>
+<div class="paramount-spec"><span>Drop</span><strong>5 mm</strong></div>
+<div class="paramount-spec"><span>Weight</span><strong>7.3 oz</strong></div>
+<div class="paramount-spec"><span>Category</span><strong>Race Day</strong></div>
+</section>
+<section class="miles-tested"><h2>Miles Tested</h2><div class="miles-tested-grid">
+<div class="miles-tested-item"><span>Cody</span><strong>25 miles</strong></div>
+<div class="miles-tested-item"><span>Emily</span><strong>33 miles</strong></div>
+<div class="miles-tested-item"><span>Eric</span><strong>28 miles</strong></div>
+<div class="miles-tested-item"><span>Blake</span><strong>27 miles</strong></div>
+</div></section>
+<section class="paramount-section"><h2>The Good</h2>
+<div class="paramount-reviewer"><h3>Cody</h3>
+<p>The underfoot feel of the Cloudboom Strike 2 is really impressive. It has a smooth, comfortable ride that feels much more stable than most super shoes I've tested. For a high-stack carbon racer, I never felt like I was fighting the shoe through corners or when my form started breaking down late in a run.</p>
+<p>While I'm nowhere near race-day fitness right now, picking up the pace in the Cloudboom Strike 2 felt effortless. I wouldn't call it the fastest super shoe on the market, but I honestly don't think that matters for most runners. For 90% of marathoners, this shoe has more than enough speed. During one of my long runs I mixed miles in the 8-minute range with some low-7-minute pace efforts, and the transition between speeds felt incredibly smooth.</p>
+<p>The upper might actually be my favorite ON has ever made. Lockdown is excellent without creating hot spots, and it hugs the foot in all the right places. I never found myself thinking about the upper during the run—which is exactly what you want from a race shoe.</p></div>
+<div class="paramount-reviewer"><h3>Emily</h3>
+<p>When I first opened the Cloudboom Strike 2's box, I immediately thought there was no way I'd get along with this shoe. I was intimidated, if I'm honest. It looks super fast, aggressive, and not like something I usually vibe with. But sometimes, believe it or not, I'm wrong. Like, really wrong.</p>
+<p>Starting with the open-weave upper, I actually got along with this material quite a bit. It's rigid and a bit coarse to the touch, but it has tons of perforation, which is perfect for summer temps and going at faster paces. I was able to get a solid lockdown through the midfoot as well. The material feels barely there, almost like a net on top of your foot.</p>
+<p>The midsole is obviously the star of the show. It has three main components: the CloudTec Sphere channels, a curved carbon Speedboard, and their brand-new HelionHF foam. All of these components work in tandem to provide the runner with an incredibly smooth heel-to-toe transition at any pace. I can't say for certain that I felt the specific elements of this shoe (other than the foam) working on their own, but together, they pack quite the punch. The Cloudboom Strike 2 is fast without being overly aggressive. I did a 16-mile long run in this shoe where I was supposed to hit goal marathon pace for the last 4 miles, and I was able to get there and stay at that pace. The shoe wasn't forcing me to go faster or slowing me down. It also felt solid during those easier 12 miles. It has a fantastic forefoot cushioning feel that I really enjoyed running in.</p>
+<p>When doing strides during my usual daily miles, the shoe popped right off the toe and felt more explosive. This is my proof that while the Cloudboom Strike 2 is meant for race day, it can handle a multitude of different types of runs. Last, and maybe least, the traction was incredibly grippy and seems to be very durable.</p></div>
+<div class="paramount-reviewer"><h3>Eric</h3>
+<p>Overall this shoe feels really nice underfoot. I originally expected something really aggressive like the first version, but with each additional run I felt like the 2 became really more of a cruiser. The foam underfoot is soft but not overly mushy and feels comfortable at a variety of efforts. The upper is also great, the gusseted tongue and breathable material provides excellent lockdown without being overly restrictive. Plus those who had trouble with the heel in the original will be happy to hear that the new heel is padded.</p></div>
+<div class="paramount-reviewer"><h3>Blake</h3>
+<p>The Cloudboom Strike 2 fixed all my issues with v1, and made a great shoe over all. The biggest complaint I had with V1 was the ankle collar. On fixed this in v2 by adding Achilles padding, and after almost 30 miles I've had zero rubbing or issues with blisters. The new open-weave upper is also lighter, more breathable, and feels much more premium while still providing a secure fit. Speaking of fit, it no longer runs a bit big like v1, so you can go true-to-size and get a nice, race ready fit.</p>
+<p>The midsole is where this shoe really shines. The updated Helion HF Hyper foam is softer, lighter, and noticeably bouncier than before, while still feeling surprisingly stable. The majority of the cushion still comes from the drop-in midsole (super thick sockliner), and even jogging between intervals, the shoe felt smooth and comfortable, but the faster I ran, the more it came alive. During 400 and 800 repeats, the new CloudTec Sphere design in the forefoot gave each toe-off an extra pop that made the shoe feel fast and fun without being overly aggressive.</p>
+<p>I also appreciate that On lowered the price to $250 instead of raising it, which is refreshing to see in today's super shoe market.</p></div>
+</section>
+<div class="paramount-photo"><img alt="ON Cloudboom Strike 2 side profile" src="images/on-cloudboom-strike-2-detail-2.jpg"/></div>
+<section class="paramount-section"><h2>The Bad</h2>
+<div class="paramount-reviewer"><h3>Cody</h3>
+<p>The biggest downside is the price.</p>
+<p>At $250, the Cloudboom Strike 2 is one of the most expensive marathon shoes on the market, and there's no getting around that. Premium race shoes are expensive these days, but this one still hurts the wallet.</p>
+<p>The heel collar also surprised me—and not in a good way. It's a little more plush than what you'll find on most super shoes, which is comfortable, but it absolutely soaked up sweat during my runs. By the end, it felt like it had absorbed everything, to the point where I could probably make an Instagram Reel just wringing sweat out of my socks.</p>
+<p>And then there's the colorway. If your favorite superhero is The Hulk, you're probably going to love it. Everyone else? It's...fine. Functional, but definitely not my favorite look.</p></div>
+<div class="paramount-reviewer"><h3>Eric</h3>
+<p>On brought the price down in this shoe and I think that was smart. Although their reasoning was so they could tier out the standard and LS versions, it unintentionally put the CBS2 in its proper price range. While the midsole is great as a cruiser, it’s not the top tier explosiveness that you expect from a $275+ tier shoe. People who are looking for next level bounce and pace assistance probably won’t find it here. Where the shoe excels in moderate efforts, when really trying to push top end pace I felt that the shoe fell a little short. That being said the shoe also doesn’t have the next level stack or cushion underfoot as some other cruisers. It finds itself a little bit in no mans land as far as where it shines.</p></div>
+<div class="paramount-reviewer"><h3>Blake</h3>
+<p>If I had one critique, it's that this isn't the most aggressive racing shoe out there. The rocker is fairly subtle, and it doesn't have the ultra-snappy, propulsive feel of some racers that prioritize stiffness over comfort. Instead, it leans toward a smoother, more energetic ride. This is personally the exact type of ride I prefer for a marathon, but I know that isn't everyone's cup of tea.</p></div>
+</section>
+<section class="paramount-section"><h2>The Verdict</h2>
+<div class="paramount-reviewer"><h3>Cody</h3>
+<p>The Cloudboom Strike 2 may not be the fastest super shoe available today, but I absolutely would race a marathon in it.</p>
+<p>The combination of comfort, stability, and excellent lockdown makes this one of the easiest super shoes to recommend. Not every runner wants the most aggressive carbon racer on the market. Some runners simply want a shoe they can trust over 26.2 miles, and I think the Cloudboom Strike 2 delivers exactly that.</p>
+<p>I'm racing a marathon this fall, and this shoe has absolutely earned a spot in my race-day rotation.</p></div>
+<div class="paramount-reviewer"><h3>Eric</h3>
+<p>Overall this is a very capable super shoe for the masses but it is a little bit of a tweener. It’s not quite aggressive enough for the 5k/10k but also maybe not cushioned or bouncy enough for some while running the half/full. To be clear, I COULD use it for all those distances, I’m just saying I don’t think it’ll meet the general preferences of people for them. For me the shoe is a really good workout and training shoe. Stable enough for track work, comfortable enough for tempo/threshold, just maybe not standing out in any specific area to bring it to that top tier. All that to be said, I’ve really enjoyed my miles in the shoe, it just isn’t making my race day roster.</p></div>
+<div class="paramount-reviewer"><h3>Blake</h3>
+<p>The Cloudboom Strike 2 takes everything I liked about the original and makes it better. The upper is finally comfortable, the ride is softer and bouncier, and the shoe feels surprisingly stable for a marathon racer. It may not be the most aggressive or most responsive super shoe available, but for marathon racing, I actually prefer its balanced combination of cushioning, bounce, and comfort. Overall, I think On did a great job with this shoe, and it may be on the start line of my fall marathon.</p></div>
+</section>
+<section class="paramount-section"><h2>Worth the Price?</h2>
+<div class="paramount-reviewer"><h3>Cody</h3>
+<p>I still don't love paying $250 for any running shoe, but unfortunately that's the reality of today's premium racing market.</p>
+<p>The good news is that the Cloudboom Strike 2 is light-years ahead of the original Cloudboom Strike. ON made meaningful improvements across the board, and it finally feels like a complete marathon racer rather than a shoe trying to catch the competition.</p>
+<p>If you're looking for a stable, comfortable super shoe that performs well across a variety of marathon paces, the Cloudboom Strike 2 is one of the better options available today. It may not top every speed chart, but it offers a confidence-inspiring ride that a lot of runners will appreciate on race day.</p></div>
+<div class="paramount-reviewer"><h3>Eric</h3>
+<p>I think that as shoe reviewers if a shoe isn’t crazy then it kind of gets dinged. Like I said earlier in the review, bringing the price down to $250 from its previous $275 (I think?) was a good move. At the $250 price I think that it’s worth the move, however if you’re looking for something more aggressive you may be interested in snagging the first version at a discount instead.</p></div>
+<div class="paramount-reviewer"><h3>Blake</h3>
+<p>At $250, I think the Cloudboom Strike 2 is much easier to justify than the previous version. Not only is it less expensive, but it also fixes the upper issues from V1 while improving the ride with a lighter, softer Helion HF formula. If you're looking for a marathon shoe that balances comfort, stability, and speed, I think it's priced competitively and may be one of my favorite super shoes of the year so far.</p></div>
+</section>
+<section class="buy-skip">
+<article>
+<h2>Buy If</h2>
+<ul>
+<li>You want a stable, comfortable super shoe for the half marathon or marathon.</li>
+<li>You prefer a smooth, balanced ride over an ultra-aggressive racing feel.</li>
+<li>You want a race-day shoe that can also handle long runs, tempo work, and workouts.</li>
+<li>You value strong lockdown, a breathable upper, and dependable traction.</li>
+</ul>
+</article>
+<article>
+<h2>Skip If</h2>
+<ul>
+<li>You want the most explosive or aggressive super shoe available.</li>
+<li>You're looking for the absolute lightest or fastest-feeling marathon racer.</li>
+<li>You're shopping on a tighter budget and don't want to spend $250 on a race-day shoe.</li>
+</ul>
+</article>
+</section><section class="review-disclosure">
+<h3>Disclosure</h3>
+<p><strong>Disclosure: </strong>This product was provided by the manufacturer for review. As always, they had no input into our testing, opinions, or final verdict.</p>
+</section><section class="permanent-profiles">
+<div class="profile-graphic">
+<img alt="Cody runner profile" src="images/asset-1aedc199f244fb6c.png"/>
+<a aria-label="Cody YouTube" class="profile-link youtube" href="https://www.youtube.com/@The_Shoe_In_With_Cody" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Cody Instagram" class="profile-link instagram" href="https://www.instagram.com/the_shoe_in_with_cody/" rel="noopener noreferrer" target="_blank"></a>
+</div>
+<div class="profile-graphic">
+<img alt="Emily runner profile" src="images/emily-runner-profile.png"/>
+<a aria-label="Emily YouTube" class="profile-link youtube" href="https://www.youtube.com/@RunLikeHeller" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Emily Instagram" class="profile-link instagram" href="https://www.instagram.com/runlikeheller" rel="noopener noreferrer" target="_blank"></a>
+</div>
+<div class="profile-graphic">
+<img alt="Eric runner profile" src="images/asset-ed099a8cc8a077af.png"/>
+<a aria-label="Eric YouTube" class="profile-link youtube" href="https://www.youtube.com/@raddadbodtv" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Eric Instagram" class="profile-link instagram" href="https://www.instagram.com/raddadbodtv/" rel="noopener noreferrer" target="_blank"></a>
+</div>
+<div class="profile-graphic">
+<img alt="Blake runner profile" src="images/asset-10125957c16f6865.png"/>
+<a aria-label="Blake YouTube" class="profile-link youtube" href="https://www.youtube.com/@tfxcShoes" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Blake Instagram" class="profile-link instagram" href="https://www.instagram.com/tfxcshoes/" rel="noopener noreferrer" target="_blank"></a>
+</div>
+</section><div class="review-bottom-links">
+<a href="9to5_shoes_mizuno_wave_rider_30.html">← Previous Review: Mizuno Wave Rider 30</a>
+<a href="9to5_shoes_page1.html">Back to All Shoe Reviews</a>
+</div>
+</main>
+<footer class="footer">
+<div class="footer-title">Connect</div>
+<a aria-label="Follow 9to5 Runners on Instagram" class="instagram" href="https://www.instagram.com/9to5runners/" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+<rect height="18" rx="5" stroke="currentColor" stroke-width="2" width="18" x="3" y="3"></rect>
+<circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="17.2" cy="6.8" fill="currentColor" r="1.1"></circle>
+</svg>
+</a>
+</footer>
+<script>
+const searchIndex = [
+  { title: "Mizuno Wave Rider 30 Review", type: "Shoe Review", tags: "mizuno wave rider 30 road daily trainer enerzy nxt wave plate", url: "9to5_shoes_mizuno_wave_rider_30.html" },
+  { title: "HOKA Clifton Pro Review", type: "Shoe Review", tags: "hoka clifton pro daily trainer proglide scf eva rocker", url: "9to5_shoes_hoka_clifton_pro.html" },
+  { title: "New Balance SC Rebel Review", type: "Shoe Review", tags: "new balance sc rebel plated daily trainer energy arc infinion foam workout speed", url: "9to5_shoes_new_balance_sc_rebel.html" },
+  { title: "ASICS Novablast 6 Review", type: "Shoe Review", tags: "asics novablast 6 daily trainer ff turbo 2 road versatile", url: "9to5_shoes_asics_novablast6.html" },
+  { title: "Dera B01 Trail Running Belt Review", type: "Gear Review", tags: "dera b01 trail running belt hydrapak ultraflask dial fit no bounce", url: "9to5_gear_dera_b01.html" },
+  { title: "Suunto Spark Review", type: "Gear Review", tags: "suunto spark open ear wireless headphones bluetooth running audio", url: "9to5_gear_suunto_spark.html" },
+  { title: "Janji Revy Pack", type: "Gear Review", tags: "janji revy pack backpack fastpacking travel hydration laptop", url: "9to5_gear_janji_revy_pack.html" },
+  { title: "Puma Deviate Pure Nitro", type: "Shoe Review", tags: "puma deviate pure nitro peba pumagrip daily trainer uptempo", url: "9to5_shoes_puma_deviatepurenitro.html" },
+  { title: "Saucony Paramount Max", type: "Shoe Review", tags: "saucony paramount max incredirun max cushion easy recovery long run", url: "9to5_shoes_saucony_paramountmax.html" },
+  { title: "ASICS Gel Nimbus 28", type: "Shoe Review", tags: "asics road max cushion daily trainer", url: "9to5_shoes_asics_nimbus28.html" },
+  { title: "Cody", type: "Reviewer", tags: "shoe in with cody youtube instagram reviewer", url: "9to5_about.html" },
+  { title: "Blake", type: "Reviewer", tags: "tfxc shoes youtube instagram reviewer", url: "9to5_about.html" },
+  { title: "Eric", type: "Reviewer", tags: "raddadbodtv youtube instagram reviewer", url: "9to5_about.html" },
+  { title: "The North Face Altamesa 500v2", type: "Shoe Review", tags: "north face trail door to trail", url: "9to5_shoes_page1.html" },
+  { title: "Saucony Azura", type: "Shoe Review", tags: "saucony retro lifestyle", url: "9to5_shoes_page1.html" },
+  { title: "Salomon Ultra Glide 4", type: "Shoe Review", tags: "salomon trail long run", url: "9to5_shoes_page1.html" }
+];
+
+function setupSiteSearch() {
+  const input = document.querySelector(".search-input");
+  const results = document.querySelector(".search-results");
+  if (!input || !results) return;
+
+  function render(query) {
+    const q = query.trim().toLowerCase();
+    if (!q) {
+      results.classList.remove("active");
+      results.innerHTML = "";
+      return;
+    }
+
+    const matches = searchIndex
+      .filter(item => `${item.title} ${item.type} ${item.tags}`.toLowerCase().includes(q))
+      .slice(0, 8);
+
+    results.classList.add("active");
+    results.innerHTML = matches.length
+      ? matches.map(item => `
+          <a class="search-result" href="${item.url}">
+            <span class="search-result-title">${item.title}</span>
+            <span class="search-result-meta">${item.type}</span>
+          </a>
+        `).join("")
+      : `<div class="search-empty">No results found.</div>`;
+  }
+
+  input.addEventListener("input", event => render(event.target.value));
+  document.addEventListener("click", event => {
+    if (!event.target.closest(".search-wrap")) results.classList.remove("active");
+  });
+}
+setupSiteSearch();
+</script>
+<script defer="" src="assets/site.js"></script></body>
+</html>

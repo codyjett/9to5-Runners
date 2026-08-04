@@ -489,7 +489,7 @@ img { max-width:100%; }
 <a href="9to5_gear_page1.html">Gear</a>
 <a href="9to5_about.html">About</a>
 </nav>
-<a aria-label="9to5 Runners Home" href="9to5_Homepage.html"><img alt="9to5 Runners logo" class="site-logo" src="images/asset-313d0f249b137e11.jpg"/></a>
+<a aria-label="9to5 Runners Home" href="index.html"><img alt="9to5 Runners logo" class="site-logo" src="images/asset-313d0f249b137e11.jpg"/></a>
 <div class="search-wrap">
 <input aria-label="Search 9to5 Runners" class="search-input" placeholder="Search" type="search"/>
 <div aria-label="Search results" class="search-results"></div>
@@ -530,9 +530,18 @@ img { max-width:100%; }
 <section>
 <div class="list-head">
 <h2 class="display">Recent Shoe Reviews</h2>
-<div class="post-count">8 posts</div>
+<div class="post-count">9 posts</div>
 </div>
-<div class="review-list"><article class="review-row" data-brand="mizuno" data-category="daily trainer" data-filter="road mizuno daily trainer cody emily" data-type="road"><a class="review-thumb" href="9to5_shoes_mizuno_wave_rider_30.html"><img alt="Mizuno Wave Rider 30 Review" src="images/mizuno-wave-rider-30-hero.jpg"/></a><div class="review-content"><div class="review-meta">Road Running Shoes • Published July 30, 2026</div><h3><a href="9to5_shoes_mizuno_wave_rider_30.html">Mizuno Wave Rider 30 Review</a></h3><p>A modern update to Mizuno's longstanding daily trainer with an 8 mm drop and dual-density MIZUNO ENERZY NXT midsole.</p><div class="tag-row"><span>Road</span><span>Daily Trainer</span><span>Mizuno</span></div><a class="read-link" href="9to5_shoes_mizuno_wave_rider_30.html">Read Review</a></div></article><article class="review-row" data-brand="norda" data-category="all mountain" data-filter="trail norda max cushion long run all mountain cody ryan" data-type="trail">
+<div class="review-list"><article class="review-row" data-brand="on" data-category="race day" data-filter="road race on race day super shoe marathon carbon cody emily eric blake" data-type="road">
+<a class="review-thumb" href="9to5_shoes_on_cloudboom_strike_2.html"><img alt="ON Cloudboom Strike 2 Review" src="images/on-cloudboom-strike-2-hero.jpg"/></a>
+<div class="review-content">
+<div class="review-meta">Road Running Shoes • Published August 3, 2026</div>
+<h3><a href="9to5_shoes_on_cloudboom_strike_2.html">ON Cloudboom Strike 2 Review</a></h3>
+<p>A stable, comfortable super shoe tested by Cody, Emily, Eric, and Blake across 113 combined miles.</p>
+<div class="tag-row"><span>Road</span><span>Race Day</span><span>On</span></div>
+<a class="read-link" href="9to5_shoes_on_cloudboom_strike_2.html">Read Review</a>
+</div>
+</article><article class="review-row" data-brand="mizuno" data-category="daily trainer" data-filter="road mizuno daily trainer cody emily" data-type="road"><a class="review-thumb" href="9to5_shoes_mizuno_wave_rider_30.html"><img alt="Mizuno Wave Rider 30 Review" src="images/mizuno-wave-rider-30-hero.jpg"/></a><div class="review-content"><div class="review-meta">Road Running Shoes • Published July 30, 2026</div><h3><a href="9to5_shoes_mizuno_wave_rider_30.html">Mizuno Wave Rider 30 Review</a></h3><p>A modern update to Mizuno's longstanding daily trainer with an 8 mm drop and dual-density MIZUNO ENERZY NXT midsole.</p><div class="tag-row"><span>Road</span><span>Daily Trainer</span><span>Mizuno</span></div><a class="read-link" href="9to5_shoes_mizuno_wave_rider_30.html">Read Review</a></div></article><article class="review-row" data-brand="norda" data-category="all mountain" data-filter="trail norda max cushion long run all mountain cody ryan" data-type="trail">
 <a class="review-thumb" href="9to5_shoes_norda_055.html"><img alt="norda 055 Review" src="images/norda-055-hero.jpg"/></a>
 <div class="review-content">
 <div class="review-meta">Trail Running Shoes • Published July 28, 2026</div>
@@ -604,7 +613,7 @@ img { max-width:100%; }
 </section>
 </main>
 <footer class="footer">
-<div class="footer-title">Connect</div>
+<div style="margin:18px 0;"><a href="privacy-policy.html" style="color:#fff;text-decoration:underline;">Privacy Policy</a></div><div class="footer-title">Connect</div>
 <a aria-label="Follow 9to5 Runners on Instagram" class="instagram" href="https://www.instagram.com/9to5runners/" rel="noopener noreferrer" target="_blank">
 <svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <rect height="18" rx="5" stroke="currentColor" stroke-width="2" width="18" x="3" y="3"></rect>
@@ -615,6 +624,8 @@ img { max-width:100%; }
 </footer>
 <script>
 const searchIndex = [
+  { title: "ON Cloudboom Strike 2 Review", type: "Shoe Review", tags: "on cloudboom strike 2 race day super shoe marathon carbon helion hf cody eric blake", url: "9to5_shoes_on_cloudboom_strike_2.html" },
+
   { title: "Mizuno Wave Rider 30 Review", type: "Shoe Review", tags: "mizuno wave rider 30 road daily trainer enerzy nxt wave plate", url: "9to5_shoes_mizuno_wave_rider_30.html" },
   { title: "norda 055 Review", type: "Shoe Review", tags: "norda 055 trail all mountain arnitel tpee dyneema max cushion", url: "9to5_shoes_norda_055.html" },
   { title: "HOKA Clifton Pro Review", type: "Shoe Review", tags: "hoka clifton pro daily trainer proglide scf eva rocker", url: "9to5_shoes_hoka_clifton_pro.html" },
@@ -683,7 +694,6 @@ function setupSiteSearch() {
 
 setupSiteSearch();
 </script>
-
 <style>
 .pagination .page-btn{
   border:0;
@@ -699,8 +709,6 @@ setupSiteSearch();
   cursor:default;
 }
 </style>
-
-
 <script>
 (function () {
   const REVIEWS_PER_PAGE = 25;
