@@ -1,11 +1,29 @@
-HOKA Clifton Pro Site Update
-============================
+Craft Atmosfär 1 Final Update Audit
+=====================================
+Homepage feature: Craft Atmosfär 1 Review
+Latest Reviews count: 9
+Latest Reviews order:
+1. ACG Made a Pickle Shoe?
+2. New Balance SuperComp Elite v6 Review
+3. Saucony Endorphin XC Review
+4. ASICS Blazeblast Review
+5. HOKA Tecton X 4 Review
+6. Dynafish Xiaonian Review
+7. ON Cloudboom Strike 2 Review
+8. Mizuno Wave Rider 30 Review
+9. norda 055 Review
 
-Tech Specs order: ['Price', 'Stack', 'Drop', 'Weight', 'Category']
-Miles Tested: {'Cody': '29 miles', 'Blake': '31 miles', 'Emily': '45 miles', 'Eric': '26 miles'}
-Meta description uses 131 combined miles: True
-Homepage latest review count: 9
-Homepage first review: HOKA Clifton Pro Review
-Shoes page first review: HOKA Clifton Pro Review
-Broken update links: 0
-Missing new assets: 0
+Shoes archive count: 15
+Shoes archive first 6:
+1. Craft Atmosfär 1 Review
+2. New Balance SuperComp Elite v6 Review
+3. Saucony Endorphin XC Review
+4. ASICS Blazeblast Review
+5. HOKA Tecton X 4 Review
+6. Dynafish Xiaonian Review
+
+Expected rotation rule:
+- Newest review is feature
+- Previous feature becomes #1 Latest Review
+- Latest Reviews capped at 9
+- Shoes archive gets newest shoe at #1; older shoe reviews remain
