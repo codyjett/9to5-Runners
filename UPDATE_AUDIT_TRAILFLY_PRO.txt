@@ -1,0 +1,22 @@
+Inov-8 Trailfly Pro site update
+
+Feature: Inov-8 Trailfly Pro
+Latest Reviews (9):
+1. Nike Pegasus Plus 2
+2. Mount to Coast M1
+3. Craft Atmosfär 1
+4. ACG Made a Pickle Shoe?
+5. New Balance SuperComp Elite v6
+6. Saucony Endorphin XC
+7. ASICS Blazeblast
+8. HOKA Tecton X 4
+9. Dynafish Xiaonian
+
+ON Cloudboom Strike 2 drops off homepage Latest Reviews only.
+Shoes archive: Trailfly Pro added at #1; 18 posts.
+Search: Trailfly Pro added to all HTML files in this update package.
+Reviewers: Cody 18 miles; Ryan 20 miles.
+Photos: 54 hero, 52 first in-review, 53 second in-review.
+No affiliate section added because no affiliate link was supplied.
+No disclosure section added because no disclosure details were supplied.
+Cody's $190 Worth the Price wording is preserved exactly; official spec price remains $195.
