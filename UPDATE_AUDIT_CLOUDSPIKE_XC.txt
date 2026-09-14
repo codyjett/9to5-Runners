@@ -1,0 +1,13 @@
+On Cloudspike XC update
+- New featured review: On Cloudspike XC
+- Previous feature ASICS SonicBlast 2 moved to #1 Latest Reviews
+- Latest Reviews capped at 9
+- Shoes page prepended with Cloudspike XC
+- Search index updated across current HTML files
+- Calum: 35 miles
+- Review wording preserved as supplied
+- Photos: 58 hero, 60 detail, 59 outsole
+- No affiliate link supplied; none added
+- Calum runner-profile biographical metrics/image were not available in the supplied/current files, so no personal metrics were invented. A reviewer footer with known facts is included.
+- Added Calum permanent runner profile image: 50 avg weekly miles / 135 lb / 5'6" / Track.
+- Added Running Warehouse affiliate CTA using exact affiliate URL: https://www.runningwarehouse.com/On_Cloudspike_XC_Spikes/descpage-O1CSXM2.html?from=ntfr
