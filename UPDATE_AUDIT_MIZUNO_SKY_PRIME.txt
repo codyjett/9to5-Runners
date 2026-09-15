@@ -1,0 +1,12 @@
+Mizuno Sky Prime update
+- New featured review: Mizuno Sky Prime
+- Previous feature On Cloudspike XC moved to Latest Reviews #1
+- Latest Reviews remains capped at 9
+- Shoes archive: Mizuno Sky Prime added at #1; no reviews deleted
+- Search index updated across included current HTML pages
+- Category: Max Cushion
+- Miles: Emily 26, Cody 28, Blake 26 (80 combined)
+- Reviewer profiles: Emily, Cody, Blake included at bottom
+- Disclosure included
+- Affiliate section NOT added because no Mizuno affiliate URL was provided
+- Reviewer copy preserved as provided
